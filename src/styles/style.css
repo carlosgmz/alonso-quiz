@@ -1,7 +1,23 @@
 body {
     font-size: 2em;
-    margin: 0% 10% 0% 10%;
+    margin: 3% 10%;
 }
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    height: 5%;
+    margin-top: 3em;
+    font-size: 0.8em;
+}
+
+footer div {
+
+}
+
+
+
+/* Index */
 
 header {
     height: 5em;
@@ -46,15 +62,50 @@ header {
 .extra {
     margin-top: 2em;
     text-align: center;
-    height: 4em;
 }
 
-footer {
+
+
+/* Quiz */
+
+.questionCounter {
+    font-size: 0.8em;
+}
+
+.question {
+    margin: 1% 0% 5% 0%;
+    border: 0.2em gray solid;
+    padding: 0.2em 0.3em;
+}
+
+.answers {
     display: flex;
-    justify-content: space-evenly;
-    height: 2em;
+    flex-wrap: wrap;
 }
 
-footer div {
-
+.answers div {
+    font-size: 0.9em;
+    width: 47.8%;
+    height: 5em;
+    margin: 0.5%;
+    padding: 0.3% 0.6%;
+    text-align: center;
 }
+
+#A {
+    background-color: green;
+}
+#B {
+    background-color: red;
+}
+#C {
+    background-color: blue;
+}
+#D {
+    background-color: yellow;
+}
+
+
+
+/* Result */
+
