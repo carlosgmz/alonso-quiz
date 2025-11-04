@@ -1,4 +1,5 @@
-{
+[
+    {
         "lang":{
             "en":{
                 "question":"In what circuit did Alonso get his last pole position?",
@@ -21,3 +22,4 @@
         },
         "themes":"qualy,2012,warning"
     }
+]

@@ -44,7 +44,8 @@ header {
 .difficulty a {
     width: 15em;
     background-size: cover;
-    opacity: 80%;
+    opacity: 75%;
+    cursor: pointer;
 }
 
 #normal {
@@ -68,7 +69,9 @@ header {
 
 /* Quiz */
 
-.questionCounter {
+.info {
+    display: flex;
+    justify-content: space-between;
     font-size: 0.8em;
 }
 
@@ -83,28 +86,26 @@ header {
     flex-wrap: wrap;
 }
 
-.answers div {
+.answer {
     font-size: 0.9em;
+    background-color: lightgray;
     width: 47.8%;
     height: 5em;
     margin: 0.5%;
     padding: 0.3% 0.6%;
     text-align: center;
 }
-
-#A {
-    background-color: green;
+.answer_hover:hover {
+    background-color: rgb(167, 167, 167);
+    cursor: pointer;
 }
-#B {
+
+.true {
+    background-color: rgb(0, 175, 0);
+}
+.false {
     background-color: red;
 }
-#C {
-    background-color: blue;
-}
-#D {
-    background-color: yellow;
-}
-
 
 
 /* Result */

@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/quiz.js" defer></script>
     <title>Alonso Quiz</title>
 </head>
 <body>
-    <div class="questionCounter"><span id="remainingQuestions">1</span> of <span id="totalQuestions">30</span></div>
+    <section class="info">
+        <div><span id="questionCounter"></span> of <span id="totalQuestions">30</span></div>
+        <div>Difficulty: <span id="difficulty"></span></div>
+    </section>
 
     <section class="question">
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis adipisci animi voluptates mollitia aperiam deleniti, unde recusandae quaerat ipsa magni doloribus, placeat autem sapiente. Cumque, similique. Doloribus cum expedita nostrum!</span>
+        <span></span>
     </section>
 
     <section class="answers">
-        <div id="A"><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio laudantium, dolore nesciunt voluptatem</span></div>
-        <div id="B"><span>B</span></div>
-        <div id="C"><span>C</span></div>
-        <div id="D"><span>D</span></div>
+        <div id="A" class="answer answer_hover"><span></span></div>
+        <div id="B" class="answer answer_hover"><span></span></div>
+        <div id="C" class="answer answer_hover"><span></span></div>
+        <div id="D" class="answer answer_hover"><span></span></div>
     </section>
 
     <footer>
