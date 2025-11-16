@@ -84,13 +84,13 @@ section {
     height: 20em;
 }
 
-.difficulty a {
+.difficulty div {
     width: 20em;
     background-size: cover;
     opacity: 70%;
     cursor: pointer;
 }
-.difficulty a:hover {
+.difficulty div:hover {
     opacity: 55%;
 }
 #normal {

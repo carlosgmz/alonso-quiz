@@ -6,9 +6,10 @@ const d = document,
  $A = d.querySelector("#A"),
  $B = d.querySelector("#B"),
  $C = d.querySelector("#C"),
- $D = d.querySelector("#D")
+ $D = d.querySelector("#D"),
+ accepted = ["normal","hard"]
 
-let json, difficulty, cont = 0, contTrue = 0
+let json, difficulty, cont = 0, contGuessed = 0
 
 async function fetchJson(difficulty) {
     let res = await fetch(`../locale/en/quiz_${difficulty}.json`)
@@ -22,12 +23,8 @@ async function delay(miliseconds) {
 }
 
 async function init() {
-    let params = new URLSearchParams(location.search)
-    if(params.has("difficulty","normal")) {
-        difficulty = "normal"
-    } else if(params.has("difficulty","hard")) {
-        difficulty = "hard"
-    } else {
+    let difficulty = localStorage.getItem("difficulty")
+    if(!accepted.includes(difficulty)) {
         difficulty = "normal"
     }
     json = await fetchJson(difficulty)
@@ -50,7 +47,7 @@ async function answerListener() {
         el.classList.remove("answer_hover")
     })
     if(this.textContent == json[cont].answers[0]) {
-        contTrue++
+        contGuessed++
         this.classList.add("true")
         await delay(3000)
         this.classList.remove("true")
@@ -63,7 +60,8 @@ async function answerListener() {
     }
     cont++
     if(cont==30) {
-        location.href = `http://localhost:5500/src/pages/result.html?difficulty=${difficulty}&guessed=${contTrue}`
+        localStorage.setItem("contGuessed",contGuessed)
+        location.href = `http://localhost:5500/src/pages/result.html`
         return
     }
     render()

@@ -1,6 +1,6 @@
 const d = document,
  $languages = d.querySelectorAll(".languages div"),
- accepted = ["en","es"]
+ acceptedLanguage = ["en","es"]
  //theme
 
 function readTheme() {
@@ -17,7 +17,7 @@ function applyTheme() {
 
 function readLanguage() {
     let language = localStorage.getItem("language")
-    if(language == null || !accepted.includes(language)) {
+    if(language == null || !acceptedLanguage.includes(language)) {
         localStorage.setItem("language","en")
         applyLanguage("en")
     } else if(language = "en") {
