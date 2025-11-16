@@ -1,0 +1,302 @@
+[
+    {    
+        "question":"¿En qué posición terminó Alonso la temporada 2001 de F1?",
+        "answers":[
+            "23º",
+            "21º",
+            "19º",
+            "22º"
+        ],
+        "themes":"wdc,2001"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2002 de F1?",
+        "answers":[
+            "Piloto de pruebas",
+            "17º",
+            "14º",
+            "18º"
+        ],
+        "themes":"wdc,2002"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2003 de F1?",
+        "answers":[
+            "6º",
+            "4º",
+            "9º",
+            "8º"
+        ],
+        "themes":"wdc,2003"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2004 de F1?",
+        "answers":[
+            "4º",
+            "6º",
+            "8º",
+            "9º"
+        ],
+        "themes":"wdc,2004"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2005 de F1?",
+        "answers":[
+            "1º",
+            "3º",
+            "2º",
+            "6º"
+        ],
+        "themes":"wdc,2005"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2006 de F1?",
+        "answers":[
+            "1º",
+            "3º",
+            "4º",
+            "2º"
+        ],
+        "themes":"wdc,2006"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2007 de F1?",
+        "answers":[
+            "3º",
+            "2º",
+            "4º",
+            "5º"
+        ],
+        "themes":"wdc,2007"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2008 de F1?",
+        "answers":[
+            "5º",
+            "4º",
+            "7º",
+            "9º"
+        ],
+        "themes":"wdc,2008"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2009 de F1?",
+        "answers":[
+            "9º",
+            "7º",
+            "10º",
+            "12º"
+        ],
+        "themes":"wdc,2009"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2010 de F1?",
+        "answers":[
+            "2º",
+            "3º",
+            "5º",
+            "1º"
+        ],
+        "themes":"wdc,2010"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2011 de F1?",
+        "answers":[
+            "4º",
+            "2º",
+            "3º",
+            "6º"
+        ],
+        "themes":"wdc,2011"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2012 de F1?",
+        "answers":[
+            "2º",
+            "1º",
+            "5º",
+            "4º"
+        ],
+        "themes":"wdc,2012"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2013 de F1?",
+        "answers":[
+            "2º",
+            "6º",
+            "7º",
+            "3º"
+        ],
+        "themes":"wdc,2013"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2014 de F1?",
+        "answers":[
+            "6º",
+            "9º",
+            "11º",
+            "8º"
+        ],
+        "themes":"wdc,2014"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2015 de F1?",
+        "answers":[
+            "17º",
+            "13º",
+            "16º",
+            "15º"
+        ],
+        "themes":"wdc,2015"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2016 de F1?",
+        "answers":[
+            "10º",
+            "13º",
+            "15º",
+            "12º"
+        ],
+        "themes":"wdc,2016"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2017 de F1?",
+        "answers":[
+            "15º",
+            "11º",
+            "18º",
+            "13º"
+        ],
+        "themes":"wdc,2017"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2018 de F1?",
+        "answers":[
+            "11º",
+            "9º",
+            "14º",
+            "16º"
+        ],
+        "themes":"wdc,2018"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2019 de F1?",
+        "answers":[
+            "No participó",
+            "8º",
+            "10º",
+            "9º"
+        ],
+        "themes":"wdc,2019"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2020 de F1?",
+        "answers":[
+            "No participó",
+            "7º",
+            "10º",
+            "12º"
+        ],
+        "themes":"wdc,2020"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2021 de F1?",
+        "answers":[
+            "10º",
+            "6º",
+            "9º",
+            "8º"
+        ],
+        "themes":"wdc,2021"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2022 de F1?",
+        "answers":[
+            "9º",
+            "7º",
+            "10º",
+            "6º"
+        ],
+        "themes":"wdc,2022"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2023 de F1?",
+        "answers":[
+            "4º",
+            "3º",
+            "2º",
+            "6º"
+        ],
+        "themes":"wdc,2023"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2024 de F1?",
+        "answers":[
+            "9º",
+            "7º",
+            "5º",
+            "11º"
+        ],
+        "themes":"wdc,2024"
+    },
+    {
+        "question":"¿Cuántas victorias tiene Alonso en la F1?",
+        "answers":[
+            "32",
+            "33",
+            "27",
+            "28"
+        ],
+        "themes":"general,warning"
+    },
+    {
+        "question":"¿Cuántos podios tiene Alonso en la F1?",
+        "answers":[
+            "106",
+            "103",
+            "108",
+            "98"
+        ],
+        "themes":"general,warning"
+    },
+    {
+        "question":"¿Cuántos puntos ha conseguido Alonso en la F1?",
+        "answers":[
+            "Más de 2300",
+            "Entre 2000 y 2300",
+            "Entre 1700 y 2000",
+            "Menos de 1700"
+        ],
+        "themes":"general"
+    },
+    {
+        "question":"¿Cuántas poles tiene Alonso en la F1?",
+        "answers":[
+            "22",
+            "28",
+            "25",
+            "32"
+        ],
+        "themes":"general,warning"
+    },
+    {
+        "question":"¿Cuántas vueltas rápidas tiene Alonso en la F1?",
+        "answers":[
+            "26",
+            "18",
+            "42",
+            "35"
+        ],
+        "themes":"general,warning"
+    },
+    {
+        "question":"¿En qué año consiguió Alonso su última pole?",
+        "answers":[
+            "2012",
+            "2023",
+            "2014",
+            "2017"
+        ],
+        "themes":"qualy,2012,warning"
+    }
+]

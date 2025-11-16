@@ -1,8 +1,8 @@
 const d = document,
- $difficulty = d.querySelector("#difficulty"),
+ $difficulty = d.querySelector("#difficulty span"),
  $question = d.querySelector(".question span"),
  $questionCounter = d.querySelector("#questionCounter"),
- $answers = d.querySelectorAll(".answers div"),
+ $answers = d.querySelectorAll(".answer"),
  $A = d.querySelector("#A"),
  $B = d.querySelector("#B"),
  $C = d.querySelector("#C"),
@@ -11,7 +11,7 @@ const d = document,
 let json, difficulty, cont = 0, contTrue = 0
 
 async function fetchJson(difficulty) {
-    let res = await fetch(`../../data/quiz_${difficulty}.json`)
+    let res = await fetch(`../locale/en/quiz_${difficulty}.json`)
     return await res.json()
 }
 
@@ -37,11 +37,11 @@ async function init() {
 
 async function render() {
     $questionCounter.textContent = cont+1
-    $question.textContent = json[cont].lang.en.question
-    $A.textContent = json[cont].lang.en.answers[0]
-    $B.textContent = json[cont].lang.en.answers[1]
-    $C.textContent = json[cont].lang.en.answers[2]
-    $D.textContent = json[cont].lang.en.answers[3]
+    $question.textContent = json[cont].question
+    $A.textContent = json[cont].answers[0]
+    $B.textContent = json[cont].answers[1]
+    $C.textContent = json[cont].answers[2]
+    $D.textContent = json[cont].answers[3]
 }
 
 async function answerListener() {
@@ -49,15 +49,15 @@ async function answerListener() {
         el.removeEventListener("click",answerListener)
         el.classList.remove("answer_hover")
     })
-    if(this.textContent == json[cont].lang.en.answers[0]) {
+    if(this.textContent == json[cont].answers[0]) {
         contTrue++
         this.classList.add("true")
-        await delay(3500)
+        await delay(3000)
         this.classList.remove("true")
     } else {
         this.classList.add("false")
         $A.classList.add("true")
-        await delay(3500)
+        await delay(3000)
         this.classList.remove("false")
         $A.classList.remove("true")
     }
