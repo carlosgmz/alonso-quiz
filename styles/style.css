@@ -48,6 +48,10 @@ header {
     cursor: pointer;
 }
 
+main {
+    margin: 0 25%;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -62,16 +66,12 @@ footer div {
     min-width: 205px;
 }
 
-section {
-    margin: 0 25%;
-}
-
 
 
 /* Index */
 
 .description {
-    margin: 0 30%;
+    margin: 0 10%;
 }
 
 .config {
@@ -80,7 +80,7 @@ section {
 
 .difficulty {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 20em;
 }
 
@@ -157,6 +157,45 @@ section {
     background-color: red;
 }
 
+.stats {
+    margin-top: 5em;
+}
 
-/* Result */
+.correctQuestions {
+    text-align: center;
+    font-size: 1.7em;
+}
+.resultMsg {
+    text-align: center;
+    font-style: italic;
+}
 
+.progressbar_container {
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5%;
+}
+.progressbar {
+
+}
+.avgMsg {
+
+}
+
+.summary {
+
+}
+.summary_question {
+
+}
+.summary_answer {
+
+}
+
+.return {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}

@@ -18,22 +18,32 @@
         <div class="languages"></div>
     </header>
 
-    <section class="info">
-        <div id="counter"><span id="questionCounter"></span> of <span id="totalQuestions">30</span></div>
-        <div id="difficulty">Difficulty: <span></span></div>
-        <div id="seed">Seed: <span></span></div>
-    </section>
+    <main>
+        <section class="info">
+            <div id="counter"><span id="questionCounter"></span> of <span id="totalQuestions"></span></div>
+            <div id="difficulty">Difficulty: <span></span></div>
+            <div id="seed">Seed: <span></span></div>
+        </section>
 
-    <section class="question">
-        <span></span>
-    </section>
+        <section class="question">
+            <span></span>
+        </section>
 
-    <section class="answers">
-        <div id="A" class="answer answer_hover"></div>
-        <div id="B" class="answer answer_hover"></div>
-        <div id="C" class="answer answer_hover"></div>
-        <div id="D" class="answer answer_hover"></div>
-    </section>
+        <section class="answers">
+            <div id="A" class="answer answer_hover"></div>
+            <div id="B" class="answer answer_hover"></div>
+            <div id="C" class="answer answer_hover"></div>
+            <div id="D" class="answer answer_hover"></div>
+        </section>
+    </main>
+
+    <template id="summary_template">
+        <div class="summary_div">
+            <span></span>
+            <div class="summary_question"></div>
+            <div class="summary_answer"></div>
+        </div>
+    </template>
 
     <footer>
         <div><a href="">Github ></a></div>
