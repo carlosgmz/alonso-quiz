@@ -1,4 +1,4 @@
-const $difficulty = d.querySelectorAll(".difficulty"),
+const $difficulty = d.querySelectorAll(".difficulty_choice"),
  acceptedDifficulty = ["normal","hard"]
 
 $difficulty.forEach(el=>{

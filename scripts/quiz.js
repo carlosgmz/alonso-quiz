@@ -1,5 +1,5 @@
 const d = document,
- $difficulty = d.querySelector("#difficulty span"),
+ $difficulty = d.querySelector(".difficulty span"),
  $question = d.querySelector(".question span"),
  $questionCounter = d.querySelector("#questionCounter"),
  $totalQuestions = d.querySelector("#totalQuestions"),
@@ -13,12 +13,12 @@ const d = document,
  $fragment = d.createDocumentFragment()
 
 const acceptedDifficulty = ["normal","hard"],
- FAILURE = 10,
- PASS = 15,
- REMARKABLE = 20,
- OUTSTANDING = 25,
- TOTAL_QUESTIONS = 30,
- DELAY = 1000 //3000
+ FAILURE = 10, //10
+ PASS = 15, //15
+ REMARKABLE = 20, //20
+ OUTSTANDING = 25, //25
+ TOTAL_QUESTIONS = 30, //30
+ DELAY = 100 //3000
 
 let json, difficulty, cont = 0, contGuessed = 0
 
@@ -54,11 +54,12 @@ async function renderQuiz() {
 }
 
 async function renderResult() {
+    //stats section
     const $stats = d.createElement("section")
     $stats.classList.add("stats")
     const $correctQuestions = d.createElement("div")
     $correctQuestions.classList.add("correctQuestions")
-    $correctQuestions.textContent = `${contGuessed} out of ${TOTAL_QUESTIONS}`
+    $correctQuestions.textContent = `${contGuessed} out of ${TOTAL_QUESTIONS} (${(contGuessed/TOTAL_QUESTIONS*100).toFixed(0)}%)`
     const $resultMsg = d.createElement("div")
     $resultMsg.classList.add("resultMsg")
     if(difficulty == "normal") {
@@ -67,17 +68,17 @@ async function renderResult() {
         } else if(contGuessed < PASS) {
             $resultMsg.textContent = "Casual Formula One fan"
         } else if(contGuessed < REMARKABLE) {
-            $resultMsg.textContent = "Casual Alonso fan"
-        } else if(contGuessed < OUTSTANDING) {
             $resultMsg.textContent = "Better than average Alonso fan"
-        } else if(contGuessed < TOTAL_QUESTIONS) {
+        } else if(contGuessed < OUTSTANDING) {
             $resultMsg.textContent = "Knowledgeable Alonso fan"
+        } else if(contGuessed < TOTAL_QUESTIONS) {
+            $resultMsg.textContent = "Very committed Alonso fan"
         } else $resultMsg.textContent = "Congrats, you achieved full score!"
     } else {
         if(contGuessed < FAILURE) {
             $resultMsg.textContent = "Normal difficulty might suit you"
         } else if(contGuessed < PASS) {
-            $resultMsg.textContent = "Close, but yet so far" 
+            $resultMsg.textContent = "Not bad, but not good enough" 
         } else if(contGuessed < REMARKABLE) {
             $resultMsg.textContent = "You are a true Alonsista!"
         } else if(contGuessed < OUTSTANDING) {
@@ -88,8 +89,20 @@ async function renderResult() {
     }
     $stats.append($correctQuestions,$resultMsg)
 
+    //summary section
     const $summary = d.createElement("section")
     $summary.classList.add("summary")
+    const $info = d.createElement("div")
+    $info.classList.add("info")
+    let $difficulty = d.createElement("div")
+    $difficulty.classList.add("difficulty")
+    $difficulty.textContent = `Difficulty: ${difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}`
+    let $seed = d.createElement("div")
+    $seed.classList.add("seed") 
+    $seed.textContent = "Seed:"
+    $info.append($difficulty,$seed)
+    const $summary_result = d.createElement("div")
+    $summary_result.classList.add("summary_result")
     for(let i = 1; i <= TOTAL_QUESTIONS; i++) {
         let $clone = $template.cloneNode(true)
         $clone.querySelector("span").textContent = i
@@ -102,9 +115,58 @@ async function renderResult() {
         }
         $fragment.appendChild($clone)
     }
-    $summary.appendChild($fragment)
+    $summary_result.appendChild($fragment)
+    $summary.append($info,$summary_result)
+    
+    //share section
+    const $share = d.createElement("section")
+    $share.classList.add("share")
+    const $socials = d.createElement("div")
+    $socials.classList.add("socials")
+    let $a = d.createElement("a")
+    $a.target = "_blank"
+    let $img = d.createElement("img")
+    $a.appendChild($img)
+     //twitter-X share button
+     const $twitter = $a.cloneNode(true)
+     $twitter.href = ""
+     $twitter.querySelector("img").src = "../assets/imgs/twitter-x.svg"
+     $twitter.querySelector("img").alt = "twitter"
+     //instagram share button
+     const $instagram = $a.cloneNode(true)
+     $instagram.href = ""
+     $instagram.querySelector("img").src = "../assets/imgs/instagram.svg"
+     $instagram.querySelector("img").alt = "instagram"
+     //threads share button
+     const $threads = $a.cloneNode(true)
+     $threads.href = ""
+     $threads.querySelector("img").src = "../assets/imgs/threads.svg"
+     $threads.querySelector("img").alt = "threads"
+     //facebook share button
+     const $facebook = $a.cloneNode(true)
+     $facebook.href = ""
+     $facebook.querySelector("img").src = "../assets/imgs/facebook.svg"
+     $facebook.querySelector("img").alt = "facebook"
+     //discord share button
+     const $discord = $a.cloneNode(true)
+     $discord.href = ""
+     $discord.querySelector("img").src = "../assets/imgs/discord.svg"
+     $discord.querySelector("img").alt = "discord"
+    $socials.append($twitter,$instagram,$threads,$facebook,$discord)
+    $share.appendChild($socials)
 
-    $main.replaceChildren($stats,$summary)
+    //return section
+    const $return = d.createElement("section")
+    $return.classList.add("return")
+    $a = d.createElement("a")
+    $a.href = "http://localhost:5500/pages/index.html"
+    let $button = d.createElement("button")
+    $button.textContent = "Take another quiz"
+    $a.appendChild($button)
+    $return.appendChild($a)
+
+    //previous quiz sections are replaced with result sections
+    $main.replaceChildren($stats,$summary,$share,$return)
 }
 
 async function answerListener() {

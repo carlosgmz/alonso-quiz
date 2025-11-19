@@ -78,19 +78,19 @@ footer div {
     text-align: center;
 }
 
-.difficulty {
+.difficulty_choice {
     display: flex;
     justify-content: space-around;
     height: 20em;
 }
 
-.difficulty div {
+.difficulty_choice div {
     width: 20em;
     background-size: cover;
     opacity: 70%;
     cursor: pointer;
 }
-.difficulty div:hover {
+.difficulty_choice div:hover {
     opacity: 55%;
 }
 #normal {
@@ -107,16 +107,15 @@ footer div {
 .info {
     display: flex;
     justify-content: space-between;
-    margin-top: 2em;
-    margin-bottom: 0.3em;
+    margin: 3em 0em 0.3em 0em;
 }
-#counter {
+.counter {
 
 }
-#seed {
+.seed {
 
 }
-#difficulty {
+.difficulty {
 
 }
 
@@ -158,18 +157,16 @@ footer div {
 }
 
 .stats {
-    margin-top: 5em;
+    margin: 5em 0;
 }
-
 .correctQuestions {
     text-align: center;
-    font-size: 1.7em;
+    font-size: 2.5em;
 }
 .resultMsg {
     text-align: center;
     font-style: italic;
 }
-
 .progressbar_container {
     margin-top: 5em;
     display: flex;
@@ -187,15 +184,50 @@ footer div {
 .summary {
 
 }
+.summary_result {
+    border: 2px solid gray;
+    background-color: rgb(214, 233, 233);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.summary_item {
+    border: 1px dotted gray;
+    padding: 0.3em 0.5em 0.8em 0.5em;
+}
+.summary_item span {
+    font-size: 0.75em;
+    vertical-align: bottom;
+}
 .summary_question {
-
+    font-size: 0.85em;
 }
 .summary_answer {
+    text-align: center;
+    font-size: 0.95em;
+}
 
+.share {
+    margin: 1em 0 3em 0;
+    display: flex;
+    justify-content: center;
+}
+.socials {
+    display: inline-flex;
+    column-gap: 1em;
+}
+.socials a img {
+    height: 30px;
+    width: 30px;
 }
 
 .return {
-    margin-top: 2em;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 1em 0 5em 0;
+}
+.return button {
+    padding: 1em 2em;
+    font-size: 1em;
+    cursor: pointer;
 }
