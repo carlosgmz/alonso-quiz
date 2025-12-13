@@ -1,0 +1,704 @@
+[
+    {    
+        "question":"¿En qué posición terminó Alonso la temporada 2001 de F1?",
+        "answers":[
+            "23º",
+            "21º",
+            "19º",
+            "22º"
+        ],
+        "themes":"wdc,2001"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2002 de F1?",
+        "answers":[
+            "Piloto de pruebas",
+            "17º",
+            "14º",
+            "18º"
+        ],
+        "themes":"wdc,2002"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2003 de F1?",
+        "answers":[
+            "6º",
+            "4º",
+            "9º",
+            "8º"
+        ],
+        "themes":"wdc,2003"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2004 de F1?",
+        "answers":[
+            "4º",
+            "6º",
+            "8º",
+            "9º"
+        ],
+        "themes":"wdc,2004"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2005 de F1?",
+        "answers":[
+            "1º",
+            "3º",
+            "2º",
+            "6º"
+        ],
+        "themes":"wdc,2005"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2006 de F1?",
+        "answers":[
+            "1º",
+            "3º",
+            "4º",
+            "2º"
+        ],
+        "themes":"wdc,2006"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2007 de F1?",
+        "answers":[
+            "3º",
+            "2º",
+            "4º",
+            "5º"
+        ],
+        "themes":"wdc,2007"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2008 de F1?",
+        "answers":[
+            "5º",
+            "4º",
+            "7º",
+            "9º"
+        ],
+        "themes":"wdc,2008"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2009 de F1?",
+        "answers":[
+            "9º",
+            "7º",
+            "10º",
+            "12º"
+        ],
+        "themes":"wdc,2009"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2010 de F1?",
+        "answers":[
+            "2º",
+            "3º",
+            "5º",
+            "1º"
+        ],
+        "themes":"wdc,2010"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2011 de F1?",
+        "answers":[
+            "4º",
+            "2º",
+            "3º",
+            "6º"
+        ],
+        "themes":"wdc,2011"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2012 de F1?",
+        "answers":[
+            "2º",
+            "1º",
+            "5º",
+            "4º"
+        ],
+        "themes":"wdc,2012"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2013 de F1?",
+        "answers":[
+            "2º",
+            "6º",
+            "7º",
+            "3º"
+        ],
+        "themes":"wdc,2013"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2014 de F1?",
+        "answers":[
+            "6º",
+            "9º",
+            "11º",
+            "8º"
+        ],
+        "themes":"wdc,2014"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2015 de F1?",
+        "answers":[
+            "17º",
+            "13º",
+            "16º",
+            "15º"
+        ],
+        "themes":"wdc,2015"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2016 de F1?",
+        "answers":[
+            "10º",
+            "13º",
+            "15º",
+            "12º"
+        ],
+        "themes":"wdc,2016"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2017 de F1?",
+        "answers":[
+            "15º",
+            "11º",
+            "18º",
+            "13º"
+        ],
+        "themes":"wdc,2017"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2018 de F1?",
+        "answers":[
+            "11º",
+            "9º",
+            "14º",
+            "16º"
+        ],
+        "themes":"wdc,2018"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2019 de F1?",
+        "answers":[
+            "No participó",
+            "8º",
+            "10º",
+            "9º"
+        ],
+        "themes":"wdc,2019"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2020 de F1?",
+        "answers":[
+            "No participó",
+            "7º",
+            "10º",
+            "12º"
+        ],
+        "themes":"wdc,2020"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2021 de F1?",
+        "answers":[
+            "10º",
+            "6º",
+            "9º",
+            "8º"
+        ],
+        "themes":"wdc,2021"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2022 de F1?",
+        "answers":[
+            "9º",
+            "7º",
+            "10º",
+            "6º"
+        ],
+        "themes":"wdc,2022"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2023 de F1?",
+        "answers":[
+            "4º",
+            "3º",
+            "2º",
+            "6º"
+        ],
+        "themes":"wdc,2023"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2024 de F1?",
+        "answers":[
+            "9º",
+            "7º",
+            "5º",
+            "11º"
+        ],
+        "themes":"wdc,2024"
+    },
+    {
+        "question":"¿En qué posición terminó Alonso la temporada 2025 de F1?",
+        "answers":[
+            "10º",
+            "9º",
+            "13º",
+            "12º"
+        ],
+        "themes":"wdc,2025"
+    },
+    {
+        "question":"¿Cuántas victorias tiene Alonso en la F1?",
+        "answers":[
+            "32",
+            "33",
+            "27",
+            "28"
+        ],
+        "themes":"general,warning"
+    },
+    {
+        "question":"¿Cuántos podios tiene Alonso en la F1?",
+        "answers":[
+            "106",
+            "103",
+            "108",
+            "98"
+        ],
+        "themes":"general,warning"
+    },
+    {
+        "question":"¿Cuántos puntos ha conseguido Alonso en la F1?",
+        "answers":[
+            "Más de 2300",
+            "Entre 2000 y 2300",
+            "Entre 1700 y 2000",
+            "Menos de 1700"
+        ],
+        "themes":"general"
+    },
+    {
+        "question":"¿Cuántas poles tiene Alonso en la F1?",
+        "answers":[
+            "22",
+            "28",
+            "25",
+            "32"
+        ],
+        "themes":"general,warning"
+    },
+    {
+        "question":"¿Cuántas vueltas rápidas tiene Alonso en la F1?",
+        "answers":[
+            "26",
+            "18",
+            "42",
+            "35"
+        ],
+        "themes":"general,warning"
+    },
+    {
+        "question":"¿En qué año consiguió Alonso su última pole?",
+        "answers":[
+            "2012",
+            "2023",
+            "2014",
+            "2017"
+        ],
+        "themes":"qualy,2012,warning"
+    },
+    {
+        "question":"¿En qué año consiguió Alonso su última victoria?",
+        "answers":[
+            "2013",
+            "2023",
+            "2014",
+            "2021"
+        ],
+        "themes":"2013,warning"
+    },
+    {
+        "question":"¿En qué circuito consiguió Alonso su último podio?",
+        "answers":[
+            "Interlagos",
+            "Baréin",
+            "Montreal",
+            "Qatar"
+        ],
+        "themes":"2023,warning"
+    },
+    {
+        "question":"¿De qué Grand Prix es esta imagen?",
+        "answers":[
+            "Brasil 2015",
+            "Brasil 2016",
+            "Australia 2015",
+            "Australia 2017"
+        ],
+        "themes":"2015,img",
+        "img":"alonso526.jpg"
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2005",
+            "2006",
+            "2003",
+            "2004"
+        ],
+        "themes":"2005,img",
+        "img":"alonso498.jpg"
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2008",
+            "2007",
+            "2009",
+            "2010"
+        ],
+        "themes":"2008,img",
+        "img":"alonso483.jpg"
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2012",
+            "2010",
+            "2009",
+            "2014"
+        ],
+        "themes":"2012,img",
+        "img":"alonso387.jpg"
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2017",
+            "2019",
+            "2016",
+            "2020"
+        ],
+        "themes":"2017,img",
+        "img":"alonso167.jpg"
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2005",
+            "2006",
+            "2004",
+            "2007"
+        ],
+        "themes":"2005,img",
+        "img":"alonso603.png"
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2017",
+            "2015",
+            "2016",
+            "2018"
+        ],
+        "themes":"2017,img",
+        "img":"alonso605.png"
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2006",
+            "2005",
+            "2003",
+            "2004"
+        ],
+        "themes":"2006,img",
+        "img":"alonso607.png"
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2019",
+            "2017",
+            "2016",
+            "2021"
+        ],
+        "themes":"2019,img",
+        "img":"alonso610.png"
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2003",
+            "2002",
+            "2004",
+            "2005"
+        ],
+        "themes":"2003,img",
+        "img":"alonso612.png"
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2023 Dutch GP",
+            "2024 Brazil GP",
+            "2023 Belgian GP",
+            "2024 Hungarian GP"
+        ],
+        "themes":"2023,img",
+        "img":"alonso616.jpg"
+    },
+    {
+        "question":"¿De qué Grand Prix es esta imagen?",
+        "answers":[
+            "Hockenheim 2007",
+            "Malasia 2007",
+            "Malasia 2008",
+            "Hockenheim 2008"
+        ],
+        "themes":"2007,img",
+        "img":"alonso601.png"
+    },
+    {
+        "question":"¿De qué Grand Prix es esta imagen?",
+        "answers":[
+            "Hungría 2007",
+            "Mónaco 2007",
+            "Estados Unidos 2007",
+            "Gran Bretaña 2007"
+        ],
+        "themes":"2007,img",
+        "img":"alonso604.png"
+    },
+    {
+        "question":"¿De qué Grand Prix es esta radio de equipo?",
+        "answers":[
+            "Mónaco 2017",
+            "Rusia 2016",
+            "Japón 2015",
+            "Mónaco 2016"
+        ],
+        "themes":"2017,audio",
+        "audio":"monaco2017.m4a"
+    },
+    {
+        "question":"¿De qué Grand Prix es esta radio de equipo?",
+        "answers":[
+            "Korea 2010",
+            "China 2013",
+            "Gran Bretaña 2011",
+            "Singapur 2010"
+        ],
+        "themes":"2010,audio",
+        "audio":"korea2010.m4a"
+    },
+    {
+        "question":"¿De qué Grand Prix es esta radio de equipo?",
+        "answers":[
+            "Valencia 2012",
+            "Malasia 2012",
+            "Italia 2010",
+            "China 2013"
+        ],
+        "themes":"2012,audio",
+        "audio":"europe2012.m4a"
+    },
+    {
+        "question":"¿De qué Grand Prix es esta radio de equipo?",
+        "answers":[
+            "China 2005",
+            "Brasil 2006",
+            "China 2006",
+            "Brasil 2005"
+        ],
+        "themes":"2005,audio",
+        "audio":"china2005.m4a"
+    },
+    {
+        "question":"¿De qué Grand Prix es esta radio de equipo?",
+        "answers":[
+            "Baréin 2023",
+            "Qatar 2021",
+            "Abu Dhabi 2018",
+            "Arabia Saudí 2024"
+        ],
+        "themes":"2023,audio",
+        "audio":"bahrain2023.m4a"
+    },
+    {
+        "question":"Which Grand Prix is this team radio from?",
+        "answers":[
+            "China 2013",
+            "Monza 2010",
+            "Singapur 2010",
+            "Alemania 2012"
+        ],
+        "themes":"2013,audio",
+        "audio":"china2013.ogg"
+    },
+    {
+        "question":"¿En qué circuito consiguió Alonso su última pole?",
+        "answers":[
+            "Hockenheim",
+            "Nürburgring",
+            "Hungaroring",
+            "Monaco"
+        ],
+        "themes":"qualy,2012,warning"
+    },
+    {
+        "question":"¿En qué circuito añadió Alpine “El Plan” al ala trasera?",
+        "answers":[
+            "Yas Marina",
+            "Montmeló",
+            "Baréin",
+            "Melbourne"
+        ],
+        "themes":"2021,meme"
+    },
+    {
+        "question":"¿De qué circuito es este casco especial?",
+        "answers":[
+            "Mónaco 2013",
+            "India 2012",
+            "Abu Dhabi 2014",
+            "Mónaco 2012"
+        ],
+        "themes":"2013,img",
+        "img":"alonso575.jpg"
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2009",
+            "2006",
+            "2008",
+            "2005"
+        ],
+        "themes":"2009,img",
+        "img":"alonso525.jpg"
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2003",
+            "2004",
+            "2005",
+            "2002"
+        ],
+        "themes":"2003,img",
+        "img":"alonso600.png"
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2000",
+            "1998",
+            "1999",
+            "2002"
+        ],
+        "themes":"2000,img",
+        "img":"alonso602.png"
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2004",
+            "2003",
+            "2005",
+            "2006"
+        ],
+        "themes":"2004,img",
+        "img":"alonso606.png"
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2019",
+            "2018",
+            "2020",
+            "2017"
+        ],
+        "themes":"2019,img",
+        "img":"alonso609.png"
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2012",
+            "2010",
+            "2011",
+            "2013"
+        ],
+        "themes":"2012,img",
+        "img":"alonso613.png"
+    },
+    {
+        "question":"¿De qué Grand Prix es esta imagen?",
+        "answers":[
+            "Estados Unidos 2001",
+            "Japón 2001",
+            "Canadá 2001",
+            "Europa 2002"
+        ],
+        "themes":"2001,img",
+        "img":"alonso608.png"
+    },
+    {
+        "question":"¿De qué Grand Prix es esta imagen?",
+        "answers":[
+            "2008 Australian GP",
+            "2007 Australian GP",
+            "2007 British GP",
+            "2008 British GP"
+        ],
+        "themes":"2001,img",
+        "img":"alonso611.png"
+    },
+    {
+        "question":"¿De qué Grand Prix es esta radio de equipo?",
+        "answers":[
+            "2012 Spanish GP",
+            "2011 Canadian GP",
+            "2013 Singapore GP",
+            "2012 Australian GP"
+        ],
+        "themes":"2012,audio",
+        "audio":"spain2012.m4a"
+    },
+    {
+        "question":"¿De qué Grand Prix es esta radio de equipo?",
+        "answers":[
+            "Abu Dhabi 2017",
+            "Japón 2015",
+            "Canadá 2015",
+            "Rusia 2016"
+        ],
+        "themes":"2017,audio",
+        "audio":"abudhabi2017.m4a"
+    },
+    {
+        "question":"¿De qué Grand Prix es esta radio de equipo?",
+        "answers":[
+            "España 2015",
+            "Austria 2016",
+            "Canadá 2017",
+            "Mónaco 2018"
+        ],
+        "themes":"2015,audio",
+        "audio":"spain2015.m4a"
+    },
+    {
+        "question":"¿De qué Grand Prix es esta radio de equipo?",
+        "answers":[
+            "España 2006",
+            "Hungría 2003",
+            "Imola 2005",
+            "Brasil 2006"
+        ],
+        "themes":"2006,audio",
+        "audio":"spain2006.m4a"
+    }
+]

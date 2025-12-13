@@ -120,11 +120,24 @@ footer div {
 }
 
 .question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: aliceblue;
     border: 0.2em gray solid;
     font-size: 1.2em;
     padding: 0.2em 0.3em;
     margin-bottom: 1.5em;
+}
+.question_img {
+    width: 600px;
+    margin-top: 0.5em;
+}
+.question_audio {
+    margin-top: 0.5em;
+}
+.question_hidden {
+    display: none;
 }
 
 .answers {

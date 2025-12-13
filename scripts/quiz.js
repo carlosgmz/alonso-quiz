@@ -1,6 +1,8 @@
 const d = document,
  $difficulty = d.querySelector(".difficulty span"),
- $question = d.querySelector(".question span"),
+ $questionSpan = d.querySelector(".question span"),
+ $questionImg = d.querySelector(".question img"),
+ $questionAudio = d.querySelector(".question audio"),
  $questionCounter = d.querySelector("#questionCounter"),
  $totalQuestions = d.querySelector("#totalQuestions"),
  $answers = d.querySelectorAll(".answer"),
@@ -46,7 +48,15 @@ async function init() {
 
 async function renderQuiz() {
     $questionCounter.textContent = cont+1
-    $question.textContent = json[cont].question
+    $questionSpan.textContent = json[cont].question
+    if(typeof json[cont].img !== "undefined") {
+        $questionImg.src = `../assets/imgs/quiz/${json[cont].img}`
+        $questionImg.classList.remove("question_hidden")
+    } else if(!$questionImg.classList.contains("question_hidden")) {$questionImg.classList.add("question_hidden")}
+    if(typeof json[cont].audio !== "undefined") {
+        $questionAudio.src = `../assets/audio/${json[cont].audio}`
+        $questionAudio.classList.remove("question_hidden")
+    } else if(!$questionAudio.classList.contains("question_hidden")) {$questionAudio.classList.add("question_hidden")}
     $A.textContent = json[cont].answers[0]
     $B.textContent = json[cont].answers[1]
     $C.textContent = json[cont].answers[2]
