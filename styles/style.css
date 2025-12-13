@@ -78,26 +78,16 @@ footer div {
     text-align: center;
 }
 
-.difficulty_choice {
+.start {
     display: flex;
-    justify-content: space-around;
-    height: 20em;
+    justify-content: center;
+    align-items: center;
+    margin: 5em 0 5em 0;
 }
-
-.difficulty_choice div {
-    width: 20em;
-    background-size: cover;
-    opacity: 70%;
+.start button {
+    padding: 1em 2em;
+    font-size: 1em;
     cursor: pointer;
-}
-.difficulty_choice div:hover {
-    opacity: 55%;
-}
-#normal {
-    background-image: url("../../assets/imgs/alonso474.jpg");
-}
-#hard {
-    background-image: url("../../assets/imgs/alonso522.jpg");
 }
 
 

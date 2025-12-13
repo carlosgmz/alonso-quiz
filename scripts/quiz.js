@@ -1,5 +1,4 @@
 const d = document,
- $difficulty = d.querySelector(".difficulty span"),
  $questionSpan = d.querySelector(".question span"),
  $questionImg = d.querySelector(".question img"),
  $questionAudio = d.querySelector(".question audio"),
@@ -14,39 +13,32 @@ const d = document,
  $template = d.querySelector("#summary_template").content,
  $fragment = d.createDocumentFragment()
 
-const acceptedDifficulty = ["normal","hard"],
- FAILURE = 10, //10
+const FAILURE = 10, //10
  PASS = 15, //15
  REMARKABLE = 20, //20
  OUTSTANDING = 25, //25
- TOTAL_QUESTIONS = 30, //30
- DELAY = 100 //3000
+ TOTAL_QUESTIONS = 30 //30
 
-let json, difficulty, cont = 0, contGuessed = 0
+let json, cont = 0, contGuessed = 0
 
-async function fetchJson(difficulty) {
-    let res = await fetch(`../locale/en/quiz_${difficulty}.json`)
+async function fetchJson(language) {
+    let res = await fetch(`../json/${language}/quiz.json`)
     return await res.json()
 }
 
-async function delay(miliseconds) {
+async function delay() {
     return new Promise((resolve)=>setTimeout(()=>{
         resolve()
-    }, miliseconds))
+    }, 100))
 }
 
 async function init() {
-    difficulty = localStorage.getItem("difficulty")
-    if(!acceptedDifficulty.includes(difficulty)) {
-        difficulty = "normal"
-    }
-    json = await fetchJson(difficulty)
+    json = await fetchJson("en")
     $totalQuestions.textContent = TOTAL_QUESTIONS
-    $difficulty.textContent = difficulty.charAt(0).toUpperCase() + difficulty.slice(1)
-    await renderQuiz()
+    await renderQuestion()
 }
 
-async function renderQuiz() {
+async function renderQuestion() {
     $questionCounter.textContent = cont+1
     $questionSpan.textContent = json[cont].question
     if(typeof json[cont].img !== "undefined") {
@@ -72,31 +64,17 @@ async function renderResult() {
     $correctQuestions.textContent = `${contGuessed} out of ${TOTAL_QUESTIONS} (${(contGuessed/TOTAL_QUESTIONS*100).toFixed(0)}%)`
     const $resultMsg = d.createElement("div")
     $resultMsg.classList.add("resultMsg")
-    if(difficulty == "normal") {
-        if(contGuessed < FAILURE) {
-            $resultMsg.textContent = "Awful. Better luck next time!"
-        } else if(contGuessed < PASS) {
-            $resultMsg.textContent = "Casual Formula One fan"
-        } else if(contGuessed < REMARKABLE) {
-            $resultMsg.textContent = "Better than average Alonso fan"
-        } else if(contGuessed < OUTSTANDING) {
-            $resultMsg.textContent = "Knowledgeable Alonso fan"
-        } else if(contGuessed < TOTAL_QUESTIONS) {
-            $resultMsg.textContent = "Very committed Alonso fan"
-        } else $resultMsg.textContent = "Congrats, you achieved full score!"
-    } else {
-        if(contGuessed < FAILURE) {
-            $resultMsg.textContent = "Normal difficulty might suit you"
-        } else if(contGuessed < PASS) {
-            $resultMsg.textContent = "Not bad, but not good enough" 
-        } else if(contGuessed < REMARKABLE) {
-            $resultMsg.textContent = "You are a true Alonsista!"
-        } else if(contGuessed < OUTSTANDING) {
-            $resultMsg.textContent = "A real diehard Alonso fan"
-        } else if(contGuessed < TOTAL_QUESTIONS) {
-            $resultMsg.textContent = "The craziest Alonso fan ever"
-        } else $resultMsg.textContent = "You didn't cheat, did you?"
-    }
+    if(contGuessed < FAILURE) {
+        $resultMsg.textContent = "Awful. Better luck next time!"
+    } else if(contGuessed < PASS) {
+        $resultMsg.textContent = "Casual Formula One fan"
+    } else if(contGuessed < REMARKABLE) {
+        $resultMsg.textContent = "Better than average Alonso fan"
+    } else if(contGuessed < OUTSTANDING) {
+        $resultMsg.textContent = "A real diehard Alonsista"
+    } else if(contGuessed < TOTAL_QUESTIONS) {
+        $resultMsg.textContent = "The craziest Alonso fan ever"
+    } else $resultMsg.textContent = "You didn't cheat, did you?"
     $stats.append($correctQuestions,$resultMsg)
 
     //summary section
@@ -104,13 +82,10 @@ async function renderResult() {
     $summary.classList.add("summary")
     const $info = d.createElement("div")
     $info.classList.add("info")
-    let $difficulty = d.createElement("div")
-    $difficulty.classList.add("difficulty")
-    $difficulty.textContent = `Difficulty: ${difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}`
     let $seed = d.createElement("div")
     $seed.classList.add("seed") 
     $seed.textContent = "Seed:"
-    $info.append($difficulty,$seed)
+    $info.append($seed)
     const $summary_result = d.createElement("div")
     $summary_result.classList.add("summary_result")
     for(let i = 1; i <= TOTAL_QUESTIONS; i++) {
@@ -192,12 +167,12 @@ async function answerListener() {
     if(this.textContent == json[cont].answers[0]) {
         contGuessed++
         this.classList.add("true")
-        await delay(DELAY)
+        await delay()
         this.classList.remove("true")
     } else {
         this.classList.add("false")
         $A.classList.add("true")
-        await delay(DELAY)
+        await delay()
         this.classList.remove("false")
         $A.classList.remove("true")
     }
@@ -206,7 +181,7 @@ async function answerListener() {
         await renderResult()
         return
     }
-    await renderQuiz()
+    await renderQuestion()
     $answers.forEach(el=>{
         el.addEventListener("click",answerListener)
         el.classList.add("answer_hover")
