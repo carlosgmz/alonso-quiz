@@ -5,10 +5,6 @@ const d = document,
  $questionCounter = d.querySelector("#questionCounter"),
  $totalQuestions = d.querySelector("#totalQuestions"),
  $answers = d.querySelectorAll(".answer"),
- $A = d.querySelector("#A"),
- $B = d.querySelector("#B"),
- $C = d.querySelector("#C"),
- $D = d.querySelector("#D"),
  $main = d.querySelector("main"),
  $template = d.querySelector("#summary_template").content,
  $fragment = d.createDocumentFragment()
@@ -19,7 +15,7 @@ const FAILURE = 10, //10
  OUTSTANDING = 25, //25
  TOTAL_QUESTIONS = 68 //30
 
-let json, cont = 0, contGuessed = 0
+let json, cont = 0, numGuessed = 0, questionPointer = 0, correctAnswer
 
 async function fetchJson(language) {
     let res = await fetch(`../json/${language}/quiz.json`)
@@ -29,7 +25,7 @@ async function fetchJson(language) {
 async function delay() {
     return new Promise((resolve)=>setTimeout(()=>{
         resolve()
-    }, 100))
+    }, 3000))
 }
 
 async function init() {
@@ -40,19 +36,36 @@ async function init() {
 
 async function renderQuestion() {
     $questionCounter.textContent = cont+1
-    $questionSpan.textContent = json[cont].question
-    if(typeof json[cont].img !== "undefined") {
-        $questionImg.src = `../assets/imgs/quiz/${json[cont].img}`
+
+    //random question is selected from array
+    questionPointer = Math.random()*json.length>>0
+    
+    $questionSpan.textContent = json[questionPointer].question
+    if(typeof json[questionPointer].img !== "undefined") {
+        $questionImg.src = `../assets/imgs/quiz/${json[questionPointer].img}`
         $questionImg.classList.remove("question_hidden")
-    } else if(!$questionImg.classList.contains("question_hidden")) {$questionImg.classList.add("question_hidden")}
-    if(typeof json[cont].audio !== "undefined") {
-        $questionAudio.src = `../assets/audio/${json[cont].audio}`
+    } else if(!$questionImg.classList.contains("question_hidden")) {
+        $questionImg.classList.add("question_hidden")
+        $questionImg.src = ""
+    }
+    if(typeof json[questionPointer].audio !== "undefined") {
+        $questionAudio.src = `../assets/audio/${json[questionPointer].audio}`
         $questionAudio.classList.remove("question_hidden")
-    } else if(!$questionAudio.classList.contains("question_hidden")) {$questionAudio.classList.add("question_hidden")}
-    $A.textContent = json[cont].answers[0]
-    $B.textContent = json[cont].answers[1]
-    $C.textContent = json[cont].answers[2]
-    $D.textContent = json[cont].answers[3]
+    } else if(!$questionAudio.classList.contains("question_hidden")) {
+        $questionAudio.classList.add("question_hidden")
+        $questionAudio.src = ""
+    }
+    //creates a copy of the question's answers
+    let answersCopy = [...json[questionPointer].answers]
+    $answers.forEach(el=>{
+        //selects a random answer
+        let answerPointer = Math.random()*answersCopy.length>>0
+        //checks if it selected the correct answer for later
+        if(answersCopy[answerPointer] == json[questionPointer].answers[0]) {correctAnswer = el.id}
+        //adds answer text to div textcontent
+        el.textContent = answersCopy[answerPointer]
+        answersCopy.splice(answerPointer,1)
+    })
 }
 
 async function renderResult() {
@@ -61,18 +74,18 @@ async function renderResult() {
     $stats.classList.add("stats")
     const $correctQuestions = d.createElement("div")
     $correctQuestions.classList.add("correctQuestions")
-    $correctQuestions.textContent = `${contGuessed} out of ${TOTAL_QUESTIONS} (${(contGuessed/TOTAL_QUESTIONS*100).toFixed(0)}%)`
+    $correctQuestions.textContent = `${numGuessed} out of ${TOTAL_QUESTIONS} (${(numGuessed/TOTAL_QUESTIONS*100).toFixed(0)}%)`
     const $resultMsg = d.createElement("div")
     $resultMsg.classList.add("resultMsg")
-    if(contGuessed < FAILURE) {
+    if(numGuessed < FAILURE) {
         $resultMsg.textContent = "Awful. Better luck next time!"
-    } else if(contGuessed < PASS) {
+    } else if(numGuessed < PASS) {
         $resultMsg.textContent = "Casual Formula One fan"
-    } else if(contGuessed < REMARKABLE) {
+    } else if(numGuessed < REMARKABLE) {
         $resultMsg.textContent = "Better than average Alonso fan"
-    } else if(contGuessed < OUTSTANDING) {
+    } else if(numGuessed < OUTSTANDING) {
         $resultMsg.textContent = "A real diehard Alonsista"
-    } else if(contGuessed < TOTAL_QUESTIONS) {
+    } else if(numGuessed < TOTAL_QUESTIONS) {
         $resultMsg.textContent = "The craziest Alonso fan ever"
     } else $resultMsg.textContent = "You didn't cheat, did you?"
     $stats.append($correctQuestions,$resultMsg)
@@ -160,22 +173,24 @@ async function answerListener() {
         el.classList.remove("answer_hover")
     })
 
-    localStorage.setItem(`question${cont+1}`,json[cont].question)
-    localStorage.setItem(`answer${cont+1}`,json[cont].answers[0])
+    localStorage.setItem(`question${cont+1}`,json[questionPointer].question)
+    localStorage.setItem(`answer${cont+1}`,json[questionPointer].answers[0])
     localStorage.setItem(`selectedAnswer${cont+1}`,this.textContent)
 
-    if(this.textContent == json[cont].answers[0]) {
-        contGuessed++
+    if(this.textContent == json[questionPointer].answers[0]) {
+        numGuessed++
         this.classList.add("true")
         await delay()
         this.classList.remove("true")
     } else {
         this.classList.add("false")
-        $A.classList.add("true")
+        d.querySelector(`#${correctAnswer}`).classList.add("true")
         await delay()
         this.classList.remove("false")
-        $A.classList.remove("true")
+        d.querySelector(`#${correctAnswer}`).classList.remove("true")
     }
+    //removes question from array to prevent repeats
+    json.splice(questionPointer,1)
     cont++
     if(cont==TOTAL_QUESTIONS) {
         await renderResult()
