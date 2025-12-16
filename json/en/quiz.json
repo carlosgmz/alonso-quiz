@@ -10,16 +10,6 @@
         "themes":"wdc,2001"
     },
     {
-        "question":"Which position did Alonso finish in the F1 2002 WDC?",
-        "answers":[
-            "Test driver",
-            "17º",
-            "14º",
-            "18º"
-        ],
-        "themes":"wdc,2002"
-    },
-    {
         "question":"Which position did Alonso finish in the F1 2003 WDC?",
         "answers":[
             "6º",
@@ -80,16 +70,6 @@
         "themes":"wdc,2008"
     },
     {
-        "question":"Which position did Alonso finish in the F1 2009 WDC?",
-        "answers":[
-            "9º",
-            "7º",
-            "10º",
-            "12º"
-        ],
-        "themes":"wdc,2009"
-    },
-    {
         "question":"Which position did Alonso finish in the F1 2010 WDC?",
         "answers":[
             "2º",
@@ -98,16 +78,6 @@
             "1º"
         ],
         "themes":"wdc,2010"
-    },
-    {
-        "question":"Which position did Alonso finish in the F1 2011 WDC?",
-        "answers":[
-            "4º",
-            "2º",
-            "3º",
-            "6º"
-        ],
-        "themes":"wdc,2011"
     },
     {
         "question":"Which position did Alonso finish in the F1 2012 WDC?",
@@ -140,16 +110,6 @@
         "themes":"wdc,2014"
     },
     {
-        "question":"Which position did Alonso finish in the F1 2015 WDC?",
-        "answers":[
-            "17º",
-            "13º",
-            "16º",
-            "15º"
-        ],
-        "themes":"wdc,2015"
-    },
-    {
         "question":"Which position did Alonso finish in the F1 2016 WDC?",
         "answers":[
             "10º",
@@ -168,36 +128,6 @@
             "13º"
         ],
         "themes":"wdc,2017"
-    },
-    {
-        "question":"Which position did Alonso finish in the F1 2018 WDC?",
-        "answers":[
-            "11º",
-            "9º",
-            "14º",
-            "16º"
-        ],
-        "themes":"wdc,2018"
-    },
-    {
-        "question":"Which position did Alonso finish in the F1 2019 WDC?",
-        "answers":[
-            "Did not take part",
-            "8º",
-            "12º",
-            "9º"
-        ],
-        "themes":"wdc,2019"
-    },
-    {
-        "question":"Which position did Alonso finish in the F1 2020 WDC?",
-        "answers":[
-            "Did not take part",
-            "7º",
-            "10º",
-            "12º"
-        ],
-        "themes":"wdc,2020"
     },
     {
         "question":"Which position did Alonso finish in the F1 2021 WDC?",
@@ -228,16 +158,6 @@
             "6º"
         ],
         "themes":"wdc,2023"
-    },
-    {
-        "question":"Which position did Alonso finish in the F1 2024 WDC?",
-        "answers":[
-            "9º",
-            "7º",
-            "5º",
-            "11º"
-        ],
-        "themes":"wdc,2024"
     },
     {
         "question":"Which position did Alonso finish in the F1 2025 WDC?",
@@ -570,6 +490,28 @@
         "img":"alonso575.jpg"
     },
     {
+        "question":"Which race is this special helmet from?",
+        "answers":[
+            "2017 Indianapolis 500",
+            "2018 Abu Dhabi GP",
+            "2018 Australian GP",
+            "2019 Indianapolis 500"
+        ],
+        "themes":"2017,img",
+        "img":"alonso617.jpg"
+    },
+    {
+        "question":"Which race is this special helmet from?",
+        "answers":[
+            "2013 Indian GP",
+            "2012 Monaco GP",
+            "2014 Abu Dhabi GP",
+            "2011 Spanish GP"
+        ],
+        "themes":"2013,img",
+        "img":"alonso618.jpg"
+    },
+    {
         "question":"Which year is this image from?",
         "answers":[
             "2009",
@@ -700,5 +642,75 @@
         ],
         "themes":"2006,audio",
         "audio":"spain2006.ogg"
+    },
+    {
+        "question":"How many times has Alonso joined Renault in F1?",
+        "answers":[
+            "3",
+            "4",
+            "2",
+            "1"
+        ],
+        "themes":"team"
+    },
+    {
+        "question":"Which teammates did Alonso have at Minardi?",
+        "answers":[
+            "Tarso Marques and Alex Yoong",
+            "Jenson Button and Jarno Trulli",
+            "Anthony Davidson and Mark Webber",
+            "Tarso Marques and Marc Gené"
+        ],
+        "themes":"2001,teammate"
+    },
+    {
+        "question":"How many times has Alonso whitewashed a teammate in qualifying in F1?",
+        "answers":[
+            "3",
+            "2",
+            "1",
+            "0"
+        ],
+        "themes":"general,warning"
+    },
+    {
+        "question":"Which teammates did Alonso have at McLaren? (one-race replacements do not count)",
+        "answers":[
+            "Lewis Hamilton, Jenson Button and Stoffel Vandoorne",
+            "Kevin Magnussen, Jenson Button and Felipe Nasr",
+            "Felipe Massa and Kimi Räikkönen",
+            "Jenson Button and Stoffel Vandoorne"
+        ],
+        "themes":"teammate"
+    },
+    {
+        "question":"Which girlfriend was Alonso dating between 2017 and 2021?",
+        "answers":[
+            "Linda Morselli",
+            "Andrea Schlager",
+            "Raquel del Rosario",
+            "Melissa Jimenez"
+        ],
+        "themes":"social"
+    },
+    {
+        "question":"Who is Alonso going to have a baby with?",
+        "answers":[
+            "Melissa Jimenez",
+            "Andrea Schlager",
+            "Raquel del Rosario",
+            "Linda Morselli"
+        ],
+        "themes":"social,warning"
+    },
+    {
+        "question":"With which team did Alonso win his debut race?",
+        "answers":[
+            "Ferrari",
+            "Renault",
+            "Aston Martin",
+            "McLaren"
+        ],
+        "themes":"team"
     }
 ]

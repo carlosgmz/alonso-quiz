@@ -10,16 +10,6 @@
         "themes":"wdc,2001"
     },
     {
-        "question":"¿En qué posición terminó Alonso la temporada 2002 de F1?",
-        "answers":[
-            "Piloto de pruebas",
-            "17º",
-            "14º",
-            "18º"
-        ],
-        "themes":"wdc,2002"
-    },
-    {
         "question":"¿En qué posición terminó Alonso la temporada 2003 de F1?",
         "answers":[
             "6º",
@@ -80,16 +70,6 @@
         "themes":"wdc,2008"
     },
     {
-        "question":"¿En qué posición terminó Alonso la temporada 2009 de F1?",
-        "answers":[
-            "9º",
-            "7º",
-            "10º",
-            "12º"
-        ],
-        "themes":"wdc,2009"
-    },
-    {
         "question":"¿En qué posición terminó Alonso la temporada 2010 de F1?",
         "answers":[
             "2º",
@@ -98,16 +78,6 @@
             "1º"
         ],
         "themes":"wdc,2010"
-    },
-    {
-        "question":"¿En qué posición terminó Alonso la temporada 2011 de F1?",
-        "answers":[
-            "4º",
-            "2º",
-            "3º",
-            "6º"
-        ],
-        "themes":"wdc,2011"
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2012 de F1?",
@@ -140,16 +110,6 @@
         "themes":"wdc,2014"
     },
     {
-        "question":"¿En qué posición terminó Alonso la temporada 2015 de F1?",
-        "answers":[
-            "17º",
-            "13º",
-            "16º",
-            "15º"
-        ],
-        "themes":"wdc,2015"
-    },
-    {
         "question":"¿En qué posición terminó Alonso la temporada 2016 de F1?",
         "answers":[
             "10º",
@@ -168,36 +128,6 @@
             "13º"
         ],
         "themes":"wdc,2017"
-    },
-    {
-        "question":"¿En qué posición terminó Alonso la temporada 2018 de F1?",
-        "answers":[
-            "11º",
-            "9º",
-            "14º",
-            "16º"
-        ],
-        "themes":"wdc,2018"
-    },
-    {
-        "question":"¿En qué posición terminó Alonso la temporada 2019 de F1?",
-        "answers":[
-            "No participó",
-            "8º",
-            "10º",
-            "9º"
-        ],
-        "themes":"wdc,2019"
-    },
-    {
-        "question":"¿En qué posición terminó Alonso la temporada 2020 de F1?",
-        "answers":[
-            "No participó",
-            "7º",
-            "10º",
-            "12º"
-        ],
-        "themes":"wdc,2020"
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2021 de F1?",
@@ -228,16 +158,6 @@
             "6º"
         ],
         "themes":"wdc,2023"
-    },
-    {
-        "question":"¿En qué posición terminó Alonso la temporada 2024 de F1?",
-        "answers":[
-            "9º",
-            "7º",
-            "5º",
-            "11º"
-        ],
-        "themes":"wdc,2024"
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2025 de F1?",
@@ -570,6 +490,28 @@
         "img":"alonso575.jpg"
     },
     {
+        "question":"¿De qué circuito es este casco especial?",
+        "answers":[
+            "Indianápolis 2017",
+            "Abu Dhabi 2018",
+            "Australia 2018",
+            "Indianapolis 2019"
+        ],
+        "themes":"2017,img",
+        "img":"alonso617.jpg"
+    },
+    {
+        "question":"¿De qué circuito es este casco especial?",
+        "answers":[
+            "India 2013",
+            "Mónaco 2012",
+            "Abu Dhabi 2014",
+            "España 2011"
+        ],
+        "themes":"2013,img",
+        "img":"alonso618.jpg"
+    },
+    {
         "question":"¿De qué año es esta imagen?",
         "answers":[
             "2009",
@@ -700,5 +642,75 @@
         ],
         "themes":"2006,audio",
         "audio":"spain2006.ogg"
+    },
+    {
+        "question":"¿Cuántas veces Alonso ha fichado por Renault en la F1?",
+        "answers":[
+            "3",
+            "4",
+            "2",
+            "1"
+        ],
+        "themes":"team"
+    },
+    {
+        "question":"¿Cuántas veces Alonso ha barrido completamente a un compañero de equipo en clasificación en F1?",
+        "answers":[
+            "3",
+            "2",
+            "1",
+            "0"
+        ],
+        "themes":"general,warning"
+    },
+    {
+        "question":"¿Qué compañeros de equipo tuvo Alonso en Minardi?",
+        "answers":[
+            "Tarso Marques y Alex Yoong",
+            "Jenson Button y Jarno Trulli",
+            "Anthony Davidson y Mark Webber",
+            "Tarso Marques y Marc Gené"
+        ],
+        "themes":"2001,teammate"
+    },
+    {
+        "question":"¿Qué compañeros de equipo tuvo Alonso en McLaren? (reemplazos temporales no cuentan)",
+        "answers":[
+            "Lewis Hamilton, Jenson Button and Stoffel Vandoorne",
+            "Kevin Magnussen, Jenson Button and Felipe Nasr",
+            "Felipe Massa and Kimi Räikkönen",
+            "Jenson Button and Stoffel Vandoorne"
+        ],
+        "themes":"teammate"
+    },
+    {
+        "question":"¿Qué novia tuvo Alonso entre 2017 y 2021?",
+        "answers":[
+            "Linda Morselli",
+            "Andrea Schlager",
+            "Raquel del Rosario",
+            "Melissa Jimenez"
+        ],
+        "themes":"social"
+    },
+    {
+        "question":"¿Con quién va a ser padre Fernando Alonso?",
+        "answers":[
+            "Melissa Jimenez",
+            "Andrea Schlager",
+            "Raquel del Rosario",
+            "Linda Morselli"
+        ],
+        "themes":"social"
+    },
+    {
+        "question":"¿Con qué equipo ganó Alonso su carrera debut?",
+        "answers":[
+            "Ferrari",
+            "Renault",
+            "Aston Martin",
+            "McLaren"
+        ],
+        "themes":"team"
     }
 ]
