@@ -401,7 +401,7 @@
             "2016 Monaco GP"
         ],
         "themes":"2017,audio",
-        "audio":"monaco2017.m4a"
+        "audio":"audio1.m4a"
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -412,7 +412,7 @@
             "2010 Singapore GP"
         ],
         "themes":"2010,audio",
-        "audio":"korea2010.m4a"
+        "audio":"audio2.m4a"
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -423,7 +423,7 @@
             "2013 Chinese GP"
         ],
         "themes":"2012,audio",
-        "audio":"europe2012.m4a"
+        "audio":"audio3.m4a"
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -434,7 +434,7 @@
             "2005 Brazilian GP"
         ],
         "themes":"2005,audio",
-        "audio":"china2005.m4a"
+        "audio":"audio4.m4a"
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -445,7 +445,7 @@
             "2024 Saudi Arabia GP"
         ],
         "themes":"2023,audio",
-        "audio":"bahrain2023.m4a"
+        "audio":"audio5.m4a"
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -456,7 +456,7 @@
             "2012 German GP"
         ],
         "themes":"2013,audio",
-        "audio":"china2013.ogg"
+        "audio":"audio6.ogg"
     },
     {
         "question":"In which circuit did Alonso get his last pole position?",
@@ -608,7 +608,7 @@
             "2012 Australian GP"
         ],
         "themes":"2012,audio",
-        "audio":"spain2012.m4a"
+        "audio":"audio7.m4a"
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -619,7 +619,7 @@
             "2016 Russian GP"
         ],
         "themes":"2017,audio",
-        "audio":"abudhabi2017.m4a"
+        "audio":"audio8.m4a"
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -630,7 +630,7 @@
             "2018 Monaco GP"
         ],
         "themes":"2015,audio",
-        "audio":"spain2015.m4a"
+        "audio":"audio9.m4a"
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -641,7 +641,7 @@
             "2006 Brazil GP"
         ],
         "themes":"2006,audio",
-        "audio":"spain2006.ogg"
+        "audio":"audio10.ogg"
     },
     {
         "question":"How many times has Alonso joined Renault in F1?",

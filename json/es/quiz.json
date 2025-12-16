@@ -401,7 +401,7 @@
             "Mónaco 2016"
         ],
         "themes":"2017,audio",
-        "audio":"monaco2017.m4a"
+        "audio":"audio1.m4a"
     },
     {
         "question":"¿De qué Grand Prix es esta radio de equipo?",
@@ -412,7 +412,7 @@
             "Singapur 2010"
         ],
         "themes":"2010,audio",
-        "audio":"korea2010.m4a"
+        "audio":"audio2.m4a"
     },
     {
         "question":"¿De qué Grand Prix es esta radio de equipo?",
@@ -423,7 +423,7 @@
             "China 2013"
         ],
         "themes":"2012,audio",
-        "audio":"europe2012.m4a"
+        "audio":"audio3.m4a"
     },
     {
         "question":"¿De qué Grand Prix es esta radio de equipo?",
@@ -434,7 +434,7 @@
             "Brasil 2005"
         ],
         "themes":"2005,audio",
-        "audio":"china2005.m4a"
+        "audio":"audio4.m4a"
     },
     {
         "question":"¿De qué Grand Prix es esta radio de equipo?",
@@ -445,7 +445,7 @@
             "Arabia Saudí 2024"
         ],
         "themes":"2023,audio",
-        "audio":"bahrain2023.m4a"
+        "audio":"audio5.m4a"
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -456,7 +456,7 @@
             "Alemania 2012"
         ],
         "themes":"2013,audio",
-        "audio":"china2013.ogg"
+        "audio":"audio6.ogg"
     },
     {
         "question":"¿En qué circuito consiguió Alonso su última pole?",
@@ -608,7 +608,7 @@
             "2012 Australian GP"
         ],
         "themes":"2012,audio",
-        "audio":"spain2012.m4a"
+        "audio":"audio7.m4a"
     },
     {
         "question":"¿De qué Grand Prix es esta radio de equipo?",
@@ -619,7 +619,7 @@
             "Rusia 2016"
         ],
         "themes":"2017,audio",
-        "audio":"abudhabi2017.m4a"
+        "audio":"audio8.m4a"
     },
     {
         "question":"¿De qué Grand Prix es esta radio de equipo?",
@@ -630,7 +630,7 @@
             "Mónaco 2018"
         ],
         "themes":"2015,audio",
-        "audio":"spain2015.m4a"
+        "audio":"audio9.m4a"
     },
     {
         "question":"¿De qué Grand Prix es esta radio de equipo?",
@@ -641,7 +641,7 @@
             "Brasil 2006"
         ],
         "themes":"2006,audio",
-        "audio":"spain2006.ogg"
+        "audio":"audio10.ogg"
     },
     {
         "question":"¿Cuántas veces Alonso ha fichado por Renault en la F1?",
