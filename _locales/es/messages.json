@@ -4,7 +4,7 @@
     "p3":"¿Listo? Haz click en el botón para empezar",
     "button-start":"Empezar test",
 
-    "question-counter":"de",
+    "question-counter":" de ",
     "arrow-next":"Sigue",
 
     "failure":"Simplemente terrible.",
@@ -13,6 +13,7 @@
     "outstanding":"Un verdadero Alonsista acérrimo",
     "max":"El fan de Alonso más loco que existe",
     "cheat":"¿Seguro que no has hecho trampas?",
+    "correct-questions":" acertadas de ",
     "button-return":"Volver al inicio",
 
     "footer-a1":"Github >",

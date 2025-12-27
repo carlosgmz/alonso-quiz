@@ -74,9 +74,17 @@ async function renderResult() {
     //stats section
     const $stats = d.createElement("section")
     $stats.classList.add("stats")
-    const $correctQuestions = d.createElement("div")
-    $correctQuestions.classList.add("correctQuestions")
-    $correctQuestions.textContent = `${numGuessed} / ${TOTAL_QUESTIONS} (${(numGuessed/TOTAL_QUESTIONS*100).toFixed(0)}%)`
+    const $resultQuestions = d.createElement("div")
+    $resultQuestions.classList.add("resultQuestions")
+    const $span1 = d.createElement("span")
+    $span1.textContent = numGuessed
+    const $span2 = d.createElement("span")
+    $span2.setAttribute("data-i18n","correct-questions")
+    const $span3 = d.createElement("span")
+    $span3.textContent = TOTAL_QUESTIONS
+    const $span4 = d.createElement("span")
+    $span4.textContent = ` (${(numGuessed/TOTAL_QUESTIONS*100).toFixed(0)}%)`
+    $resultQuestions.append($span1,$span2,$span3,$span4)
     const $resultMsg = d.createElement("div")
     $resultMsg.classList.add("resultMsg")
     if(numGuessed < FAILURE) {
@@ -90,7 +98,7 @@ async function renderResult() {
     } else if(numGuessed < TOTAL_QUESTIONS) {
         $resultMsg.setAttribute("data-i18n","max")
     } else $resultMsg.setAttribute("data-i18n","cheat")
-    $stats.append($correctQuestions,$resultMsg)
+    $stats.append($resultQuestions,$resultMsg)
 
     //summary section
     const $summary = d.createElement("section")

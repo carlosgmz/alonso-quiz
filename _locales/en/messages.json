@@ -4,7 +4,7 @@
     "p3":"Ready? Then click the button to begin!",
     "button-start":"Start quiz",
 
-    "question-counter":"of",
+    "question-counter":" of ",
     "arrow-next":"Next",
     
     "failure":"Simply awful.",
@@ -13,6 +13,7 @@
     "outstanding":"A real diehard Alonsista",
     "max":"The craziest Alonso fan ever",
     "cheat":"You didn't cheat, did you?",
+    "correct-questions":" correct out of ",
     "button-return":"Return to index",
 
     "footer-a1":"Github >",
