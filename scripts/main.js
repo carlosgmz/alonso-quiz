@@ -1,60 +1,49 @@
-const d = document,
- $languages = d.querySelectorAll(".languages div"),
+const doc = document,
+ $languages = doc.querySelectorAll(".languages div"),
  acceptedLanguage = ["en","es"]
- //theme
 
-let language
-
-function readTheme() {
-    
+async function fetchLocale(language) {
+    let res = await fetch(`../_locales/${language}/messages.json`)
+    return await res.json()
 }
 
-function clickTheme() {
-
-}
-
-function applyTheme() {
-
-}
-
-function readLanguage() {
-    language = localStorage.getItem("language")
-    if(language == null || !acceptedLanguage.includes(language)) {
+async function readLanguage() {
+    let language = localStorage.getItem("language")
+    if(language == null || language === "undefined" || !acceptedLanguage.includes(language)) {
         localStorage.setItem("language","en")
-        applyLanguage("en")
+        return "en"
     } else if(language == "en") {
-        applyLanguage("en")
+        return "en"
     } else if(language == "es") {
-        applyLanguage("es")
+        return "es"
     }
 
 }
 
-function clickLanguage() {
+async function clickLanguage() {
     if(this.id == "en") {
-        if(language == "en") {return}
+        if(localStorage.getItem("language") == "en") {return}
         localStorage.setItem("language","en")
-        applyLanguage("en")
+        await applyLanguage("en",doc)
     } else if(this.id == "es") {
-        if(language == "es") {return}
+        if(localStorage.getItem("language") == "es") {return}
         localStorage.setItem("language","es")
-        applyLanguage("es")
+        await applyLanguage("es",doc)
     }
 }
 
-function applyLanguage() {
-    if(page == "index") {
-
-    } else if(page == "quiz") {
-
-    }
+export async function applyLanguage(language,html) {
+    let locale = await fetchLocale(language)
+    html.querySelectorAll("[data-i18n]").forEach(el=>{
+        let name = el.getAttribute("data-i18n")
+        el.textContent = locale[name]
+    })
 }
 
-readLanguage()
-//readTheme()
+(async () => {
+    await applyLanguage(await readLanguage(),doc)
+})()
 
-$languages.forEach(el=>{
+$languages.forEach(async el=>{
     el.addEventListener("click",clickLanguage)
 })
-
-//eventlistener theme

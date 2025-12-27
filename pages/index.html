@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
-    <script>var page = "index";</script>
-    <script src="../scripts/main.js" defer></script>
+    <script type="module" src="../scripts/main.js" defer></script>
     <title>Alonso Quiz</title>
 </head>
 <body>
@@ -23,32 +22,22 @@
     
     <main class="index">
         <section class="description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facere, optio unde odit velit ullam nesciunt exercitationem ipsam, laborum asperiores, iure adipisci aliquam perspiciatis pariatur voluptatum commodi reiciendis eveniet ab.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quam! Pariatur distinctio repellat nam cum facilis possimus expedita vitae sed voluptate eveniet minus dolore, explicabo hic ut nemo animi ea.</p>
-        </section>
-
-        <section class="config">
-            <div>
-                <label>Seed: </label>
-                <input type="text"/>
-            </div>
-            <div>
-                <label>Endless Mode</label>
-                <input type="checkbox"/>
-            </div>
+            <p data-i18n="p1"></p>
+            <p data-i18n="p2"></p>
+            <p data-i18n="p3"></p>
         </section>
 
         <section class="start">
             <a href="http://localhost:5500/pages/quiz.html">
-                <button>Start quiz</button>
+                <button data-i18n="button-start"></button>
             </a>
         </section>
     </main>
 
     <footer>
-        <div><a href="" target="_blank">Github ></a></div>
-        <div><a href="">Data Policy ^</a></div>
-        <div><a href="" target="_blank">Buy me a Coffee ></a></div>
+        <div><a href="" target="_blank" data-i18n="footer-a1"></a></div>
+        <div><a href="" data-i18n="footer-a2"></a></div>
+        <div><a href="" target="_blank" data-i18n="footer-a3"></a></div>
     </footer>
 </body>
 </html>

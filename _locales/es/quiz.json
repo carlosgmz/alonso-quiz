@@ -19,7 +19,7 @@
             "8º"
         ],
         "themes":"wdc,2003",
-        "extra":"Tras ejercer como piloto de pruebas para Renault en 2002, 2003 fue la primera temporada de Alonso como piloto de carreras de Renault, donde se convirtió en el piloto más joven en conseguir la pole y ganar en la F1."
+        "extra":"2003 fue la primera temporada de Alonso como piloto de carreras de Renault tras ejercer de probador en 2002. En ella se convirtió en el piloto más joven en conseguir la pole y ganar en la F1."
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2004 de F1?",
@@ -30,7 +30,7 @@
             "9º"
         ],
         "themes":"wdc,2004",
-        "extra":"El 2004 fue una temporada exitosa para los pilotos de Renault Alonso y Trulli (que se marchó a mediados de año), aunque no lo suficiente como para alcanzar al Ferrari F2004 de Michael Schumacher, que batió todos los récords."
+        "extra":"2004 fue una temporada exitosa para los pilotos de Renault Alonso y Trulli (que se marchó a mediados de año), aunque no lo suficiente como para alcanzar al Ferrari F2004 de Michael Schumacher, que batió todos los récords."
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2005 de F1?",
@@ -315,7 +315,7 @@
             "2020"
         ],
         "themes":"2017,img",
-        "img":"alonso167.jpg",
+        "img":"alonso167.png",
         "extra":"Imagen de las 500 Millas de Indianápolis de 2017. Lideró durante 27 vueltas y rodaba séptimo, cerca del eventual ganador Takuma Sato, antes de que su motor Honda se averiara."
     },
     {
@@ -381,10 +381,10 @@
     {
         "question":"¿De qué año es esta imagen?",
         "answers":[
-            "2023 Dutch GP",
-            "2024 Brazil GP",
-            "2023 Belgian GP",
-            "2024 Hungarian GP"
+            "Holanda 2023",
+            "Brasil 2024",
+            "Bélgica 2023",
+            "Hungría 2024"
         ],
         "themes":"2023,img",
         "img":"alonso616.jpg",

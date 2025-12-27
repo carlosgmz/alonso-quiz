@@ -1,3 +1,5 @@
+import {applyLanguage} from "./main.js"
+
 const d = document,
  $questionSpan = d.querySelector(".question span"),
  $questionImg = d.querySelector(".question img"),
@@ -24,18 +26,12 @@ const FAILURE = 20, //10
 let json, cont = 0, numGuessed = 0, questionPointer = 0, correctAnswer
 
 async function fetchJson(language) {
-    let res = await fetch(`../json/${language}/quiz.json`)
+    let res = await fetch(`../_locales/${language}/quiz.json`)
     return await res.json()
 }
 
-async function delay(miliseconds) {
-    return new Promise((resolve)=>setTimeout(()=>{
-        resolve()
-    }, miliseconds))
-}
-
 async function init() {
-    json = await fetchJson("en")
+    json = await fetchJson(localStorage.getItem("language"))
     $totalQuestions.textContent = TOTAL_QUESTIONS
     await renderQuestion()
 }
@@ -80,20 +76,20 @@ async function renderResult() {
     $stats.classList.add("stats")
     const $correctQuestions = d.createElement("div")
     $correctQuestions.classList.add("correctQuestions")
-    $correctQuestions.textContent = `${numGuessed} out of ${TOTAL_QUESTIONS} (${(numGuessed/TOTAL_QUESTIONS*100).toFixed(0)}%)`
+    $correctQuestions.textContent = `${numGuessed} / ${TOTAL_QUESTIONS} (${(numGuessed/TOTAL_QUESTIONS*100).toFixed(0)}%)`
     const $resultMsg = d.createElement("div")
     $resultMsg.classList.add("resultMsg")
     if(numGuessed < FAILURE) {
-        $resultMsg.textContent = "Awful. Better luck next time!"
+        $resultMsg.setAttribute("data-i18n","failure")
     } else if(numGuessed < PASS) {
-        $resultMsg.textContent = "Casual Formula One fan"
+        $resultMsg.setAttribute("data-i18n","pass")
     } else if(numGuessed < REMARKABLE) {
-        $resultMsg.textContent = "Better than average Alonso fan"
+        $resultMsg.setAttribute("data-i18n","remarkable")
     } else if(numGuessed < OUTSTANDING) {
-        $resultMsg.textContent = "A real diehard Alonsista"
+        $resultMsg.setAttribute("data-i18n","outstanding")
     } else if(numGuessed < TOTAL_QUESTIONS) {
-        $resultMsg.textContent = "The craziest Alonso fan ever"
-    } else $resultMsg.textContent = "You didn't cheat, did you?"
+        $resultMsg.setAttribute("data-i18n","max")
+    } else $resultMsg.setAttribute("data-i18n","cheat")
     $stats.append($correctQuestions,$resultMsg)
 
     //summary section
@@ -101,10 +97,6 @@ async function renderResult() {
     $summary.classList.add("summary")
     const $info = d.createElement("div")
     $info.classList.add("info")
-    let $seed = d.createElement("div")
-    $seed.classList.add("seed") 
-    $seed.textContent = "Seed:"
-    $info.append($seed)
     const $summary_result = d.createElement("div")
     $summary_result.classList.add("summary_result")
     for(let i = 1; i <= TOTAL_QUESTIONS; i++) {
@@ -165,9 +157,13 @@ async function renderResult() {
     $a = d.createElement("a")
     $a.href = "http://localhost:5500/pages/index.html"
     let $button = d.createElement("button")
-    $button.textContent = "Take another quiz"
+    $button.setAttribute("data-i18n","button-return")
     $a.appendChild($button)
     $return.appendChild($a)
+    
+    //locales
+    applyLanguage(localStorage.getItem("language"),$stats)
+    applyLanguage(localStorage.getItem("language"),$return)
 
     //previous quiz sections are replaced with result sections
     $main.replaceChildren($stats,$summary,$share,$return)

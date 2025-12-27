@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
-    <script>var page = "quiz";</script>
-    <script src="../scripts/quiz.js" defer></script>
+    <script type="module" src="../scripts/main.js" defer></script>
+    <script type="module" src="../scripts/quiz.js" defer></script>
     <title>Alonso Quiz</title>
 </head>
 <body>
@@ -20,8 +20,7 @@
 
     <main class="quiz">
         <section class="info">
-            <div class="counter"><span id="questionCounter"></span> of <span id="totalQuestions"></span></div>
-            <div class="seed">Seed: <span></span></div>
+            <div class="counter"><span id="questionCounter"></span> <span data-i18n="question-counter"></span> <span id="totalQuestions"></span></div>
         </section>
 
         <section class="question">
@@ -44,7 +43,7 @@
             </div>
             <div class="answer_control next hidden">
                 <img src="../assets/imgs/flecha_2.png" alt="next">
-                <span>Next</span>
+                <span data-i18n="arrow-next"></span>
             </div>
         </section>
     </main>
@@ -58,9 +57,9 @@
     </template>
 
     <footer>
-        <div><a href="" target="_blank">Github ></a></div>
-        <div><a href="">Data Policy ^</a></div>
-        <div><a href="" target="_blank">Buy me a Coffee ></a></div>
+        <div><a href="" target="_blank" data-i18n="footer-a1"></a></div>
+        <div><a href="" data-i18n="footer-a2"></a></div>
+        <div><a href="" target="_blank" data-i18n="footer-a3"></a></div>
     </footer>
 </body>
 </html>
