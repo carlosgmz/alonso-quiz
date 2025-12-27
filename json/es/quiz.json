@@ -7,7 +7,8 @@
             "19º",
             "22º"
         ],
-        "themes":"wdc,2001"
+        "themes":"wdc,2001",
+        "extra":"2001 fue la primera temporada de Alonso en la F1. A bordo del muy deficitario Minardi PS01, logró buenos resultados en clasificación y carreras cuando el Minardi no sufría averías."
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2003 de F1?",
@@ -17,7 +18,8 @@
             "9º",
             "8º"
         ],
-        "themes":"wdc,2003"
+        "themes":"wdc,2003",
+        "extra":"Tras ejercer como piloto de pruebas para Renault en 2002, 2003 fue la primera temporada de Alonso como piloto de carreras de Renault, donde se convirtió en el piloto más joven en conseguir la pole y ganar en la F1."
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2004 de F1?",
@@ -27,7 +29,8 @@
             "8º",
             "9º"
         ],
-        "themes":"wdc,2004"
+        "themes":"wdc,2004",
+        "extra":"El 2004 fue una temporada exitosa para los pilotos de Renault Alonso y Trulli (que se marchó a mediados de año), aunque no lo suficiente como para alcanzar al Ferrari F2004 de Michael Schumacher, que batió todos los récords."
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2005 de F1?",
@@ -37,7 +40,8 @@
             "2º",
             "6º"
         ],
-        "themes":"wdc,2005"
+        "themes":"wdc,2005",
+        "extra":"McLaren y Renault se beneficiaron de un cambio normativo que perjudicó a Ferrari y lucharon por el título entre sus principales pilotos, Räikkönen y Alonso. McLaren tenía un coche más rápido, pero sus problemas de fiabilidad permitieron a Alonso ganar su primer Campeonato de Fórmula 1."
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2006 de F1?",
@@ -47,7 +51,8 @@
             "4º",
             "2º"
         ],
-        "themes":"wdc,2006"
+        "themes":"wdc,2006",
+        "extra":"Una temporada épica y duramente batallada contra Michael Schumacher. El R26 empezó la temporada con mayor ritmo y luego Ferrari remontó el vuelo, aunque una buena gestión del colchón de puntos inicial y grandes actuaciones de Alonso fueron suficientes para convertirse en bicampeón."
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2007 de F1?",
@@ -57,7 +62,8 @@
             "4º",
             "5º"
         ],
-        "themes":"wdc,2007"
+        "themes":"wdc,2007",
+        "extra":"Rivalidad, drama, espionaje... Una temporada llena de emociones fuertes, carrera tras carrera, con los pilotos de McLaren Lewis Hamilton y Fernando Alonso luchando por el campeonato; solo para que Räikkönen, de Ferrari, lo arrebatara en la última carrera por un solo punto."
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2008 de F1?",
@@ -67,7 +73,8 @@
             "7º",
             "9º"
         ],
-        "themes":"wdc,2008"
+        "themes":"wdc,2008",
+        "extra":"Después de la ruptura con McLaren Alonso volvió a Renault durante dos temporadas. El R28 sufrió al principio de temporada pero con las mejoras aumentó su competitividad y ganó dos carreras en Japón y la controversial Singapur."
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2010 de F1?",
@@ -75,9 +82,10 @@
             "2º",
             "3º",
             "5º",
-            "1º"
+            "4º"
         ],
-        "themes":"wdc,2010"
+        "themes":"wdc,2010",
+        "extra":"La primera intentona al mundial con Ferrari fue en 2010. Una temporada muy competitiva donde 4 pilotos llegaron con opciones a la última carrera, pero las posibilidades de Fernando se esfumaron tras un error estratégico de Ferrari."
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2012 de F1?",
@@ -87,7 +95,8 @@
             "5º",
             "4º"
         ],
-        "themes":"wdc,2012"
+        "themes":"wdc,2012",
+        "extra":"Posiblemente la mejor temporada de Alonso en cuanto a rendimiento en la F1, consiguó pelear por el mundial con un F2012 que para muchos ni debió haberse acercado, obrando hazañas en lugares como Malasia y Valencia; pero no fue suficiente y Sebastian Vettel se convirtió en tricampeón."
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2013 de F1?",
@@ -97,7 +106,8 @@
             "7º",
             "3º"
         ],
-        "themes":"wdc,2013"
+        "themes":"wdc,2013",
+        "extra":"En la temporada 2013 el Ferrari empezó competitivo y Alonso logró grandes actuaciones en China y España; aún así, un cambio en los neumáticos que benefició a Red Bull hizo imposible pelear el campeonato y facilitó a Vettel dominar el resto del año."
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2014 de F1?",
@@ -107,7 +117,8 @@
             "11º",
             "8º"
         ],
-        "themes":"wdc,2014"
+        "themes":"wdc,2014",
+        "extra":"El último año de Alonso con Ferrari fue complicado. En el contexto de la nueva normativa híbrida, el Ferrari F14T sufría graves deficiencias, aunque estas no impidieron que Alonso lograra grandes resultados en China y Hungría. Al año siguiente se marcharía a McLaren-Honda."
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2016 de F1?",
@@ -117,17 +128,19 @@
             "15º",
             "12º"
         ],
-        "themes":"wdc,2016"
+        "themes":"wdc,2016",
+        "extra":"Después de una temporada inicial muy difícil en McLaren-Honda, 2016 pareció mejorar ligeramente en competitividad, aunque los pilotos tuvieron que continuar sufriendo ya que en 2017 Honda volvería a tener problemas tras un cambio en la arquitectura del motor."
     },
     {
-        "question":"¿En qué posición terminó Alonso la temporada 2017 de F1?",
+        "question":"¿En qué posición terminó Alonso la temporada 2018 de F1?",
         "answers":[
-            "15º",
             "11º",
+            "15º",
             "18º",
             "13º"
         ],
-        "themes":"wdc,2017"
+        "themes":"wdc,2018",
+        "extra":"2018 fue la última temporada de F1 antes de su primera retirada. Después Fernando iría a probar suerte en otras competiciones como el Mundial de Resistencia, las 500 millas de Indianápolis, Daytona y el Dakar."
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2021 de F1?",
@@ -137,17 +150,8 @@
             "9º",
             "8º"
         ],
-        "themes":"wdc,2021"
-    },
-    {
-        "question":"¿En qué posición terminó Alonso la temporada 2022 de F1?",
-        "answers":[
-            "9º",
-            "7º",
-            "10º",
-            "6º"
-        ],
-        "themes":"wdc,2022"
+        "themes":"wdc,2021",
+        "extra":"Volviendo a la Fórmula Uno en 2021 con Alpine, tras un período de adaptación recuperó la forma en Bakú y logró buenas actuaciones como la defensa de Hungría sobre Hamilton y el podio en Qatar."
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2023 de F1?",
@@ -157,7 +161,8 @@
             "2º",
             "6º"
         ],
-        "themes":"wdc,2023"
+        "themes":"wdc,2023",
+        "extra":"La primera temporada con Aston Martin estuvo marcada por un gran éxito inicial, logrando tres podios consecutivos gracias a un AMR23 equilibrado. A partir de mitad de temporada los éxitos fueron más escasos debido a actualizaciones ineficaces, aunque Zandvoort y Brasil fueron brillantes."
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2025 de F1?",
@@ -167,7 +172,8 @@
             "13º",
             "12º"
         ],
-        "themes":"wdc,2025"
+        "themes":"wdc,2025",
+        "extra":"2025 fue una temporada sin grandes resultados con un AMR25 al que le faltaba rendimiento antes del gran cambio regulatorio de 2026. Los momentos más importantes fueron el fichaje de Adrian Newey en marzo y el 5º puesto en Hungría."
     },
     {
         "question":"¿Cuántas victorias tiene Alonso en la F1?",
@@ -227,7 +233,8 @@
             "2014",
             "2017"
         ],
-        "themes":"qualy,2012,warning"
+        "themes":"qualy,2012,warning",
+        "extra":"En el GP de Hockenheim de 2012 fue la última pole position de Alonso hasta la fecha, en condiciones de lluvia extrema."
     },
     {
         "question":"¿En qué año consiguió Alonso su última victoria?",
@@ -237,7 +244,8 @@
             "2014",
             "2021"
         ],
-        "themes":"2013,warning"
+        "themes":"2013,warning",
+        "extra":"El GP de España de 2013 fue la última victoria de Alonso hasta la fecha. Partiendo desde la quinta posición de la parrilla, realizó una brillante salida y adelantó por el exterior a Räikkönen y Hamilton."
     },
     {
         "question":"¿En qué circuito consiguió Alonso su último podio?",
@@ -247,7 +255,8 @@
             "Montreal",
             "Qatar"
         ],
-        "themes":"2023,warning"
+        "themes":"2023,warning",
+        "extra":"A día de hoy, su último podio lo consiguió en el GP de Brasil de 2023 en Interlagos tras una épica lucha con el Red Bull de Sergio Pérez."
     },
     {
         "question":"¿De qué Grand Prix es esta imagen?",
@@ -258,7 +267,8 @@
             "Australia 2017"
         ],
         "themes":"2015,img",
-        "img":"alonso526.jpg"
+        "img":"alonso526.jpg",
+        "extra":"El famoso meme de la tumbona se originó en la clasificación del Gran Premio de Brasil de 2015, después de que su McLaren-Honda se detuviera por problemas en el motor."
     },
     {
         "question":"¿De qué año es esta imagen?",
@@ -269,7 +279,8 @@
             "2004"
         ],
         "themes":"2005,img",
-        "img":"alonso498.jpg"
+        "img":"alonso498.jpg",
+        "extra":"Imagen del GP de Turquía 2005, con Fisichella y Alonso."
     },
     {
         "question":"¿De qué año es esta imagen?",
@@ -280,7 +291,8 @@
             "2010"
         ],
         "themes":"2008,img",
-        "img":"alonso483.jpg"
+        "img":"alonso483.jpg",
+        "extra":"Imagen del año 2008 en Renault, aparecen Alonso, Kubica y Webber respectivamente."
     },
     {
         "question":"¿De qué año es esta imagen?",
@@ -291,7 +303,8 @@
             "2014"
         ],
         "themes":"2012,img",
-        "img":"alonso387.jpg"
+        "img":"alonso387.jpg",
+        "extra":"El podio de Valencia en 2012 contó con tres campeones del mundo que sumaban un total de diez campeonatos mundiales entre ellos. Andrea Stella, el ingeniero de Alonso que subió al podio, había trabajado con los tres."
     },
     {
         "question":"¿De qué año es esta imagen?",
@@ -302,7 +315,8 @@
             "2020"
         ],
         "themes":"2017,img",
-        "img":"alonso167.jpg"
+        "img":"alonso167.jpg",
+        "extra":"Imagen de las 500 Millas de Indianápolis de 2017. Lideró durante 27 vueltas y rodaba séptimo, cerca del eventual ganador Takuma Sato, antes de que su motor Honda se averiara."
     },
     {
         "question":"¿De qué año es esta imagen?",
@@ -313,7 +327,8 @@
             "2007"
         ],
         "themes":"2005,img",
-        "img":"alonso603.png"
+        "img":"alonso603.png",
+        "extra":"Imagen del emblemático adelantamiento por fuera a Michael Schumacher en la curva 130R durante el Gran Premio de Japón de 2005."
     },
     {
         "question":"¿De qué año es esta imagen?",
@@ -324,7 +339,8 @@
             "2018"
         ],
         "themes":"2017,img",
-        "img":"alonso605.png"
+        "img":"alonso605.png",
+        "extra":"En la salida del Gran Premio de Singapur de 2017, Alonso pasó del octavo al fantástico tercer puesto gracias a tomar la línea exterior, pero fue golpeado por un Red Bull fuera de control. Se sabe que después dio un puñetazo a la pared de su vestuario."
     },
     {
         "question":"¿De qué año es esta imagen?",
@@ -335,7 +351,8 @@
             "2004"
         ],
         "themes":"2006,img",
-        "img":"alonso607.png"
+        "img":"alonso607.png",
+        "extra":"Imagen del lluvioso Gran Premio de Hungría de 2006, donde Alonso tuvo un espectacular comienzo de carrera adelantando a muchos pilotos, entre ellos los pilotos de Ferrari Felipe Massa y, en esta foto, Michael Schumacher."
     },
     {
         "question":"¿De qué año es esta imagen?",
@@ -346,7 +363,8 @@
             "2021"
         ],
         "themes":"2019,img",
-        "img":"alonso610.png"
+        "img":"alonso610.png",
+        "extra":"Imagen del stint nocturno de las 24 horas de Le Mans de 2019, en este caso Alonso encontrando mucho tráfico de GTs."
     },
     {
         "question":"¿De qué año es esta imagen?",
@@ -357,7 +375,8 @@
             "2005"
         ],
         "themes":"2003,img",
-        "img":"alonso612.png"
+        "img":"alonso612.png",
+        "extra":"Imagen de la vuelta de pole de Alonso en el Gran Premio de Hungría de 2003."
     },
     {
         "question":"¿De qué año es esta imagen?",
@@ -368,7 +387,8 @@
             "2024 Hungarian GP"
         ],
         "themes":"2023,img",
-        "img":"alonso616.jpg"
+        "img":"alonso616.jpg",
+        "extra":"Imagen del Gran Premio de Holanda de 2023, marcado por condiciones variables y banderas rojas. Alonso se alzó con el segundo puesto tras un error de Sergio Pérez, de Red Bull."
     },
     {
         "question":"¿De qué Grand Prix es esta imagen?",
@@ -379,7 +399,8 @@
             "Hockenheim 2008"
         ],
         "themes":"2007,img",
-        "img":"alonso601.png"
+        "img":"alonso601.png",
+        "extra":"El Gran Premio de Europa de 2007 fue una carrera muy agitada, condiciones variables y muchos abandonos. Alonso acabaría ganando tras adelantar al Ferrari de Felipe Massa."
     },
     {
         "question":"¿De qué Grand Prix es esta imagen?",
@@ -390,7 +411,8 @@
             "Gran Bretaña 2007"
         ],
         "themes":"2007,img",
-        "img":"alonso604.png"
+        "img":"alonso604.png",
+        "extra":"Imagen emblemática del Gran Premio de Hungría de 2007, en la que Fernando Alonso bloqueó a Lewis Hamilton en boxes durante la Q3 después de que Lewis incumpliera las normas del equipo anteriormente."
     },
     {
         "question":"¿De qué Grand Prix es esta radio de equipo?",
@@ -401,7 +423,8 @@
             "Mónaco 2016"
         ],
         "themes":"2017,audio",
-        "audio":"audio1.m4a"
+        "audio":"audio1.m4a",
+        "extra":"Alonso se había perdido el Gran Premio de Mónaco de 2017 para participar en las 500 Millas de Indianápolis, ya que ambas citas coincidían. Jenson Button ocuparía su lugar, y esta divertida comunicación por radio tuvo lugar antes del inicio de la carrera."
     },
     {
         "question":"¿De qué Grand Prix es esta radio de equipo?",
@@ -445,7 +468,8 @@
             "Arabia Saudí 2024"
         ],
         "themes":"2023,audio",
-        "audio":"audio5.m4a"
+        "audio":"audio5.m4a",
+        "extra":"Esta comunicación por radio de equipo tuvo lugar tras subir al podio durante el Gran Premio de Baréin de 2023, donde un mecánico de Aston llamado Jim acababa de cumplir 60 años."
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -457,16 +481,6 @@
         ],
         "themes":"2013,audio",
         "audio":"audio6.ogg"
-    },
-    {
-        "question":"¿En qué circuito consiguió Alonso su última pole?",
-        "answers":[
-            "Hockenheim",
-            "Nürburgring",
-            "Hungaroring",
-            "Monaco"
-        ],
-        "themes":"qualy,2012,warning"
     },
     {
         "question":"¿En qué circuito añadió Alpine “El Plan” al ala trasera?",
@@ -509,7 +523,8 @@
             "España 2011"
         ],
         "themes":"2013,img",
-        "img":"alonso618.jpg"
+        "img":"alonso618.jpg",
+        "extra":"En aquel momento, 1571 era el récord de puntos en la Fórmula Uno de cualquier piloto."
     },
     {
         "question":"¿De qué año es esta imagen?",
@@ -531,7 +546,8 @@
             "2002"
         ],
         "themes":"2003,img",
-        "img":"alonso600.png"
+        "img":"alonso600.png",
+        "extra":"Imagen del Gran Premio de Malasia de 2003, donde Alonso logró su primera pole position y su primer podio."
     },
     {
         "question":"¿De qué año es esta imagen?",
@@ -542,7 +558,8 @@
             "2002"
         ],
         "themes":"2000,img",
-        "img":"alonso602.png"
+        "img":"alonso602.png",
+        "extra":"Imagen vintage del GP de Fórmula 3000 de Spa en el año 2000, donde Alonso ganó la carrera tras conseguir la pole position."
     },
     {
         "question":"¿De qué año es esta imagen?",
@@ -553,7 +570,8 @@
             "2006"
         ],
         "themes":"2004,img",
-        "img":"alonso606.png"
+        "img":"alonso606.png",
+        "extra":"Imagen del GP de Estados Unidos 2004 donde Alonso tuvo una increíble salida desde 9º a 3º."
     },
     {
         "question":"¿De qué año es esta imagen?",
@@ -564,7 +582,8 @@
             "2017"
         ],
         "themes":"2019,img",
-        "img":"alonso609.png"
+        "img":"alonso609.png",
+        "extra":"Las 24 Horas de Daytona de 2019 fueron una carrera con condiciones variables, y a pocas horas del final empezó a llover con fuerza de nuevo. Aquí vemos a Alonso deseando que termine la carrera ya que él y su equipo iban en primera posición."
     },
     {
         "question":"¿De qué año es esta imagen?",
@@ -575,7 +594,8 @@
             "2013"
         ],
         "themes":"2012,img",
-        "img":"alonso613.png"
+        "img":"alonso613.png",
+        "extra":"La pole position de Alonso en Silverstone 2012. Sus dos poles ese año se produjeron en condiciones de lluvia y siguen siendo sus últimas poles hasta la fecha."
     },
     {
         "question":"¿De qué Grand Prix es esta imagen?",
@@ -586,26 +606,28 @@
             "Europa 2002"
         ],
         "themes":"2001,img",
-        "img":"alonso608.png"
+        "img":"alonso608.png",
+        "extra":"Imagen de la clasificación del Gran Premio de Estados Unidos de 2001 en Indianápolis, donde Alonso clasificó por delante del BAR-Honda del campeón del mundo Jacques Villeneuve, pilotando un Minardi."
     },
     {
         "question":"¿De qué Grand Prix es esta imagen?",
         "answers":[
-            "2008 Australian GP",
-            "2007 Australian GP",
-            "2007 British GP",
-            "2008 British GP"
+            "Australia 2008",
+            "Australia 2007",
+            "Gran Bretaña 2007",
+            "Gran Bretaña 2008"
         ],
-        "themes":"2001,img",
-        "img":"alonso611.png"
+        "themes":"2008,img",
+        "img":"alonso611.png",
+        "extra":"Imagen del Gran Premio de Australia de 2008, en el que Alonso adelantó al piloto de McLaren Heikki Kovalainen durante la última vuelta."
     },
     {
         "question":"¿De qué Grand Prix es esta radio de equipo?",
         "answers":[
-            "2012 Spanish GP",
-            "2011 Canadian GP",
-            "2013 Singapore GP",
-            "2012 Australian GP"
+            "España 2012",
+            "Canadá 2011",
+            "Singapur 2013",
+            "Australia 2012"
         ],
         "themes":"2012,audio",
         "audio":"audio7.m4a"
@@ -651,7 +673,8 @@
             "2",
             "1"
         ],
-        "themes":"team"
+        "themes":"team",
+        "extra":"Primero en 2002 como piloto de pruebas, segundo en 2008 tras dejar McLaren y tercero al anunciar su regreso en 2020, antes de que se convirtiera en Alpine."
     },
     {
         "question":"¿Cuántas veces Alonso ha barrido completamente a un compañero de equipo en clasificación en F1?",
@@ -661,7 +684,8 @@
             "1",
             "0"
         ],
-        "themes":"general,warning"
+        "themes":"general,warning",
+        "extra":"Superó por completo a Nelson Piquet Jr, Stoffel Vandoorne y Lance Stroll en clasificación durante las temporadas 2008, 2018 y 2025, respectivamente."
     },
     {
         "question":"¿Qué compañeros de equipo tuvo Alonso en Minardi?",
@@ -711,6 +735,29 @@
             "Aston Martin",
             "McLaren"
         ],
-        "themes":"team"
+        "themes":"team",
+        "extra":"Alonso ganó su carrera debut con Ferrari durante el Gran Premio de Baréin de 2010."
+    },
+    {
+        "question":"¿En qué Gran Premio tiene Alonso la mayor cantidad de poles?",
+        "answers":[
+            "Gran Bretaña",
+            "Hungría",
+            "Mónaco",
+            "Alemania"
+        ],
+        "themes":"general,warning",
+        "extra":"Alonso suma un total de tres pole positions en el Gran Premio de Gran Bretaña: 2005, 2006 y 2012."
+    },
+    {
+        "question":"¿En qué Gran Premio tiene Alonso la mayor cantidad de podios?",
+        "answers":[
+            "Brasil",
+            "España",
+            "Malasia",
+            "Italia"
+        ],
+        "themes":"general,warning",
+        "extra":"Alonso tiene 9 podios en Brasil; el segundo es España con 7."
     }
 ]

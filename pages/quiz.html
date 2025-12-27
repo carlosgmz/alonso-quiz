@@ -18,7 +18,7 @@
         <div class="languages"></div>
     </header>
 
-    <main>
+    <main class="quiz">
         <section class="info">
             <div class="counter"><span id="questionCounter"></span> of <span id="totalQuestions"></span></div>
             <div class="seed">Seed: <span></span></div>
@@ -26,15 +26,26 @@
 
         <section class="question">
             <span></span>
-            <img src="" class="question_img question_hidden">
-            <audio controls src="" class="question_audio question_hidden"></audio>
+            <img src="" class="question_img hidden">
+            <audio controls src="" class="question_audio hidden"></audio>
         </section>
 
-        <section class="answers">
-            <div id="A" class="answer answer_hover"></div>
-            <div id="B" class="answer answer_hover"></div>
-            <div id="C" class="answer answer_hover"></div>
-            <div id="D" class="answer answer_hover"></div>
+        <section class="extra hidden">
+            <span></span>
+        </section>
+        
+        <section class="answer_container">
+            <div class="answer_control prev hidden"></div>
+            <div class="answers">
+                <div id="A" class="answer answer_hover"></div>
+                <div id="B" class="answer answer_hover"></div>
+                <div id="C" class="answer answer_hover"></div>
+                <div id="D" class="answer answer_hover"></div>
+            </div>
+            <div class="answer_control next hidden">
+                <img src="../assets/imgs/flecha_2.png" alt="next">
+                <span>Next</span>
+            </div>
         </section>
     </main>
 

@@ -4,15 +4,21 @@ const d = document,
  $questionAudio = d.querySelector(".question audio"),
  $questionCounter = d.querySelector("#questionCounter"),
  $totalQuestions = d.querySelector("#totalQuestions"),
+ $extra = d.querySelector(".extra"),
+ $extraSpan = d.querySelector(".extra span"),
  $answers = d.querySelectorAll(".answer"),
+ $next = d.querySelector(".next"),
+ $nextImg = d.querySelector(".next img"),
+ $prev = d.querySelector(".prev"),
+ $prevImg = d.querySelector(".prev img"),
  $main = d.querySelector("main"),
  $template = d.querySelector("#summary_template").content,
  $fragment = d.createDocumentFragment()
 
-const FAILURE = 10, //10
- PASS = 15, //15
- REMARKABLE = 20, //20
- OUTSTANDING = 25, //25
+const FAILURE = 20, //10
+ PASS = 34, //15
+ REMARKABLE = 50, //20
+ OUTSTANDING = 60, //25
  TOTAL_QUESTIONS = 68 //30
 
 let json, cont = 0, numGuessed = 0, questionPointer = 0, correctAnswer
@@ -22,10 +28,10 @@ async function fetchJson(language) {
     return await res.json()
 }
 
-async function delay() {
+async function delay(miliseconds) {
     return new Promise((resolve)=>setTimeout(()=>{
         resolve()
-    }, 3000))
+    }, miliseconds))
 }
 
 async function init() {
@@ -43,16 +49,16 @@ async function renderQuestion() {
     $questionSpan.textContent = json[questionPointer].question
     if(typeof json[questionPointer].img !== "undefined") {
         $questionImg.src = `../assets/imgs/quiz/${json[questionPointer].img}`
-        $questionImg.classList.remove("question_hidden")
-    } else if(!$questionImg.classList.contains("question_hidden")) {
-        $questionImg.classList.add("question_hidden")
+        $questionImg.classList.remove("hidden")
+    } else if(!$questionImg.classList.contains("hidden")) {
+        $questionImg.classList.add("hidden")
         $questionImg.src = ""
     }
     if(typeof json[questionPointer].audio !== "undefined") {
         $questionAudio.src = `../assets/audio/${json[questionPointer].audio}`
-        $questionAudio.classList.remove("question_hidden")
-    } else if(!$questionAudio.classList.contains("question_hidden")) {
-        $questionAudio.classList.add("question_hidden")
+        $questionAudio.classList.remove("hidden")
+    } else if(!$questionAudio.classList.contains("hidden")) {
+        $questionAudio.classList.add("hidden")
         $questionAudio.src = ""
     }
     //creates a copy of the question's answers
@@ -177,34 +183,63 @@ async function answerListener() {
     localStorage.setItem(`answer${cont+1}`,json[questionPointer].answers[0])
     localStorage.setItem(`selectedAnswer${cont+1}`,this.textContent)
 
+    //if answer is correct
     if(this.textContent == json[questionPointer].answers[0]) {
         numGuessed++
         this.classList.add("true")
-        await delay()
-        this.classList.remove("true")
     } else {
         this.classList.add("false")
         d.querySelector(`#${correctAnswer}`).classList.add("true")
-        await delay()
-        this.classList.remove("false")
-        d.querySelector(`#${correctAnswer}`).classList.remove("true")
+    }
+    //shows up extra info if required
+    if(typeof json[questionPointer].extra !== "undefined") {
+        $extraSpan.textContent = `ⓘ ${json[questionPointer].extra}`
+        $extra.classList.remove("hidden")
     }
     //removes question from array to prevent repeats
     json.splice(questionPointer,1)
     cont++
-    if(cont==TOTAL_QUESTIONS) {
-        await renderResult()
-        return
-    }
-    await renderQuestion()
-    $answers.forEach(el=>{
-        el.addEventListener("click",answerListener)
-        el.classList.add("answer_hover")
-    })
+    $next.classList.remove("hidden")
+    $prev.classList.remove("hidden")
 }
 
 init()
 
 $answers.forEach(el=>{
     el.addEventListener("click",answerListener)
+})
+
+$next.addEventListener("mouseover",e=>{
+    $nextImg.src = "../assets/imgs/flecha_2_2.png"
+})
+$next.addEventListener("mouseout",e=>{
+    $nextImg.src = "../assets/imgs/flecha_2.png"
+})
+$next.addEventListener("click",async e=>{
+    if(cont==TOTAL_QUESTIONS) {
+        await renderResult()
+        return
+    }
+    $answers.forEach(el=>{
+        el.classList.remove("true")
+        el.classList.remove("false")
+    })
+    $next.classList.add("hidden")
+    $prev.classList.add("hidden")
+    $extra.classList.add("hidden")
+    $extraSpan.textContent = ""
+    await renderQuestion()
+    $answers.forEach(el=>{
+        el.addEventListener("click",answerListener)
+        el.classList.add("answer_hover")
+    })
+})
+$questionImg.addEventListener("click",async e=>{
+    if(e.target.classList.contains("zoomed-in")) {
+        await d.exitFullscreen()
+        e.target.classList.remove("zoomed-in")
+    } else {
+        await e.target.requestFullscreen()
+        e.target.classList.add("zoomed-in")
+    }
 })

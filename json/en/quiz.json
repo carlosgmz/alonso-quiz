@@ -7,7 +7,8 @@
             "19º",
             "22º"
         ],
-        "themes":"wdc,2001"
+        "themes":"wdc,2001",
+        "extra":"2001 was Alonso's first F1 season. At the hands of the very underpowered Minardi PS01 he delivered strong qualifying and race performances when the Minardi didn't break down."
     },
     {
         "question":"Which position did Alonso finish in the F1 2003 WDC?",
@@ -17,7 +18,8 @@
             "9º",
             "8º"
         ],
-        "themes":"wdc,2003"
+        "themes":"wdc,2003",
+        "extra":"After serving as a test driver for Renault in 2002, 2003 was Alonso's first season as a Renault race driver, where he became the youngest ever to secure pole position and win in F1 at the time."
     },
     {
         "question":"Which position did Alonso finish in the F1 2004 WDC?",
@@ -27,7 +29,8 @@
             "8º",
             "9º"
         ],
-        "themes":"wdc,2004"
+        "themes":"wdc,2004",
+        "extra":"2004 was a successful season for Renault drivers Alonso and Trulli (who left mid-year), though not quite close enough to the record-breaking Ferrari F2004 of Michael Schumacher."
     },
     {
         "question":"Which position did Alonso finish in the F1 2005 WDC?",
@@ -37,7 +40,8 @@
             "2º",
             "6º"
         ],
-        "themes":"wdc,2005"
+        "themes":"wdc,2005",
+        "extra":"McLaren and Renault took advantage of a regulatory change that penalised Ferrari, and fought for the title between their main drivers Räikkönen and Alonso; McLaren had a faster car but their reliability problems allowed Alonso to win his first F1 Championship."
     },
     {
         "question":"Which position did Alonso finish in the F1 2006 WDC?",
@@ -47,7 +51,8 @@
             "4º",
             "2º"
         ],
-        "themes":"wdc,2006"
+        "themes":"wdc,2006",
+        "extra":"An epic and hard-fought season against Michael Schumacher. The Renault R26 started the season with greater pace, but Ferrari then fought back. A good management of the initial points cushion and great performances by Alonso were enough to become double world champion."
     },
     {
         "question":"Which position did Alonso finish in the F1 2007 WDC?",
@@ -57,7 +62,8 @@
             "4º",
             "5º"
         ],
-        "themes":"wdc,2007"
+        "themes":"wdc,2007",
+        "extra":"Rivalry, drama, espionage... A complete thriller of a season, race by race, with McLaren drivers Lewis Hamilton and Fernando Alonso battling for the championship, just for Ferrari's Räikkönen to snatch it at the final race by a single point."
     },
     {
         "question":"Which position did Alonso finish in the F1 2008 WDC?",
@@ -67,7 +73,8 @@
             "7º",
             "9º"
         ],
-        "themes":"wdc,2008"
+        "themes":"wdc,2008",
+        "extra":"After leaving McLaren in difficult terms, Alonso returned to Renault for two seasons. The R28 struggled at the start of the season but updates increased its competitiveness and Fernando won in Japan and the controversial Singapore Grand Prix."
     },
     {
         "question":"Which position did Alonso finish in the F1 2010 WDC?",
@@ -75,9 +82,10 @@
             "2º",
             "3º",
             "5º",
-            "1º"
+            "4º"
         ],
-        "themes":"wdc,2010"
+        "themes":"wdc,2010",
+        "extra":"Alonso's first attempt at the world championship with Ferrari was in 2010. A highly competitive season in which four drivers were in contention going into the final race, but Fernando's chances vanished after a strategy error by Ferrari."
     },
     {
         "question":"Which position did Alonso finish in the F1 2012 WDC?",
@@ -87,7 +95,8 @@
             "5º",
             "4º"
         ],
-        "themes":"wdc,2012"
+        "themes":"wdc,2012",
+        "extra":"Possibly Alonso's best season in terms of performance in F1, managing to fight for the world championship with an F2012 that many believed should not even have been in contention; but it was not enough and Sebastian Vettel became a three-time world champion."
     },
     {
         "question":"Which position did Alonso finish in the F1 2013 WDC?",
@@ -97,7 +106,8 @@
             "7º",
             "3º"
         ],
-        "themes":"wdc,2013"
+        "themes":"wdc,2013",
+        "extra":"In the 2013 season, Ferrari started competitive and Alonso achieved great performances in China and Spain; even so, a tyre change that benefited Red Bull made it impossible to fight for the championship and allowed Vettel to dominate the rest of the year."
     },
     {
         "question":"Which position did Alonso finish in the F1 2014 WDC?",
@@ -107,7 +117,8 @@
             "11º",
             "8º"
         ],
-        "themes":"wdc,2014"
+        "themes":"wdc,2014",
+        "extra":"Alonso's final year with Ferrari was difficult. Under the new hybrid regulations, the Ferrari F14T suffered from serious shortcomings, although these did not prevent Alonso from achieving great results in China and Hungary. He left for McLaren-Honda next year."
     },
     {
         "question":"Which position did Alonso finish in the F1 2016 WDC?",
@@ -117,17 +128,19 @@
             "15º",
             "12º"
         ],
-        "themes":"wdc,2016"
+        "themes":"wdc,2016",
+        "extra":"After a very difficult initial season at McLaren-Honda, 2016 seemed to bring a slight improvement in competitiveness, although the drivers continued to suffer as Honda would once again encounter problems in 2017 following a change in engine architecture."
     },
     {
-        "question":"Which position did Alonso finish in the F1 2017 WDC?",
+        "question":"Which position did Alonso finish in the F1 2018 WDC?",
         "answers":[
-            "15º",
             "11º",
+            "15º",
             "18º",
             "13º"
         ],
-        "themes":"wdc,2017"
+        "themes":"wdc,2018",
+        "extra":"2018 was Fernando's last F1 season before his first retirement. He then went on to try his luck in other competitions such as the World Endurance Championship, the Indianapolis 500, Daytona and the Dakar Rally."
     },
     {
         "question":"Which position did Alonso finish in the F1 2021 WDC?",
@@ -137,17 +150,8 @@
             "9º",
             "8º"
         ],
-        "themes":"wdc,2021"
-    },
-    {
-        "question":"Which position did Alonso finish in the F1 2022 WDC?",
-        "answers":[
-            "9º",
-            "7º",
-            "10º",
-            "6º"
-        ],
-        "themes":"wdc,2022"
+        "themes":"wdc,2021",
+        "extra":"Returning to Formula One in 2021 with Alpine, after a period of adaptation he regained form in Baku and achieved good performances like the defensive action against Hamilton in Hungary and a podium in Qatar."
     },
     {
         "question":"Which position did Alonso finish in the F1 2023 WDC?",
@@ -157,7 +161,8 @@
             "2º",
             "6º"
         ],
-        "themes":"wdc,2023"
+        "themes":"wdc,2023",
+        "extra":"Alonso's first season with Aston Martin was marked by great initial success, achieving three consecutive podiums thanks to a well-balanced AMR23. Mid-season onwards results became scarce due to ineffective updates, though Zandvoort and Brazil were brilliant performances."
     },
     {
         "question":"Which position did Alonso finish in the F1 2025 WDC?",
@@ -167,7 +172,8 @@
             "13º",
             "12º"
         ],
-        "themes":"wdc,2025"
+        "themes":"wdc,2025",
+        "extra":"2025 was a season without great results, due to an AMR25 that lacked performance ahead of the major regulatory change in 2026. The most important moments were the signing of Adrian Newey in March and the 5th place finish in Hungary."
     },
     {
         "question":"How many wins does Alonso have in F1?",
@@ -227,7 +233,8 @@
             "2014",
             "2017"
         ],
-        "themes":"qualy,2012,warning"
+        "themes":"qualy,2012,warning",
+        "extra":"2012 Hockenheim GP was Alonso's last pole position to date, in extreme wet conditions."
     },
     {
         "question":"In what year did Alonso get his last win?",
@@ -237,7 +244,8 @@
             "2014",
             "2021"
         ],
-        "themes":"2013,warning"
+        "themes":"2013,warning",
+        "extra":"2013 Spanish GP was Alonso's last win to date, from 5th on the grid pulled off a brilliant start with outside overtakes on Räikkönen and Hamilton."
     },
     {
         "question":"In which circuit did Alonso get his last podium?",
@@ -247,7 +255,8 @@
             "Montreal",
             "Qatar"
         ],
-        "themes":"2023,warning"
+        "themes":"2023,warning",
+        "extra":"As of today, his last podium was achieved in the 2023 Brazil GP at Interlagos, after an epic fight with Red Bull's Sergio Pérez."
     },
     {
         "question":"Which Grand Prix is this image from?",
@@ -258,7 +267,8 @@
             "2017 Australian GP"
         ],
         "themes":"2015,img",
-        "img":"alonso526.jpg"
+        "img":"alonso526.jpg",
+        "extra":"The famous deckchair meme was started in this 2015 Brazil GP qualifying session after his McLaren-Honda pulled to a halt with engine issues."
     },
     {
         "question":"Which year is this image from?",
@@ -269,7 +279,8 @@
             "2004"
         ],
         "themes":"2005,img",
-        "img":"alonso498.jpg"
+        "img":"alonso498.jpg",
+        "extra":"Image from the 2005 Turkish GP, featuring Fisichella and Alonso."
     },
     {
         "question":"Which year is this image from?",
@@ -280,7 +291,8 @@
             "2010"
         ],
         "themes":"2008,img",
-        "img":"alonso483.jpg"
+        "img":"alonso483.jpg",
+        "extra":"Image from the year 2008 in Renault, featuring Alonso, Kubica and Webber respectively."
     },
     {
         "question":"Which year is this image from?",
@@ -291,7 +303,8 @@
             "2014"
         ],
         "themes":"2012,img",
-        "img":"alonso387.jpg"
+        "img":"alonso387.jpg",
+        "extra":"Valencia's 2012 podium featured three world champions for a total of 10 world championships between them. Andrea Stella, Alonso's engineer who climbed to the podium, had worked with all three of them."
     },
     {
         "question":"Which year is this image from?",
@@ -302,7 +315,8 @@
             "2020"
         ],
         "themes":"2017,img",
-        "img":"alonso167.png"
+        "img":"alonso167.png",
+        "extra":"Image from the 2017 Indianapolis 500. He led for 27 laps and was running seventh, close to eventual winner Takuma Sato, before his Honda engine gave up."
     },
     {
         "question":"Which year is this image from?",
@@ -313,7 +327,8 @@
             "2007"
         ],
         "themes":"2005,img",
-        "img":"alonso603.png"
+        "img":"alonso603.png",
+        "extra":"Image from the iconic outside overtake on Michael Schumacher on the 130R during the 2005 Japanese GP."
     },
     {
         "question":"Which year is this image from?",
@@ -324,7 +339,8 @@
             "2018"
         ],
         "themes":"2017,img",
-        "img":"alonso605.png"
+        "img":"alonso605.png",
+        "extra":"In the wet 2017 Singapore GP race start, Alonso went from 8th to a fantastic 3rd place thanks to taking an outside line but was hit by an out of control Red Bull. He is known to have punched a hole in his dressing room afterwards."
     },
     {
         "question":"Which year is this image from?",
@@ -335,7 +351,8 @@
             "2004"
         ],
         "themes":"2006,img",
-        "img":"alonso607.png"
+        "img":"alonso607.png",
+        "extra":"Image from the rainy 2006 Hungarian Grand Prix, where Alonso had a spectacular start to the race overtaking many drivers, including Ferrari's Felipe Massa and, in this photo, Michael Schumacher."
     },
     {
         "question":"Which year is this image from?",
@@ -346,7 +363,8 @@
             "2021"
         ],
         "themes":"2019,img",
-        "img":"alonso610.png"
+        "img":"alonso610.png",
+        "extra":"Image from 2019's 24 hours of Le Mans night stint, in this case Alonso encountering lots of GT traffic."
     },
     {
         "question":"Which year is this image from?",
@@ -357,7 +375,8 @@
             "2005"
         ],
         "themes":"2003,img",
-        "img":"alonso612.png"
+        "img":"alonso612.png",
+        "extra":"Image from Alonso's pole lap in the 2003 Hungarian GP."
     },
     {
         "question":"Which Grand Prix is this image from?",
@@ -368,7 +387,8 @@
             "2008 European GP"
         ],
         "themes":"2007,img",
-        "img":"alonso601.png"
+        "img":"alonso601.png",
+        "extra":"The 2007 European GP was a very eventful race with variable conditions and many DNFs. Alonso would eventually win after overtaking Ferrari's Felipe Massa."
     },
     {
         "question":"Which Grand Prix is this image from?",
@@ -379,7 +399,8 @@
             "2007 British GP"
         ],
         "themes":"2007,img",
-        "img":"alonso604.png"
+        "img":"alonso604.png",
+        "extra":"Iconic image from the 2007 Hungarian GP where Fernando Alonso blocked Lewis Hamilton in the pits during Q3 after Lewis failed to comply with team rules earlier in the weekend."
     },
     {
         "question":"Which Grand Prix is this image from?",
@@ -390,7 +411,8 @@
             "2024 Hungarian GP"
         ],
         "themes":"2023,img",
-        "img":"alonso616.jpg"
+        "img":"alonso616.jpg",
+        "extra":"Image from a 2023 Dutch GP filled with variable conditions and red flags. Alonso would claim 2nd place after Red Bull's Sergio Pérez made a mistake."
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -401,7 +423,8 @@
             "2016 Monaco GP"
         ],
         "themes":"2017,audio",
-        "audio":"audio1.m4a"
+        "audio":"audio1.m4a",
+        "extra":"Alonso forgo the 2017 Monaco GP for the Indianapolis 500 as both dates coincided. Jenson Button would take his place, this hilarious radio call happening before the race start."
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -445,7 +468,8 @@
             "2024 Saudi Arabia GP"
         ],
         "themes":"2023,audio",
-        "audio":"audio5.m4a"
+        "audio":"audio5.m4a",
+        "extra":"This team radio happened after reaching the podium during the 2023 Bahrain GP, where an Aston mechanic called Jim had just had his 60th birthday."
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -457,16 +481,6 @@
         ],
         "themes":"2013,audio",
         "audio":"audio6.ogg"
-    },
-    {
-        "question":"In which circuit did Alonso get his last pole position?",
-        "answers":[
-            "Hockenheim", 
-            "Nürburgring",
-            "Hungaroring",
-            "Monaco"
-        ],
-        "themes":"qualy,2012,warning"
     },
     {
         "question":"In which circuit did Alpine have “El Plan” on the rear wing?",
@@ -509,7 +523,8 @@
             "2011 Spanish GP"
         ],
         "themes":"2013,img",
-        "img":"alonso618.jpg"
+        "img":"alonso618.jpg",
+        "extra":"1571 was at that time Formula One's points record of any driver."
     },
     {
         "question":"Which year is this image from?",
@@ -531,7 +546,8 @@
             "2002"
         ],
         "themes":"2003,img",
-        "img":"alonso600.png"
+        "img":"alonso600.png",
+        "extra":"Image from the 2003 Malaysian GP where Alonso achieved his first pole position and podium."
     },
     {
         "question":"Which year is this image from?",
@@ -542,7 +558,8 @@
             "2002"
         ],
         "themes":"2000,img",
-        "img":"alonso602.png"
+        "img":"alonso602.png",
+        "extra":"Vintage image from the Formula 3000 Spa GP back in the year 2000 where Alonso won the race after achieving pole position."
     },
     {
         "question":"Which year is this image from?",
@@ -553,7 +570,8 @@
             "2006"
         ],
         "themes":"2004,img",
-        "img":"alonso606.png"
+        "img":"alonso606.png",
+        "extra":"Image from the 2004 United States GP where Alonso had an amazing start from 9th to 3rd."
     },
     {
         "question":"Which year is this image from?",
@@ -564,7 +582,8 @@
             "2017"
         ],
         "themes":"2019,img",
-        "img":"alonso609.png"
+        "img":"alonso609.png",
+        "extra":"The 2019 Daytona 24 Hours was a race with variable conditions, and with just a few hours to go the rain came down very hard. Here we see Alonso hoping for the race to end, as he and his team were in first place."
     },
     {
         "question":"Which year is this image from?",
@@ -574,8 +593,9 @@
             "2011",
             "2013"
         ],
-        "themes":"2012,img",
-        "img":"alonso613.png"
+        "themes":"2012,img,warning",
+        "img":"alonso613.png",
+        "extra":"Alonso's pole position at Silverstone 2012. His two poles that year came in wet conditions and remain his last ones to date."
     },
     {
         "question":"Which Grand Prix is this image from?",
@@ -586,7 +606,8 @@
             "2002 European GP"
         ],
         "themes":"2001,img",
-        "img":"alonso608.png"
+        "img":"alonso608.png",
+        "extra":"Image from the 2001 United States GP qualifying at Indianapolis, where Alonso outqualified world champion Jacques Villeneuve's BAR-Honda while driving a Minardi."
     },
     {
         "question":"Which Grand Prix is this image from?",
@@ -596,8 +617,9 @@
             "2007 British GP",
             "2008 British GP"
         ],
-        "themes":"2001,img",
-        "img":"alonso611.png"
+        "themes":"2008,img",
+        "img":"alonso611.png",
+        "extra":"Image from the 2008 Australian GP where Alonso overtook McLaren driver Heikki Kovalainen during the last lap."
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -651,7 +673,8 @@
             "2",
             "1"
         ],
-        "themes":"team"
+        "themes":"team",
+        "extra":"First in 2002 as test driver, second in 2008 after leaving McLaren and third announcing his comeback in 2020 before it became Alpine."
     },
     {
         "question":"Which teammates did Alonso have at Minardi?",
@@ -671,7 +694,8 @@
             "1",
             "0"
         ],
-        "themes":"general,warning"
+        "themes":"general,warning",
+        "extra":"He completely beat Nelson Piquet Jr, Stoffel Vandoorne and Lance Stroll in qualifying in the 2008, 2018 and 2025 seasons respectively."
     },
     {
         "question":"Which teammates did Alonso have at McLaren? (one-race replacements do not count)",
@@ -711,6 +735,29 @@
             "Aston Martin",
             "McLaren"
         ],
-        "themes":"team"
+        "themes":"team",
+        "extra":"Alonso won his debut race with Ferrari during the 2010 Bahrain GP."
+    },
+    {
+        "question":"In which Grand Prix does Alonso have the biggest amount of pole positions?",
+        "answers":[
+            "British GP",
+            "Hungarian GP",
+            "Monaco GP",
+            "German GP"
+        ],
+        "themes":"general,warning",
+        "extra":"Alonso holds a total of 3 pole positions at the British GP: 2005, 2006 and 2012."
+    },
+    {
+        "question":"In which Grand Prix does Alonso have the biggest amount of podiums?",
+        "answers":[
+            "Brazil GP",
+            "Spanish GP",
+            "Malaysian GP",
+            "Italian GP"
+        ],
+        "themes":"general,warning",
+        "extra":"Alonso holds 9 podiums in Brazil, with the second most being Spain with 7."
     }
 ]
