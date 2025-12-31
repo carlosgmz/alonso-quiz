@@ -1,6 +1,8 @@
 const doc = document,
  $languages = doc.querySelectorAll(".languages div"),
  acceptedLanguage = ["en","es"]
+ //$darkmode = doc.querySelector(".darkmode-div button"),
+ //acceptedTheme = ["light","dark"]
 
 async function fetchLocale(language) {
     let res = await fetch(`../_locales/${language}/messages.json`)
@@ -19,19 +21,19 @@ async function readLanguage() {
     }
 
 }
-
-async function clickLanguage() {
-    if(this.id == "en") {
-        if(localStorage.getItem("language") == "en") {return}
-        localStorage.setItem("language","en")
-        await applyLanguage("en",doc)
-    } else if(this.id == "es") {
-        if(localStorage.getItem("language") == "es") {return}
-        localStorage.setItem("language","es")
-        await applyLanguage("es",doc)
+/*
+function readTheme() {
+    let theme = localStorage.getItem("theme")
+    if(theme == null || theme === "undefined" || !acceptedTheme.includes(theme)) {
+        localStorage.setItem("theme","light")
+        return "light"
+    } else if(theme == "light") {
+        return "light"
+    } else if(theme == "dark") {
+        return "dark"
     }
 }
-
+*/
 export async function applyLanguage(language,html) {
     let locale = await fetchLocale(language)
     html.querySelectorAll("[data-i18n]").forEach(el=>{
@@ -39,11 +41,38 @@ export async function applyLanguage(language,html) {
         el.textContent = locale[name]
     })
 }
+/*
+function applyTheme() {
 
+}
+*/
 (async () => {
     await applyLanguage(await readLanguage(),doc)
 })()
 
+//readTheme()
+
 $languages.forEach(async el=>{
-    el.addEventListener("click",clickLanguage)
+    el.addEventListener("click",async e=>{
+        if(e.target.id == "en") {
+            if(localStorage.getItem("language") == "en") {return}
+            localStorage.setItem("language","en")
+            await applyLanguage("en",doc)
+        } else if(e.target.id == "es") {
+            if(localStorage.getItem("language") == "es") {return}
+            localStorage.setItem("language","es")
+            await applyLanguage("es",doc)
+        }
+    })
 })
+/*
+$darkmode.addEventListener("click",async e=>{
+    if(localStorage.getItem("theme") == "light") {
+        localStorage.setItem("theme","dark")
+        applyTheme("dark")
+    } else if(localStorage.getItem("theme") == "dark") {
+        localStorage.setItem("theme","light")
+        applyTheme("light")
+    }
+})
+*/

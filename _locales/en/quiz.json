@@ -226,7 +226,7 @@
         "themes":"general,warning"
     },
     {
-        "question":"In what year did Alonso get his last pole position?",
+        "question":"In what year did Alonso get his last F1 pole position?",
         "answers":[
             "2012",
             "2023",
@@ -237,7 +237,7 @@
         "extra":"2012 Hockenheim GP was Alonso's last pole position to date, in extreme wet conditions."
     },
     {
-        "question":"In what year did Alonso get his last win?",
+        "question":"In what year did Alonso get his last F1 win?",
         "answers":[
             "2013",
             "2023",
@@ -248,7 +248,7 @@
         "extra":"2013 Spanish GP was Alonso's last win to date, from 5th on the grid pulled off a brilliant start with outside overtakes on Räikkönen and Hamilton."
     },
     {
-        "question":"In which circuit did Alonso get his last podium?",
+        "question":"In which circuit did Alonso get his last podium in F1?",
         "answers":[
             "Interlagos",
             "Bahrain",
@@ -435,7 +435,8 @@
             "2010 Singapore GP"
         ],
         "themes":"2010,audio",
-        "audio":"audio2.m4a"
+        "audio":"audio2.m4a",
+        "extra":"The 2010 Korean Grand Prix was a long race with extreme and highly changeable conditions, which Alonso won after Vettel retired with engine trouble. It lasted so long that visibility was poor towards the end."
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -446,7 +447,8 @@
             "2013 Chinese GP"
         ],
         "themes":"2012,audio",
-        "audio":"audio3.m4a"
+        "audio":"audio3.m4a",
+        "extra":"Radio from the iconic 2012 race in Valencia, where Alonso won after starting 11th with numerous overtakes, great action on the track, and good strategy and pit stops from Ferrari."
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -457,7 +459,8 @@
             "2005 Brazilian GP"
         ],
         "themes":"2005,audio",
-        "audio":"audio4.m4a"
+        "audio":"audio4.m4a",
+        "extra":"'We are the Champions' is from China 2005 and not Brazil; although the drivers' championship was won in Brazil, China hosted the last race of the year and Renault and McLaren were still battling it out for the constructors' title."
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -480,7 +483,8 @@
             "2012 German GP"
         ],
         "themes":"2013,audio",
-        "audio":"audio6.ogg"
+        "audio":"audio6.ogg",
+        "extra":"The first of two victories that year, Alonso won in China with a strong race pace after starting third."
     },
     {
         "question":"In which circuit did Alpine have “El Plan” on the rear wing?",
@@ -630,7 +634,8 @@
             "2012 Australian GP"
         ],
         "themes":"2012,audio",
-        "audio":"audio7.m4a"
+        "audio":"audio7.m4a",
+        "extra":"Alonso can be heard discussing race strategy with his engineer Andrea Stella at the 2012 Spanish Grand Prix, where he battled against Maldonado's Williams."
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -641,7 +646,8 @@
             "2016 Russian GP"
         ],
         "themes":"2017,audio",
-        "audio":"audio8.m4a"
+        "audio":"audio8.m4a",
+        "extra":"Radio from the 2017 Abu Dhabi Grand Prix, which would be the last with a Honda engine in McLaren, though not the last in F1."
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -652,7 +658,8 @@
             "2018 Monaco GP"
         ],
         "themes":"2015,audio",
-        "audio":"audio9.m4a"
+        "audio":"audio9.m4a",
+        "extra":"One of the many amusing radio moments for spectators during the McLaren-Honda era, trying to see things with a sense of humour.s"
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -663,7 +670,8 @@
             "2006 Brazil GP"
         ],
         "themes":"2006,audio",
-        "audio":"audio10.ogg"
+        "audio":"audio10.ogg",
+        "extra":"It was Alonso's first victory in his home country in F1, so as Alonso rightly says, 'this one was the one to win'."
     },
     {
         "question":"How many times has Alonso joined Renault in F1?",
@@ -728,7 +736,7 @@
         "themes":"social,warning"
     },
     {
-        "question":"With which team did Alonso win his debut race?",
+        "question":"With which F1 team did Alonso win his debut race?",
         "answers":[
             "Ferrari",
             "Renault",
@@ -739,7 +747,7 @@
         "extra":"Alonso won his debut race with Ferrari during the 2010 Bahrain GP."
     },
     {
-        "question":"In which Grand Prix does Alonso have the biggest amount of pole positions?",
+        "question":"In which F1 Grand Prix does Alonso have the biggest amount of pole positions?",
         "answers":[
             "British GP",
             "Hungarian GP",
@@ -759,5 +767,26 @@
         ],
         "themes":"general,warning",
         "extra":"Alonso holds 9 podiums in Brazil, with the second most being Spain with 7."
+    },
+    {
+        "question":"Where did Alonso's 50th F1 podium happen?",
+        "answers":[
+            "2008 Singapore GP",
+            "2006 Japanese GP",
+            "2007 Chinese GP",
+            "2010 Canadian GP"
+        ],
+        "themes":"2008,general",
+        "extra":"The 50th podium coincided with the famous (or infamous) 2008 Singapore Grand Prix, where Renault won by deliberately crashing Nelson Piquet Jr to take advantage of the safety car."
+    },
+    {
+        "question":"Where did Alonso's 100th F1 podium happen?",
+        "answers":[
+            "2023 Saudi Arabia GP",
+            "2021 Qatar GP",
+            "2014 Hungarian GP",
+            "2023 Miami GP"
+        ],
+        "themes":"2023,general"
     }
 ]

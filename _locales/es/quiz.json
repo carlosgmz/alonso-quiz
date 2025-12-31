@@ -226,7 +226,7 @@
         "themes":"general,warning"
     },
     {
-        "question":"¿En qué año consiguió Alonso su última pole?",
+        "question":"¿En qué año consiguió Alonso su última pole en F1?",
         "answers":[
             "2012",
             "2023",
@@ -237,7 +237,7 @@
         "extra":"En el GP de Hockenheim de 2012 fue la última pole position de Alonso hasta la fecha, en condiciones de lluvia extrema."
     },
     {
-        "question":"¿En qué año consiguió Alonso su última victoria?",
+        "question":"¿En qué año consiguió Alonso su última victoria en F1?",
         "answers":[
             "2013",
             "2023",
@@ -248,7 +248,7 @@
         "extra":"El GP de España de 2013 fue la última victoria de Alonso hasta la fecha. Partiendo desde la quinta posición de la parrilla, realizó una brillante salida y adelantó por el exterior a Räikkönen y Hamilton."
     },
     {
-        "question":"¿En qué circuito consiguió Alonso su último podio?",
+        "question":"¿En qué circuito consiguió Alonso su último podio en F1?",
         "answers":[
             "Interlagos",
             "Baréin",
@@ -435,7 +435,8 @@
             "Singapur 2010"
         ],
         "themes":"2010,audio",
-        "audio":"audio2.m4a"
+        "audio":"audio2.m4a",
+        "extra":"El Gran Premio de Corea de 2010 fue una carrera larga con condiciones extremas y muy cambiantes, que ganó Alonso después de que Vettel se retirara por problemas en el motor. Duró tanto que la visibilidad era pobre hacia el final."
     },
     {
         "question":"¿De qué Grand Prix es esta radio de equipo?",
@@ -446,7 +447,8 @@
             "China 2013"
         ],
         "themes":"2012,audio",
-        "audio":"audio3.m4a"
+        "audio":"audio3.m4a",
+        "extra":"Radio de la icónica carrera de Valencia en 2012 donde Alonso ganó después de salir 11º con muchos adelantamientos, grandes acciones en la pista y buena estrategia y paradas de Ferrari."
     },
     {
         "question":"¿De qué Grand Prix es esta radio de equipo?",
@@ -457,7 +459,8 @@
             "Brasil 2005"
         ],
         "themes":"2005,audio",
-        "audio":"audio4.m4a"
+        "audio":"audio4.m4a",
+        "extra":"'We are the Champions' es de China 2005 y no Brasil; aunque el mundial de pilotos se ganó en Brasil, China la última carrera del año y Renault y McLaren todavía peleaban por el título de constructores."
     },
     {
         "question":"¿De qué Grand Prix es esta radio de equipo?",
@@ -472,7 +475,7 @@
         "extra":"Esta comunicación por radio de equipo tuvo lugar tras subir al podio durante el Gran Premio de Baréin de 2023, donde un mecánico de Aston llamado Jim acababa de cumplir 60 años."
     },
     {
-        "question":"Which Grand Prix is this team radio from?",
+        "question":"¿De qué Grand Prix es esta radio de equipo?",
         "answers":[
             "China 2013",
             "Monza 2010",
@@ -480,7 +483,8 @@
             "Alemania 2012"
         ],
         "themes":"2013,audio",
-        "audio":"audio6.ogg"
+        "audio":"audio6.ogg",
+        "extra":"La primera de las dos victorias de ese año, Alonso ganó en China con un buen ritmo de carrera tras salir tercero."
     },
     {
         "question":"¿En qué circuito añadió Alpine “El Plan” al ala trasera?",
@@ -630,7 +634,8 @@
             "Australia 2012"
         ],
         "themes":"2012,audio",
-        "audio":"audio7.m4a"
+        "audio":"audio7.m4a",
+        "extra":"Se puede escuchar a Alonso discutiendo la estrategia de carrera con su ingeniero Andrea Stella en el Gran Premio de España de 2012, donde compitió contra el Williams de Maldonado."
     },
     {
         "question":"¿De qué Grand Prix es esta radio de equipo?",
@@ -641,7 +646,8 @@
             "Rusia 2016"
         ],
         "themes":"2017,audio",
-        "audio":"audio8.m4a"
+        "audio":"audio8.m4a",
+        "extra":"Radio del GP de Abu Dhabi de 2017, que sería el último con un motor Honda en McLaren, aunque no en la F1."
     },
     {
         "question":"¿De qué Grand Prix es esta radio de equipo?",
@@ -652,7 +658,8 @@
             "Mónaco 2018"
         ],
         "themes":"2015,audio",
-        "audio":"audio9.m4a"
+        "audio":"audio9.m4a",
+        "extra":"Una de las muchas radios graciosas para los espectadores que tuvo en la era McLaren-Honda, intentando ver las cosas con algo de humor."
     },
     {
         "question":"¿De qué Grand Prix es esta radio de equipo?",
@@ -663,7 +670,8 @@
             "Brasil 2006"
         ],
         "themes":"2006,audio",
-        "audio":"audio10.ogg"
+        "audio":"audio10.ogg",
+        "extra":"Fue la primera victoria de Alonso en el GP de España en la F1, así que como bien dice Alonso, 'this one was the one to win'."
     },
     {
         "question":"¿Cuántas veces Alonso ha fichado por Renault en la F1?",
@@ -728,7 +736,7 @@
         "themes":"social"
     },
     {
-        "question":"¿Con qué equipo ganó Alonso su carrera debut?",
+        "question":"¿Con qué equipo de F1 ganó Alonso su carrera debut?",
         "answers":[
             "Ferrari",
             "Renault",
@@ -739,7 +747,7 @@
         "extra":"Alonso ganó su carrera debut con Ferrari durante el Gran Premio de Baréin de 2010."
     },
     {
-        "question":"¿En qué Gran Premio tiene Alonso la mayor cantidad de poles?",
+        "question":"¿En qué Gran Premio de F1 tiene Alonso la mayor cantidad de poles?",
         "answers":[
             "Gran Bretaña",
             "Hungría",
@@ -759,5 +767,26 @@
         ],
         "themes":"general,warning",
         "extra":"Alonso tiene 9 podios en Brasil; el segundo es España con 7."
+    },
+    {
+        "question":"¿Dónde ocurrió el podio número 50 de Alonso en F1?",
+        "answers":[
+            "Singapur 2008",
+            "Japón 2006",
+            "China 2007",
+            "Canadá 2010"
+        ],
+        "themes":"2008,general",
+        "extra":"El podio número 50 coincidió con el conocido Gran Premio de Singapur de 2008, donde Renault ganó al provocar un accidente de Nelson Piquet Jr. aprovechando el coche de seguridad."
+    },
+    {
+        "question":"¿Dónde ocurrió el podio número 100 de Alonso en F1?",
+        "answers":[
+            "Arabia Saudí 2023",
+            "Qatar 2021",
+            "Hungría 2014",
+            "Miami 2023"
+        ],
+        "themes":"2023,general"
     }
 ]
