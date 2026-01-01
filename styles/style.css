@@ -103,10 +103,10 @@ footer div {
 /* Quiz */
 
 .quiz {
-    margin: 3em 22.5% 5em 22.5%;
+    margin: 3em 22.5% 3em 22.5%;
 }
 
-.info {
+.quiz-info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.3em;
@@ -160,6 +160,7 @@ footer div {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    column-gap: 0.3em;
 }
 .answer_control {
     width: 12.5%;
@@ -180,10 +181,10 @@ footer div {
     font-style: italic;
 }
 .answers {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4em;
+    width: 73.9%;
 }
 .answer {
     display: flex;
@@ -191,13 +192,14 @@ footer div {
     align-items: center;
     font-size: 1.3em;
     background-color: rgb(170, 170, 170);
-    width: 49%;
     height: 5em;
-    margin: 0.5%;
 }
 .answer_hover:hover {
     background-color: rgb(185, 185, 185);
     cursor: pointer;
+}
+.answer span {
+    padding: 0.3em;
 }
 
 .true {
@@ -240,15 +242,24 @@ footer div {
 .summary {
 
 }
+.summary-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.2em;
+    font-size: 1.3em;
+}
 .summary_result {
     border: 2px solid gray;
-    background-color: rgb(214, 233, 233);
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .summary_item {
     border: 1px dotted gray;
-    padding: 0.3em 0.5em 0.8em 0.5em;
+    background-color: rgb(225, 245, 245);
+    padding: 0em 0.3em 0.5em 0.3em;
+}
+.summary_item:hover {
+    background-color: rgb(210, 230, 230);
 }
 .summary_item span {
     font-size: 0.75em;
@@ -260,6 +271,7 @@ footer div {
 .summary_answer {
     text-align: center;
     font-size: 0.95em;
+    margin-top: 0.2em;
 }
 
 .share {
@@ -271,16 +283,35 @@ footer div {
     display: inline-flex;
     column-gap: 1em;
 }
+.socials a {
+    height: 30px;
+}
 .socials a img {
     height: 30px;
     width: 30px;
+    cursor: pointer;
+}
+.link-btn {
+    position: relative;
+}
+.link-btn img {
+    width: 30px;
+}
+.link-btn-popup {
+    position: absolute;
+    height: 30px;
+    right: 5%;
+}
+.link-btn-popup span {
+    display: inline-block;
+    height: 30px;
 }
 
 .return {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1em 0 5em 0;
+    margin: 1em 0 3em 0;
 }
 .return button {
     padding: 1em 2em;

@@ -4,7 +4,7 @@ const doc = document,
  //$darkmode = doc.querySelector(".darkmode-div button"),
  //acceptedTheme = ["light","dark"]
 
-async function fetchLocale(language) {
+export async function fetchLocale(language) {
     let res = await fetch(`../_locales/${language}/messages.json`)
     return await res.json()
 }

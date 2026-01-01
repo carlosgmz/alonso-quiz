@@ -2,9 +2,9 @@
     "p1":"Welcome to Alonso Quiz!",
     "p2":"Aimed at fans of Fernando Alonso and Formula One in general, this is a test where you will be faced with text, images and even team radio-based questions, and you will have to identify the correct answer from among four options.",
     "p3":"Ready? Then click the button to begin!",
-    "button-start":"Start quiz",
+    "button_start":"Start quiz",
 
-    "question-counter":" of ",
+    "question_counter":" of ",
     "arrow-next":"Next",
     
     "failure":"Simply awful.",
@@ -13,10 +13,14 @@
     "outstanding":"A real diehard Alonsista",
     "max":"The craziest Alonso fan ever",
     "cheat":"You didn't cheat, did you?",
-    "correct-questions":" correct out of ",
-    "button-return":"Return to index",
+    "correct_questions":" correct out of ",
+    "share_msg1":"I've guessed ",
+    "share_msg2":" of the questions on Fernando Alonso!",
+    "summary":"Summary:",
+    "link-btn-popup":"Link copied!",
+    "button_return":"Return to index",
 
-    "footer-a1":"Github >",
-    "footer-a2":"Data Policy ^",
-    "footer-a3":"Buy me a Coffee >"
+    "footer_a1":"Github >",
+    "footer_a2":"Data Policy ^",
+    "footer_a3":"Buy me a Coffee >"
 }

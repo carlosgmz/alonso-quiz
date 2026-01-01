@@ -1,4 +1,4 @@
-import {applyLanguage} from "./main.js"
+import {applyLanguage, fetchLocale} from "./main.js"
 
 const d = document,
  $questionSpan = d.querySelector(".question span"),
@@ -21,7 +21,7 @@ const FAILURE = 20, //10
  PASS = 34, //15
  REMARKABLE = 50, //20
  OUTSTANDING = 60, //25
- TOTAL_QUESTIONS = 2 //30
+ TOTAL_QUESTIONS = 70 //30
 
 let json, cont = 0, numGuessed = 0, questionPointer = 0, correctAnswer
 
@@ -65,7 +65,7 @@ async function renderQuestion() {
         //checks if it selected the correct answer for later
         if(answersCopy[answerPointer] == json[questionPointer].answers[0]) {correctAnswer = el.id}
         //adds answer text to div textcontent
-        el.textContent = answersCopy[answerPointer]
+        el.lastChild.textContent = answersCopy[answerPointer]
         answersCopy.splice(answerPointer,1)
     })
 }
@@ -79,7 +79,7 @@ async function renderResult() {
     const $span1 = d.createElement("span")
     $span1.textContent = numGuessed
     const $span2 = d.createElement("span")
-    $span2.setAttribute("data-i18n","correct-questions")
+    $span2.setAttribute("data-i18n","correct_questions")
     const $span3 = d.createElement("span")
     $span3.textContent = TOTAL_QUESTIONS
     const $span4 = d.createElement("span")
@@ -87,24 +87,29 @@ async function renderResult() {
     $resultQuestions.append($span1,$span2,$span3,$span4)
     const $resultMsg = d.createElement("div")
     $resultMsg.classList.add("resultMsg")
+    const $span5 = d.createElement("span")
     if(numGuessed < FAILURE) {
-        $resultMsg.setAttribute("data-i18n","failure")
+        $span5.setAttribute("data-i18n","failure")
     } else if(numGuessed < PASS) {
-        $resultMsg.setAttribute("data-i18n","pass")
+        $span5.setAttribute("data-i18n","pass")
     } else if(numGuessed < REMARKABLE) {
-        $resultMsg.setAttribute("data-i18n","remarkable")
+        $span5.setAttribute("data-i18n","remarkable")
     } else if(numGuessed < OUTSTANDING) {
-        $resultMsg.setAttribute("data-i18n","outstanding")
+        $span5.setAttribute("data-i18n","outstanding")
     } else if(numGuessed < TOTAL_QUESTIONS) {
-        $resultMsg.setAttribute("data-i18n","max")
-    } else $resultMsg.setAttribute("data-i18n","cheat")
+        $span5.setAttribute("data-i18n","max")
+    } else $span5.setAttribute("data-i18n","cheat")
+    $resultMsg.appendChild($span5)
     $stats.append($resultQuestions,$resultMsg)
 
     //summary section
     const $summary = d.createElement("section")
     $summary.classList.add("summary")
     const $info = d.createElement("div")
-    $info.classList.add("info")
+    $info.classList.add("summary-info")
+    const $span6 = d.createElement("span")
+    $span6.setAttribute("data-i18n","summary")
+    $info.appendChild($span6)
     const $summary_result = d.createElement("div")
     $summary_result.classList.add("summary_result")
     for(let i = 1; i <= TOTAL_QUESTIONS; i++) {
@@ -127,36 +132,48 @@ async function renderResult() {
     $share.classList.add("share")
     const $socials = d.createElement("div")
     $socials.classList.add("socials")
+    let $div = d.createElement("div")
     let $a = d.createElement("a")
     $a.target = "_blank"
     let $img = d.createElement("img")
     $a.appendChild($img)
+    $div.appendChild($a)
+    const url = "http://localhost:5500/pages/index.html"
+    const urlEncoded = encodeURIComponent(url)
+    let localejson = await fetchLocale(localStorage.getItem("language"))
+    const msg = encodeURIComponent(localejson.share_msg1 + `${(numGuessed/TOTAL_QUESTIONS*100).toFixed(0)}%` + localejson.share_msg2)
+     //copy link button
+     const $link = d.createElement("div")
+     $link.classList.add("link-btn")
+     $img = d.createElement("img")
+     $img.src = "../assets/imgs/link-svgrepo-com.svg"
+     $img.alt = "copy link"
+     $link.appendChild($img)
      //twitter-X share button
-     const $twitter = $a.cloneNode(true)
-     $twitter.href = ""
+     const $twitter = $div.cloneNode(true)
+     $twitter.querySelector("a").href = `https://twitter.com/intent/tweet?url=${urlEncoded}&text=${msg}`
+     $twitter.classList.add("twitter-btn")
      $twitter.querySelector("img").src = "../assets/imgs/twitter-x.svg"
      $twitter.querySelector("img").alt = "twitter"
-     //instagram share button
-     const $instagram = $a.cloneNode(true)
-     $instagram.href = ""
-     $instagram.querySelector("img").src = "../assets/imgs/instagram.svg"
-     $instagram.querySelector("img").alt = "instagram"
+     //whatsapp share button
+     const $whatsapp = $div.cloneNode(true)
+     $whatsapp.querySelector("a").href = `https://api.whatsapp.com/send?text=${msg} ${urlEncoded}`
+     $whatsapp.classList.add("whatsapp-btn")
+     $whatsapp.querySelector("img").src = "../assets/imgs/whatsapp.svg"
+     $whatsapp.querySelector("img").alt = "whatsapp"
      //threads share button
-     const $threads = $a.cloneNode(true)
-     $threads.href = ""
+     const $threads = $div.cloneNode(true)
+     $threads.querySelector("a").href = `https://www.threads.net/intent/post?text=${msg}&url=${urlEncoded}`
+     $threads.classList.add("threads-btn")
      $threads.querySelector("img").src = "../assets/imgs/threads.svg"
      $threads.querySelector("img").alt = "threads"
      //facebook share button
-     const $facebook = $a.cloneNode(true)
-     $facebook.href = ""
+     const $facebook = $div.cloneNode(true)
+     $facebook.querySelector("a").href = `https://www.facebook.com/sharer.php?u=${urlEncoded}`
+     $facebook.classList.add("facebook-btn")
      $facebook.querySelector("img").src = "../assets/imgs/facebook.svg"
      $facebook.querySelector("img").alt = "facebook"
-     //discord share button
-     const $discord = $a.cloneNode(true)
-     $discord.href = ""
-     $discord.querySelector("img").src = "../assets/imgs/discord.svg"
-     $discord.querySelector("img").alt = "discord"
-    $socials.append($twitter,$instagram,$threads,$facebook,$discord)
+    $socials.append($link,$twitter,$whatsapp,$threads,$facebook)
     $share.appendChild($socials)
 
     //return section
@@ -165,13 +182,14 @@ async function renderResult() {
     $a = d.createElement("a")
     $a.href = "http://localhost:5500/pages/index.html"
     let $button = d.createElement("button")
-    $button.setAttribute("data-i18n","button-return")
+    $button.setAttribute("data-i18n","button_return")
     $a.appendChild($button)
     $return.appendChild($a)
     
-    //locales
-    applyLanguage(localStorage.getItem("language"),$stats)
-    applyLanguage(localStorage.getItem("language"),$return)
+    await applyLanguage(localStorage.getItem("language"),$stats)
+    await applyLanguage(localStorage.getItem("language"),$summary)
+    await applyLanguage(localStorage.getItem("language"),$share)
+    await applyLanguage(localStorage.getItem("language"),$return)
 
     //previous quiz sections are replaced with result sections
     $main.replaceChildren($stats,$summary,$share,$return)
@@ -185,10 +203,10 @@ async function answerListener() {
 
     localStorage.setItem(`question${cont+1}`,json[questionPointer].question)
     localStorage.setItem(`answer${cont+1}`,json[questionPointer].answers[0])
-    localStorage.setItem(`selectedAnswer${cont+1}`,this.textContent)
+    localStorage.setItem(`selectedAnswer${cont+1}`,this.lastChild.textContent)
 
     //if answer is correct
-    if(this.textContent == json[questionPointer].answers[0]) {
+    if(this.lastChild.textContent == json[questionPointer].answers[0]) {
         numGuessed++
         this.classList.add("true")
     } else {

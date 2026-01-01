@@ -2,10 +2,10 @@
     "p1":"¡Bienvenido a Alonso Quiz!",
     "p2":"Esto es un test dirigido a fans de Fernando Alonso y de la Fórmula Uno en general donde te enfrentarás a preguntas textuales, imágenes y hasta radios de equipo y tendrás que identificar la respuesta correcta entre 4.",
     "p3":"¿Listo? Haz click en el botón para empezar",
-    "button-start":"Empezar test",
+    "button_start":"Empezar test",
 
-    "question-counter":" de ",
-    "arrow-next":"Sigue",
+    "question_counter":" de ",
+    "arrow_next":"Sigue",
 
     "failure":"Simplemente terrible.",
     "pass":"Fan de Fórmula Uno casual",
@@ -13,10 +13,14 @@
     "outstanding":"Un verdadero Alonsista acérrimo",
     "max":"El fan de Alonso más loco que existe",
     "cheat":"¿Seguro que no has hecho trampas?",
-    "correct-questions":" acertadas de ",
-    "button-return":"Volver al inicio",
+    "correct_questions":" acertadas de ",
+    "share_msg1":"¡He acertado un ",
+    "share_msg2":" de las preguntas sobre Fernando Alonso!",
+    "summary":"Resumen:",
+    "link-btn-popup":"¡Enlace copiado!",
+    "button_return":"Volver al inicio",
 
-    "footer-a1":"Github >",
-    "footer-a2":"Política datos ^",
-    "footer-a3":"Donar un café >"
+    "footer_a1":"Github >",
+    "footer_a2":"Política datos ^",
+    "footer_a3":"Donar un café >"
 }
