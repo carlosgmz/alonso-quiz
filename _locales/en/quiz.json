@@ -788,5 +788,17 @@
             "2023 Miami GP"
         ],
         "themes":"2023,general"
+    },
+    {
+        "question":"Which Grand Prix is this image from?",
+        "answers":[
+            "2023 Canadian GP",
+            "2023 Bahrain GP",
+            "2023 Miami GP",
+            "2023 Australian GP"
+        ],
+        "themes":"2023,img",
+        "img":"alonso633.png",
+        "extra":"Image from the 2023 Canadian Grand Prix, where Alonso qualified and finished second behind Max Verstappen and ahead of Lewis Hamilton. They hold 12 Championships between them - 26 if we count Adrian Newey's."
     }
 ]

@@ -3,6 +3,7 @@ import {applyLanguage, fetchLocale} from "./main.js"
 const d = document,
  $questionSpan = d.querySelector(".question span"),
  $questionImg = d.querySelector(".question img"),
+ $imgContainer = d.querySelector(".imgContainer"),
  $questionAudio = d.querySelector(".question audio"),
  $questionCounter = d.querySelector("#questionCounter"),
  $totalQuestions = d.querySelector("#totalQuestions"),
@@ -21,7 +22,7 @@ const FAILURE = 20, //10
  PASS = 34, //15
  REMARKABLE = 50, //20
  OUTSTANDING = 60, //25
- TOTAL_QUESTIONS = 70 //30
+ TOTAL_QUESTIONS = 71 //30
 
 let json, cont = 0, numGuessed = 0, questionPointer = 0, correctAnswer
 
@@ -143,35 +144,49 @@ async function renderResult() {
     let localejson = await fetchLocale(localStorage.getItem("language"))
     const msg = encodeURIComponent(localejson.share_msg1 + `${(numGuessed/TOTAL_QUESTIONS*100).toFixed(0)}%` + localejson.share_msg2)
      //copy link button
-     const $link = d.createElement("div")
-     $link.classList.add("link-btn")
-     $img = d.createElement("img")
-     $img.src = "../assets/imgs/link-svgrepo-com.svg"
-     $img.alt = "copy link"
-     $link.appendChild($img)
+     const $link = $div.cloneNode(true)
+     $link.classList.add("link-btn","socials-btn")
+     $link.querySelector("img").src = "../assets/imgs/link-svgrepo-com.svg"
+     $link.querySelector("img").alt = "copy link"
+     $link.addEventListener("click",async e=>{
+        e.preventDefault()
+        if(d.querySelector(".link-btn-popup") == null) {
+            let $div = d.createElement("div")
+            $div.classList.add("link-btn-popup")
+            let $span = d.createElement("span")
+            $span.setAttribute("data-i18n","link_btn_popup")
+            $span.textContent = localejson.link_btn_popup
+            $div.appendChild($span)
+            $link.appendChild($div)
+            navigator.clipboard.writeText(url)
+            setTimeout(()=>{
+                $div.remove()
+            },2000)
+        }
+     })
      //twitter-X share button
      const $twitter = $div.cloneNode(true)
      $twitter.querySelector("a").href = `https://twitter.com/intent/tweet?url=${urlEncoded}&text=${msg}`
-     $twitter.classList.add("twitter-btn")
-     $twitter.querySelector("img").src = "../assets/imgs/twitter-x.svg"
+     $twitter.classList.add("twitter-btn","socials-btn")
+     $twitter.querySelector("img").src = "../assets/imgs/socials/twitter-x.svg"
      $twitter.querySelector("img").alt = "twitter"
      //whatsapp share button
      const $whatsapp = $div.cloneNode(true)
      $whatsapp.querySelector("a").href = `https://api.whatsapp.com/send?text=${msg} ${urlEncoded}`
-     $whatsapp.classList.add("whatsapp-btn")
-     $whatsapp.querySelector("img").src = "../assets/imgs/whatsapp.svg"
+     $whatsapp.classList.add("whatsapp-btn","socials-btn")
+     $whatsapp.querySelector("img").src = "../assets/imgs/socials/whatsapp.svg"
      $whatsapp.querySelector("img").alt = "whatsapp"
      //threads share button
      const $threads = $div.cloneNode(true)
      $threads.querySelector("a").href = `https://www.threads.net/intent/post?text=${msg}&url=${urlEncoded}`
-     $threads.classList.add("threads-btn")
-     $threads.querySelector("img").src = "../assets/imgs/threads.svg"
+     $threads.classList.add("threads-btn","socials-btn")
+     $threads.querySelector("img").src = "../assets/imgs/socials/threads.svg"
      $threads.querySelector("img").alt = "threads"
      //facebook share button
      const $facebook = $div.cloneNode(true)
      $facebook.querySelector("a").href = `https://www.facebook.com/sharer.php?u=${urlEncoded}`
-     $facebook.classList.add("facebook-btn")
-     $facebook.querySelector("img").src = "../assets/imgs/facebook.svg"
+     $facebook.classList.add("facebook-btn","socials-btn")
+     $facebook.querySelector("img").src = "../assets/imgs/socials/facebook.svg"
      $facebook.querySelector("img").alt = "facebook"
     $socials.append($link,$twitter,$whatsapp,$threads,$facebook)
     $share.appendChild($socials)
@@ -200,6 +215,8 @@ async function answerListener() {
         el.removeEventListener("click",answerListener)
         el.classList.remove("answer_hover")
     })
+
+    if($questionImg.classList.contains("zoomed-in")) {$questionImg.classList.remove("zoomed-in")}
 
     localStorage.setItem(`question${cont+1}`,json[questionPointer].question)
     localStorage.setItem(`answer${cont+1}`,json[questionPointer].answers[0])
@@ -237,7 +254,9 @@ $next.addEventListener("mouseover",e=>{
 $next.addEventListener("mouseout",e=>{
     $nextImg.src = "../assets/imgs/flecha_2.png"
 })
-$next.addEventListener("click",async e=>{
+$next.addEventListener("click",nextQuestion)
+
+async function nextQuestion() {
     if(cont==TOTAL_QUESTIONS) {
         await renderResult()
         return
@@ -249,19 +268,22 @@ $next.addEventListener("click",async e=>{
     $next.classList.add("hidden")
     $prev.classList.add("hidden")
     $extra.classList.add("hidden")
+    if($questionImg.classList.contains("zoomed-in")) {$questionImg.classList.remove("zoomed-in")}
+    $questionSpan.classList.remove("typewriter")
+    void $questionSpan.offsetWidth
+    $questionSpan.classList.add("typewriter")
     $extraSpan.textContent = ""
     await renderQuestion()
     $answers.forEach(el=>{
         el.addEventListener("click",answerListener)
         el.classList.add("answer_hover")
     })
+}
+
+$questionImg.addEventListener("click",e=>{
+    $questionImg.classList.toggle("zoomed-in")
 })
-$questionImg.addEventListener("click",async e=>{
-    if(e.target.classList.contains("zoomed-in")) {
-        await d.exitFullscreen()
-        e.target.classList.remove("zoomed-in")
-    } else {
-        await e.target.requestFullscreen()
-        e.target.classList.add("zoomed-in")
-    }
+d.addEventListener("keydown",async e=>{
+    if(e.key === "Escape" && $questionImg.classList.contains("zoomed-in")) {$questionImg.classList.toggle("zoomed-in")}
+    if(e.key === "Enter" && !$next.classList.contains("hidden")) {await nextQuestion()}
 })

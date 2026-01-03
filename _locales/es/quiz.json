@@ -19,7 +19,7 @@
             "8º"
         ],
         "themes":"wdc,2003",
-        "extra":"2003 fue la primera temporada de Alonso como piloto de carreras de Renault tras ejercer de probador en 2002. En ella se convirtió en el piloto más joven en conseguir la pole y ganar en la F1."
+        "extra":"2003 fue la primera temporada de Alonso como piloto de carreras de Renault tras ejercer de probador en 2002. En ella se convirtió en el piloto más joven en conseguir la pole y ganar en la F1 de aquella."
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2004 de F1?",
@@ -30,7 +30,7 @@
             "9º"
         ],
         "themes":"wdc,2004",
-        "extra":"2004 fue una temporada exitosa para los pilotos de Renault Alonso y Trulli (que se marchó a mediados de año), aunque no lo suficiente como para alcanzar al Ferrari F2004 de Michael Schumacher, que batió todos los récords."
+        "extra":"2004 fue una temporada competitiva para los pilotos de Renault Alonso y Trulli (que se marchó a mediados de año), aunque no lo suficiente como para alcanzar al Ferrari F2004 de Michael Schumacher, que batió todos los récords."
     },
     {
         "question":"¿En qué posición terminó Alonso la temporada 2005 de F1?",
@@ -472,7 +472,7 @@
         ],
         "themes":"2023,audio",
         "audio":"audio5.m4a",
-        "extra":"Esta comunicación por radio de equipo tuvo lugar tras subir al podio durante el Gran Premio de Baréin de 2023, donde un mecánico de Aston llamado Jim acababa de cumplir 60 años."
+        "extra":"Esta comunicación por radio de equipo tuvo lugar tras acabar en el podio durante el Gran Premio de Baréin de 2023, donde un mecánico de Aston llamado Jim acababa de cumplir 60 años."
     },
     {
         "question":"¿De qué Grand Prix es esta radio de equipo?",
@@ -788,5 +788,17 @@
             "Miami 2023"
         ],
         "themes":"2023,general"
+    },
+    {
+        "question":"¿De qué Grand Prix es esta imagen?",
+        "answers":[
+            "Canadá 2023",
+            "Baréin 2023",
+            "Miami 2023",
+            "Australia 2023"
+        ],
+        "themes":"2023,img",
+        "img":"alonso633.png",
+        "extra":"Imagen del Gran Premio de Canadá de 2023, donde Alonso clasificó y terminó segundo detrás de Max Verstappen y por delante de Lewis Hamilton. Entre los tres suman 12 campeonatos, y 26 contando los de Adrian Newey."
     }
 ]

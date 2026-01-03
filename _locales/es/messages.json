@@ -1,15 +1,19 @@
 {
     "p1":"¡Bienvenido a Alonso Quiz!",
-    "p2":"Esto es un test dirigido a fans de Fernando Alonso y de la Fórmula Uno en general donde te enfrentarás a preguntas textuales, imágenes y hasta radios de equipo y tendrás que identificar la respuesta correcta entre 4.",
-    "p3":"¿Listo? Haz click en el botón para empezar",
+    "p2":"Esto es un test dirigido a fans de Fernando Alonso y de la Fórmula Uno en general donde te enfrentarás a preguntas textuales, imágenes y hasta radios de equipo y tendrás que identificar la respuesta correcta entre cuatro opciones.",
+    "p3":"De momento sólo hay sobre 70 preguntas en total - el objetivo es tener una base de datos más amplia. Si quieres contribuir de alguna forma, además del Github puedes contactarnos al correo: carlosgmzes@proton.me",
+    "p4":"¿Listo? Haz click en el botón para empezar:",
     "button_start":"Empezar test",
+
+    "data_policy_1":"Solamente se recolectan datos relativos a las preguntas acertadas y falladas para propósitos puramente informativos, y poder crear un promedio y facilitarle al usuario la información de si está por encima o debajo de tal promedio.",
+    "data_policy_2":"No se recolecta absolutamente ningún tipo de datos adicionales ni se vende a terceros.",
 
     "question_counter":" de ",
     "arrow_next":"Sigue",
 
     "failure":"Simplemente terrible.",
     "pass":"Fan de Fórmula Uno casual",
-    "remarkable":"Mejor que el promedio",
+    "remarkable":"Seguidor experimentado",
     "outstanding":"Un verdadero Alonsista acérrimo",
     "max":"El fan de Alonso más loco que existe",
     "cheat":"¿Seguro que no has hecho trampas?",
@@ -17,7 +21,7 @@
     "share_msg1":"¡He acertado un ",
     "share_msg2":" de las preguntas sobre Fernando Alonso!",
     "summary":"Resumen:",
-    "link-btn-popup":"¡Enlace copiado!",
+    "link_btn_popup":"¡Enlace copiado!",
     "button_return":"Volver al inicio",
 
     "footer_a1":"Github >",

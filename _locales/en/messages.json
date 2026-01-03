@@ -1,15 +1,19 @@
 {
     "p1":"Welcome to Alonso Quiz!",
     "p2":"Aimed at fans of Fernando Alonso and Formula One in general, this is a test where you will be faced with text, images and even team radio-based questions, and you will have to identify the correct answer from among four options.",
-    "p3":"Ready? Then click the button to begin!",
+    "p3":"At the moment there are only about 70 questions in total - the goal is to have a more extensive database. If you would like to contribute in any way, in addition to Github, you can contact us at: carlosgmzes@proton.me",
+    "p4":"Ready? Then click the button to begin:",
     "button_start":"Start quiz",
 
+    "data_policy_1":"Data related to test results is collected solely for informational purposes, in order to calculate an average and provide users with information on whether they are above or below said average.",
+    "data_policy_2":"No additional data is collected or sold to third parties at all.",
+
     "question_counter":" of ",
-    "arrow-next":"Next",
+    "arrow_next":"Next",
     
     "failure":"Simply awful.",
     "pass":"Casual Formula One fan",
-    "remarkable":"Better than average Alonso fan",
+    "remarkable":"Knowledgeable Alonso fan",
     "outstanding":"A real diehard Alonsista",
     "max":"The craziest Alonso fan ever",
     "cheat":"You didn't cheat, did you?",
@@ -17,7 +21,7 @@
     "share_msg1":"I've guessed ",
     "share_msg2":" of the questions on Fernando Alonso!",
     "summary":"Summary:",
-    "link-btn-popup":"Link copied!",
+    "link_btn_popup":"Link copied!",
     "button_return":"Return to index",
 
     "footer_a1":"Github >",
