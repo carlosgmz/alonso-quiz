@@ -52,9 +52,6 @@ header {
     padding: 0.5em;
     cursor: pointer;
 }
-.darkmode {
-
-}
 
 .title {
     font-size: 1.7em;
@@ -194,6 +191,7 @@ footer div {
     justify-content: center;
     align-items: center;
     margin-top: 1em;
+    margin-bottom: 3em;
 }
 .start button {
     padding: 1em 2em;
@@ -207,7 +205,7 @@ footer div {
 /* Quiz */
 
 .quiz {
-    margin: 2.5em 22.5% 3em 22.5%;
+    margin: 2.5em 20% 3em 20%;
 }
 
 .quiz-info {
@@ -251,7 +249,7 @@ footer div {
 }
 
 .question_img {
-    width: 600px;
+    width: 65%;
     margin-top: 0.5em;
     cursor: zoom-in;
 }
@@ -273,9 +271,6 @@ footer div {
     transition: 
         opacity 1s,
         display 1s allow-discrete;
-}
-.extra span {
-
 }
 
 .answer_container {
@@ -310,7 +305,7 @@ footer div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.4em;
-    width: 73.9%;
+    width: 72%;
 }
 .answer {
     display: flex;
@@ -359,16 +354,7 @@ footer div {
     align-items: center;
     column-gap: 5%;
 }
-.progressbar {
 
-}
-.avgMsg {
-
-}
-
-.summary {
-
-}
 .summary-info {
     display: flex;
     justify-content: center;
@@ -447,4 +433,63 @@ footer div {
     padding: 1em 2em;
     font-size: 1em;
     cursor: pointer;
+}
+
+
+
+/* Media queries */
+
+@media screen and (max-width: 500px) {
+    .quiz {
+        margin: 2.5em 5% 3em 5%;
+    }
+    .answers {
+        width: 60%;
+    }
+    .answer_control {
+        width: 15%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1100px) {
+    .quiz {
+        margin: 2.5em 10% 3em 10%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        column-gap: 5%;
+    }
+    .title {
+        text-align: center;
+        max-width: 125px;
+    }
+
+    .aside1, .aside2 {
+        background-image: none;
+    }
+    .answers {
+        grid-template-columns: 1fr;
+    }
+    .datapolicy-popup {
+        min-width: 300px;
+    }
+    .summary_result {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        row-gap: 0.6em;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .socials {
+        column-gap: 1.3em;
+    }
+    .socials-btn img {
+        height: 35px;
+    }
 }

@@ -708,10 +708,10 @@
     {
         "question":"¿Qué compañeros de equipo tuvo Alonso en McLaren? (reemplazos temporales no cuentan)",
         "answers":[
-            "Lewis Hamilton, Jenson Button y Stoffel Vandoorne",
-            "Kevin Magnussen, Jenson Button y Felipe Nasr",
-            "Felipe Massa y Kimi Räikkönen",
-            "Jenson Button y Stoffel Vandoorne"
+            "Hamilton, Button y Vandoorne",
+            "Magnussen, Button y Massa",
+            "Massa y Räikkönen",
+            "Button y Vandoorne"
         ],
         "themes":"teammate"
     },
