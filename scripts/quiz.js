@@ -3,7 +3,6 @@ import {applyLanguage, fetchLocale} from "./main.js"
 const d = document,
  $questionSpan = d.querySelector(".question span"),
  $questionImg = d.querySelector(".question img"),
- $imgContainer = d.querySelector(".imgContainer"),
  $questionAudio = d.querySelector(".question audio"),
  $questionCounter = d.querySelector("#questionCounter"),
  $totalQuestions = d.querySelector("#totalQuestions"),
@@ -18,6 +17,7 @@ const d = document,
  $template = d.querySelector("#summary_template").content,
  $fragment = d.createDocumentFragment()
 
+// guessed question thresholds for quiz result
 const FAILURE = 20, //10
  PASS = 34, //15
  REMARKABLE = 50, //20
@@ -26,17 +26,28 @@ const FAILURE = 20, //10
 
 let json, cont = 0, numGuessed = 0, questionPointer = 0, correctAnswer
 
+/**
+ * Fetches quiz json according to locale
+ * @param {*} language 
+ * @returns Object
+ */
 async function fetchJson(language) {
     let res = await fetch(`../_locales/${language}/quiz.json`)
     return await res.json()
 }
 
+/**
+ * Start function
+ */
 async function init() {
     json = await fetchJson(localStorage.getItem("language"))
     $totalQuestions.textContent = TOTAL_QUESTIONS
     await renderQuestion()
 }
 
+/**
+ * Renders question, media such as imgs or audio if required, and answers
+ */
 async function renderQuestion() {
     $questionCounter.textContent = cont+1
 
@@ -71,6 +82,9 @@ async function renderQuestion() {
     })
 }
 
+/**
+ * Renders result page after quiz is finished
+ */
 async function renderResult() {
     //stats section
     const $stats = d.createElement("section")
@@ -210,6 +224,9 @@ async function renderResult() {
     $main.replaceChildren($stats,$summary,$share,$return)
 }
 
+/**
+ * Function that loads whenever an answer is selected
+ */
 async function answerListener() {
     $answers.forEach(el=>{
         el.removeEventListener("click",answerListener)
@@ -242,20 +259,10 @@ async function answerListener() {
     $prev.classList.remove("hidden")
 }
 
-init()
-
-$answers.forEach(el=>{
-    el.addEventListener("click",answerListener)
-})
-
-$next.addEventListener("mouseover",e=>{
-    $nextImg.src = "../assets/imgs/flecha_2_2.png"
-})
-$next.addEventListener("mouseout",e=>{
-    $nextImg.src = "../assets/imgs/flecha_2.png"
-})
-$next.addEventListener("click",nextQuestion)
-
+/**
+ * Function that loads whenever next arrow is clicked
+ * @returns 
+ */
 async function nextQuestion() {
     if(cont==TOTAL_QUESTIONS) {
         await renderResult()
@@ -280,9 +287,28 @@ async function nextQuestion() {
     })
 }
 
+init()
+
+// click event listener for answers
+$answers.forEach(el=>{
+    el.addEventListener("click",answerListener)
+})
+
+// hover and click event listeners on next arrow
+$next.addEventListener("mouseover",e=>{
+    $nextImg.src = "../assets/imgs/flecha_2_2.png"
+})
+$next.addEventListener("mouseout",e=>{
+    $nextImg.src = "../assets/imgs/flecha_2.png"
+})
+$next.addEventListener("click",nextQuestion)
+
+// click event listener on question image for zoom in and out
 $questionImg.addEventListener("click",e=>{
     $questionImg.classList.toggle("zoomed-in")
 })
+
+// key event listeners: Esc to escape zoomed in image, Enter to jump to next question
 d.addEventListener("keydown",async e=>{
     if(e.key === "Escape" && $questionImg.classList.contains("zoomed-in")) {$questionImg.classList.toggle("zoomed-in")}
     if(e.key === "Enter" && !$next.classList.contains("hidden")) {await nextQuestion()}

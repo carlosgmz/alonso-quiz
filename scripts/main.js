@@ -6,11 +6,20 @@ const doc = document,
  $datapolicy = doc.querySelector(".datapolicy"),
  $datapolicyPopup = doc.querySelector(".datapolicy-popup")
 
+/**
+ * Fetches the content locale json file
+ * @param {*} language 
+ * @returns Object
+ */
 export async function fetchLocale(language) {
     let res = await fetch(`../_locales/${language}/messages.json`)
     return await res.json()
 }
 
+/**
+ * Reads language from local storage if it exists, else returns default browser language
+ * @returns String
+ */
 async function readLanguage() {
     let language = localStorage.getItem("language")
     if(language == null || language === "undefined" || !acceptedLanguage.includes(language)) {
@@ -22,8 +31,8 @@ async function readLanguage() {
     } else if(language == "es") {
         return "es"
     }
-
 }
+
 /*
 function readTheme() {
     let theme = localStorage.getItem("theme")
@@ -37,6 +46,12 @@ function readTheme() {
     }
 }
 */
+
+/**
+ * Applies language to all html data-i18n tags
+ * @param {*} language 
+ * @param {*} html 
+ */
 export async function applyLanguage(language,html) {
     let locale = await fetchLocale(language)
     html.querySelectorAll("[data-i18n]").forEach(el=>{
@@ -44,17 +59,20 @@ export async function applyLanguage(language,html) {
         el.textContent = locale[name]
     })
 }
+
 /*
 function applyTheme() {
 
 }
 */
+
 (async () => {
     await applyLanguage(await readLanguage(),doc)
 })()
 
 //readTheme()
 
+// click event listener on language emoji flags
 $languages.forEach(async el=>{
     el.addEventListener("click",async e=>{
         if(e.target.id == "en") {
@@ -68,6 +86,7 @@ $languages.forEach(async el=>{
         }
     })
 })
+
 /*
 $darkmode.addEventListener("click",async e=>{
     if(localStorage.getItem("theme") == "light") {
@@ -80,6 +99,7 @@ $darkmode.addEventListener("click",async e=>{
 })
 */
 
+// click event listener for datapolicy popup
 $datapolicy.addEventListener("click",e=>{
     $datapolicyPopup.classList.toggle("datapolicy-popup-shown")
 })
