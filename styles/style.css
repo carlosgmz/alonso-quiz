@@ -1,4 +1,4 @@
-html,body {
+html, body {
     height: 100%;
 }
 
@@ -7,7 +7,11 @@ body {
     flex-direction: column;
     margin: 0;
     font-size: 20px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color: rgb(200, 218, 218);
+    /*background-image: linear-gradient(to bottom, rgb(220, 233, 233), rgb(173, 203, 203))*/
 }
 
 main {
@@ -70,10 +74,6 @@ header {
 }
 .language:hover {
     transform: scale(1.3);
-}
-
-.index {
-    margin: 0 25% 5em 25%;
 }
 
 footer {
@@ -148,10 +148,29 @@ footer div {
 
 /* Index */
 
+.index {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.aside1 {
+    background-image: url("../assets/imgs/alonso474_lq_nb.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    opacity: 0.5;
+}
+.aside2 {
+    background-image: url("../assets/imgs/alonso522_nb.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    opacity: 0.5;
+}
+
 .description {
     display: flex;
     flex-direction: column;
-    row-gap: 1.5em;
+    row-gap: 2.5em;
     margin-top: 2em;
 }
 .description p {
@@ -162,7 +181,7 @@ footer div {
     text-align: center;
     font-size: 1.25em;
 }
-.description p:last-child {
+.description p:nth-child(4) {
     display: inline;
     text-align: center;
 }
@@ -174,7 +193,7 @@ footer div {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 .start button {
     padding: 1em 2em;
@@ -188,7 +207,7 @@ footer div {
 /* Quiz */
 
 .quiz {
-    margin: 3em 22.5% 3em 22.5%;
+    margin: 2.5em 22.5% 3em 22.5%;
 }
 
 .quiz-info {
