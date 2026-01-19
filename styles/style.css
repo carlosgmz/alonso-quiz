@@ -23,12 +23,17 @@ main {
     display: none;
 }
 
-a {
+a:not(.mail) {
     text-decoration: none;
     color: black;
 }
 a:hover {
     color: rgb(255, 255, 0);
+}
+.mail {
+    width: fit-content;
+    margin-bottom: 2.5em;
+    font-size: 1.1em;
 }
 
 header {
@@ -167,18 +172,21 @@ footer div {
 .description {
     display: flex;
     flex-direction: column;
-    row-gap: 2.5em;
+    align-items: center;
     margin-top: 2em;
 }
 .description p {
-    margin: 0;
+    margin: 0 0 2.5em 0;
     font-size: 1.1em;
 }
 .description p:first-child {
     text-align: center;
     font-size: 1.25em;
 }
-.description p:nth-child(4) {
+.description p:nth-child(3) {
+    margin: 0;
+}
+.description p:nth-child(5) {
     display: inline;
     text-align: center;
 }
@@ -440,6 +448,9 @@ footer div {
 /* Media queries */
 
 @media screen and (max-width: 500px) {
+    .index {
+        grid-template-columns: 0.25fr 2fr 0.25fr;
+    }
     .quiz {
         margin: 2.5em 5% 3em 5%;
     }
@@ -452,6 +463,9 @@ footer div {
 }
 
 @media screen and (min-width: 500px) and (max-width: 1100px) {
+    .index {
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+    }
     .quiz {
         margin: 2.5em 10% 3em 10%;
     }
@@ -466,9 +480,6 @@ footer div {
         max-width: 125px;
     }
 
-    .aside1, .aside2 {
-        background-image: none;
-    }
     .answers {
         grid-template-columns: 1fr;
     }
@@ -491,5 +502,8 @@ footer div {
     }
     .socials-btn img {
         height: 35px;
+    }
+    .aside1, .aside2 {
+        background-image: none;
     }
 }
