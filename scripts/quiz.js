@@ -209,7 +209,7 @@ async function renderResult() {
     const $return = d.createElement("section")
     $return.classList.add("return")
     $a = d.createElement("a")
-    $a.href = "https://alonso-quiz.github.io"
+    $a.href = "./"
     let $button = d.createElement("button")
     $button.setAttribute("data-i18n","button_return")
     $a.appendChild($button)

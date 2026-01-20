@@ -13,57 +13,34 @@
     <link rel="icon" href="../assets/imgs/favicon.png">
     <link rel="stylesheet" href="../styles/style.css">
     <script type="module" src="../scripts/main.js"></script>
-    <script type="module" src="../scripts/quiz.js"></script>
     <title>Alonso Quiz</title>
 </head>
 <body>
     <header>
         <div class="darkmode-div"></div>
-        <div class="title"><a href="./index.html">Alonso Quiz</a></div>
-        <div class="languages"></div>
-    </header>
-
-    <main class="quiz">
-        <section class="quiz-info">
-            <div class="counter">
-                <span id="questionCounter"></span>
-                <span data-i18n="question_counter"></span>
-                <span id="totalQuestions"></span>
-            </div>
-        </section>
-
-        <section class="question">
-            <span class="typewriter"></span>
-            <img src="" class="question_img hidden" id="img">
-            <audio controls src="" class="question_audio hidden"></audio>
-        </section>
-        
-        <section class="answer_container">
-            <div class="answer_control prev hidden"></div>
-            <div class="answers">
-                <div id="A" class="answer answer_hover"><span></span></div>
-                <div id="B" class="answer answer_hover"><span></span></div>
-                <div id="C" class="answer answer_hover"><span></span></div>
-                <div id="D" class="answer answer_hover"><span></span></div>
-            </div>
-            <div class="answer_control next hidden">
-                <img src="../assets/imgs/flecha_2.png" alt="next">
-                <span data-i18n="arrow_next"></span>
-            </div>
-        </section>
-
-        <section class="extra hidden">
-            <span></span>
-        </section>
-    </main>
-
-    <template id="summary_template">
-        <div class="summary_item">
-            <span></span>
-            <div class="summary_question"></div>
-            <div class="summary_answer"></div>
+        <div class="title"><a href="./">Alonso Quiz</a></div>
+        <div class="languages">
+            <div class="language"><span id="en">🇬🇧</span></div>
+            <div class="language"><span id="es">🇪🇸</span></div>
         </div>
-    </template>
+    </header>
+    
+    <main class="index">
+        <section class="aside1"></section>
+        <section class="description">
+            <p data-i18n="p1"></p>
+            <p data-i18n="p2"></p>
+            <p data-i18n="p3"></p>
+            <a class="mail" href="mailto:carlosgmzes@proton.me">carlosgmzes@proton.me</a>
+            <p data-i18n="p4"></p>
+            <div class="start">
+                <a href="./quiz">
+                    <button data-i18n="button_start"></button>
+                </a>
+            </div>
+        </section>
+        <section class="aside2"></section>
+    </main>
 
     <footer>
         <div><a href="https://github.com/carlosgmz/alonso-quiz" target="_blank" data-i18n="footer_a1"></a></div>
