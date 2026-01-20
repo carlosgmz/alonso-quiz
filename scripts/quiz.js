@@ -32,7 +32,7 @@ let json, cont = 0, numGuessed = 0, questionPointer = 0, correctAnswer
  * @returns Object
  */
 async function fetchJson(language) {
-    let res = await fetch(`../_locales/${language}/quiz.json`)
+    let res = await fetch(`./_locales/${language}/quiz.json`)
     return await res.json()
 }
 
@@ -56,14 +56,14 @@ async function renderQuestion() {
     
     $questionSpan.textContent = json[questionPointer].question
     if(typeof json[questionPointer].img !== "undefined") {
-        $questionImg.src = `../assets/imgs/quiz/${json[questionPointer].img}`
+        $questionImg.src = `./assets/imgs/quiz/${json[questionPointer].img}`
         $questionImg.classList.remove("hidden")
     } else if(!$questionImg.classList.contains("hidden")) {
         $questionImg.classList.add("hidden")
         $questionImg.src = ""
     }
     if(typeof json[questionPointer].audio !== "undefined") {
-        $questionAudio.src = `../assets/audio/${json[questionPointer].audio}`
+        $questionAudio.src = `./assets/audio/${json[questionPointer].audio}`
         $questionAudio.classList.remove("hidden")
     } else if(!$questionAudio.classList.contains("hidden")) {
         $questionAudio.classList.add("hidden")
@@ -160,7 +160,7 @@ async function renderResult() {
      //copy link button
      const $link = $div.cloneNode(true)
      $link.classList.add("link-btn","socials-btn")
-     $link.querySelector("img").src = "../assets/imgs/link-svgrepo-com.svg"
+     $link.querySelector("img").src = "./assets/imgs/link-svgrepo-com.svg"
      $link.querySelector("img").alt = "copy link"
      $link.addEventListener("click",async e=>{
         e.preventDefault()
@@ -182,25 +182,25 @@ async function renderResult() {
      const $twitter = $div.cloneNode(true)
      $twitter.querySelector("a").href = `https://twitter.com/intent/tweet?url=${urlEncoded}&text=${msg}`
      $twitter.classList.add("twitter-btn","socials-btn")
-     $twitter.querySelector("img").src = "../assets/imgs/socials/twitter-x.svg"
+     $twitter.querySelector("img").src = "./assets/imgs/socials/twitter-x.svg"
      $twitter.querySelector("img").alt = "twitter"
      //whatsapp share button
      const $whatsapp = $div.cloneNode(true)
      $whatsapp.querySelector("a").href = `https://api.whatsapp.com/send?text=${msg} ${urlEncoded}`
      $whatsapp.classList.add("whatsapp-btn","socials-btn")
-     $whatsapp.querySelector("img").src = "../assets/imgs/socials/whatsapp.svg"
+     $whatsapp.querySelector("img").src = "./assets/imgs/socials/whatsapp.svg"
      $whatsapp.querySelector("img").alt = "whatsapp"
      //threads share button
      const $threads = $div.cloneNode(true)
      $threads.querySelector("a").href = `https://www.threads.net/intent/post?text=${msg}&url=${urlEncoded}`
      $threads.classList.add("threads-btn","socials-btn")
-     $threads.querySelector("img").src = "../assets/imgs/socials/threads.svg"
+     $threads.querySelector("img").src = "./assets/imgs/socials/threads.svg"
      $threads.querySelector("img").alt = "threads"
      //facebook share button
      const $facebook = $div.cloneNode(true)
      $facebook.querySelector("a").href = `https://www.facebook.com/sharer.php?u=${urlEncoded}`
      $facebook.classList.add("facebook-btn","socials-btn")
-     $facebook.querySelector("img").src = "../assets/imgs/socials/facebook.svg"
+     $facebook.querySelector("img").src = "./assets/imgs/socials/facebook.svg"
      $facebook.querySelector("img").alt = "facebook"
     $socials.append($link,$twitter,$whatsapp,$threads,$facebook)
     $share.appendChild($socials)
@@ -296,10 +296,10 @@ $answers.forEach(el=>{
 
 // hover and click event listeners on next arrow
 $next.addEventListener("mouseover",e=>{
-    $nextImg.src = "../assets/imgs/flecha_2_2.png"
+    $nextImg.src = "./assets/imgs/flecha_2_2.png"
 })
 $next.addEventListener("mouseout",e=>{
-    $nextImg.src = "../assets/imgs/flecha_2.png"
+    $nextImg.src = "./assets/imgs/flecha_2.png"
 })
 $next.addEventListener("click",nextQuestion)
 
