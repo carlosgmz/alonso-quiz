@@ -19,9 +19,9 @@ const d = document,
 
 // guessed question thresholds for quiz result
 const FAILURE = 20, //10
- PASS = 34, //15
+ PASS = 35, //15
  REMARKABLE = 50, //20
- OUTSTANDING = 60, //25
+ OUTSTANDING = 65, //25
  TOTAL_QUESTIONS = 71 //30
 
 let json, cont = 0, numGuessed = 0, questionPointer = 0, correctAnswer
@@ -153,7 +153,7 @@ async function renderResult() {
     let $img = d.createElement("img")
     $a.appendChild($img)
     $div.appendChild($a)
-    const url = "http://localhost:5500/pages/index.html"
+    const url = "https://alonso-quiz.github.io"
     const urlEncoded = encodeURIComponent(url)
     let localejson = await fetchLocale(localStorage.getItem("language"))
     const msg = encodeURIComponent(localejson.share_msg1 + `${(numGuessed/TOTAL_QUESTIONS*100).toFixed(0)}%` + localejson.share_msg2)
@@ -209,7 +209,7 @@ async function renderResult() {
     const $return = d.createElement("section")
     $return.classList.add("return")
     $a = d.createElement("a")
-    $a.href = "http://localhost:5500/pages/index.html"
+    $a.href = "https://alonso-quiz.github.io"
     let $button = d.createElement("button")
     $button.setAttribute("data-i18n","button_return")
     $a.appendChild($button)
