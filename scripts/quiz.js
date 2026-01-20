@@ -153,7 +153,7 @@ async function renderResult() {
     let $img = d.createElement("img")
     $a.appendChild($img)
     $div.appendChild($a)
-    const url = "https://alonso-quiz.github.io"
+    const url = "https://carlosgmz.github.io/alonso-quiz/"
     const urlEncoded = encodeURIComponent(url)
     let localejson = await fetchLocale(localStorage.getItem("language"))
     const msg = encodeURIComponent(localejson.share_msg1 + `${(numGuessed/TOTAL_QUESTIONS*100).toFixed(0)}%` + localejson.share_msg2)
