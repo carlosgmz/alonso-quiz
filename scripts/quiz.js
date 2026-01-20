@@ -32,7 +32,7 @@ let json, cont = 0, numGuessed = 0, questionPointer = 0, correctAnswer
  * @returns Object
  */
 async function fetchJson(language) {
-    let res = await fetch(`./_locales/${language}/quiz.json`)
+    let res = await fetch(`./locales/${language}/quiz.json`)
     return await res.json()
 }
 
