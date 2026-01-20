@@ -5,8 +5,8 @@
     "p4":"¿Listo? Haz click en el botón para empezar:",
     "button_start":"Empezar test",
 
-    "data_policy_1":"Solamente se recolectan datos relativos a las preguntas acertadas y falladas para propósitos puramente informativos, y poder crear un promedio y facilitarle al usuario la información de si está por encima o debajo de tal promedio.",
-    "data_policy_2":"No se recolecta absolutamente ningún tipo de datos adicionales ni se vende a terceros.",
+    "data_policy_1":"Cuando se visita un sitio de GitHub Pages, la dirección IP del visitante se registra y almacena por motivos de seguridad, independientemente de si el visitante ha iniciado sesión en GitHub o no.",
+    "data_policy_2":"Para obtener más información sobre las prácticas de seguridad de GitHub, consulta el GitHub Privacy Statement.",
 
     "question_counter":" de ",
     "arrow_next":"Sigue",

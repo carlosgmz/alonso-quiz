@@ -5,8 +5,8 @@
     "p4":"Ready? Then click the button to begin:",
     "button_start":"Start quiz",
 
-    "data_policy_1":"Data related to test results is collected solely for informational purposes, in order to calculate an average and provide users with information on whether they are above or below said average.",
-    "data_policy_2":"No additional data is collected or sold to third parties at all.",
+    "data_policy_1":"When a GitHub Pages site is visited, the visitor's IP address is logged and stored for security purposes, regardless of whether the visitor has signed into GitHub or not.",
+    "data_policy_2":"For more information about GitHub's security practices, see GitHub Privacy Statement.",
 
     "question_counter":" of ",
     "arrow_next":"Next",
