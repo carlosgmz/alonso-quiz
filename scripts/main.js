@@ -24,7 +24,10 @@ async function readLanguage() {
     let language = localStorage.getItem("language")
     if(language == null || language === "undefined" || !acceptedLanguage.includes(language)) {
         let str = navigator.language.substring(0,2)
-        if(acceptedLanguage.includes(str)) { return str }
+        if(acceptedLanguage.includes(str)) {
+            localStorage.setItem("language",str)
+            return str
+        }
         else {return "en"}
     } else if(language == "en") {
         return "en"
