@@ -12,7 +12,7 @@ const doc = document,
  * @returns Object
  */
 export async function fetchLocale(language) {
-    let res = await fetch(`./_locales/${language}/messages.json`)
+    let res = await fetch(`../_locales/${language}/messages.json`)
     return await res.json()
 }
 
