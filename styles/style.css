@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
     height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -110,7 +110,7 @@ footer div {
     row-gap: 0.5em;
     min-width: 400px;
     position: absolute;
-    bottom: 53px;
+    bottom: 49px;
     padding: 1.6em 0.6em 0.8em 0.6em;
     font-size: 0.85em;
     cursor: pointer;
@@ -289,7 +289,7 @@ footer div {
     column-gap: 0.3em;
 }
 .answer_control {
-    width: 12.5%;
+    width: 14%;
     cursor: pointer;
     transition: 
         opacity 1s,
@@ -313,7 +313,7 @@ footer div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.4em;
-    width: 72%;
+    width: 70%;
 }
 .answer {
     display: flex;
@@ -455,10 +455,11 @@ footer div {
         margin: 2.5em 5% 3em 5%;
     }
     .answers {
-        width: 60%;
+        width: 55%;
+        font-size: 16px;
     }
     .answer_control {
-        width: 15%;
+        width: 21%;
     }
 }
 
@@ -468,6 +469,13 @@ footer div {
     }
     .quiz {
         margin: 2.5em 10% 3em 10%;
+    }
+    .answers {
+        width: 60%;
+        font-size: 16px;
+    }
+    .answer_control {
+        width: 18%;
     }
 }
 
@@ -485,6 +493,7 @@ footer div {
     }
     .datapolicy-popup {
         min-width: 300px;
+        bottom: 40px;
     }
     .summary_result {
         grid-template-columns: 1fr;
