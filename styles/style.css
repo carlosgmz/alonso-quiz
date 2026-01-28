@@ -6,7 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    font-size: 18px;
+    font-size: calc(14px + 0.8vmin);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -18,22 +19,23 @@ main {
     flex-grow: 1;
 }
 
+.main-anim {
+    transition: 
+        opacity 1s,
+        display 1s allow-discrete;
+}
+
 .hidden {
     opacity: 0;
     display: none;
 }
 
-a:not(.mail) {
+a {
     text-decoration: none;
     color: black;
 }
 a:hover {
     color: rgb(255, 255, 0);
-}
-.mail {
-    width: fit-content;
-    margin-bottom: 2.5em;
-    font-size: 1.1em;
 }
 
 header {
@@ -44,7 +46,6 @@ header {
     min-width: 100%;
     padding: 1.5em 0 1.5em 0;
     background-color: rgb(0, 168, 168);
-    border-bottom: 3px solid black;
 }
 
 .darkmode-div {
@@ -63,6 +64,7 @@ header {
 }
 
 .languages {
+    font-size: calc(14px + 0.5vmin);
     min-width: 100px;
     display: flex;
     justify-content: center;
@@ -71,7 +73,7 @@ header {
     transition: 1s linear;
 }
 .language {
-    font-size: 1.7em;
+    font-size: 1.8em;
     cursor: pointer;
 }
 .language:hover {
@@ -88,7 +90,6 @@ footer {
     padding: 0.8em 0 0.8em 0;
     background-color: rgb(0, 168, 168);
     margin-top: auto;
-    border-top: 3px solid black;
 }
 footer div {
     display: flex;
@@ -110,12 +111,11 @@ footer div {
     row-gap: 0.5em;
     min-width: 400px;
     position: absolute;
-    bottom: 49px;
+    bottom: 53px;
     padding: 1.6em 0.6em 0.8em 0.6em;
     font-size: 0.85em;
     cursor: pointer;
     z-index: 1;
-    border: 3px solid black;
     background-color: rgb(0, 190, 190);
     background-image: url("../assets/imgs/chevron-down.svg");
     background-repeat: no-repeat;
@@ -133,18 +133,6 @@ footer div {
     margin: 0;
 }
 
-@starting-style {
-    .datapolicy-popup-shown {
-        opacity: 0;
-    }
-    .extra {
-        opacity: 0;
-    }
-    .answer_control {
-        opacity: 0;
-    }
-}
-
 
 
 
@@ -156,35 +144,42 @@ footer div {
 }
 .aside1 {
     background-image: url("../assets/imgs/alonso474_lq_nb.png");
-    background-size: 80%;
+    background-size: 90%;
     background-repeat: no-repeat;
-    background-position: center 30%;
+    background-position: left bottom;
     opacity: 0.5;
 }
 .aside2 {
     background-image: url("../assets/imgs/alonso522_nb.png");
-    background-size: 90%;
+    background-size: 98%;
     background-repeat: no-repeat;
-    background-position: center 30%;
+    background-position: right bottom;
     opacity: 0.5;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .description {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2em;
+    background-color: rgb(225, 245, 245);
+    padding: 1em 1em 1.5em 1em;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px;
 }
 .description p {
-    margin: 0 0 2.5em 0;
+    margin: 0 0 2em 0;
     font-size: 1.1em;
 }
 .description p:first-child {
     text-align: center;
     font-size: 1.25em;
-}
-.description p:nth-child(3) {
-    margin: 0;
 }
 .description p:nth-child(5) {
     display: inline;
@@ -198,8 +193,6 @@ footer div {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1em;
-    margin-bottom: 3em;
 }
 .start button {
     padding: 1em 2em;
@@ -227,7 +220,8 @@ footer div {
     flex-direction: column;
     align-items: center;
     background-color: aliceblue;
-    border: 0.2em gray solid;
+    border: 0.1em gray solid;
+    border-radius: 5px;
     font-size: 1.2em;
     padding: 0.2em 0.3em;
     margin-bottom: 1.5em;
@@ -257,9 +251,12 @@ footer div {
 }
 
 .question_img {
-    width: 65%;
+    width: 55%;
     margin-top: 0.5em;
     cursor: zoom-in;
+    transition: 
+        opacity 0.5s,
+        display 0.5s allow-discrete;
 }
 .zoomed-in {
     transform: scale(1.75);
@@ -275,7 +272,7 @@ footer div {
     padding: 0.3em 0.6em;
     background-color: rgb(136, 196, 236);
     font-size: 0.9em;
-    margin-top: 1.5em;
+    margin: 1em 0em 1.5em 0em;
     transition: 
         opacity 1s,
         display 1s allow-discrete;
@@ -320,6 +317,7 @@ footer div {
     justify-content: center;
     align-items: center;
     font-size: 1.3em;
+    border-radius: 2px;
     background-color: rgb(170, 170, 170);
     height: 5em;
     text-align: center;
@@ -344,8 +342,10 @@ footer div {
 
 /* Result (quiz) */
 
+
+
 .stats {
-    margin: 5em 0;
+    margin: 4em 0;
 }
 .resultQuestions {
     text-align: center;
@@ -370,7 +370,8 @@ footer div {
     font-size: 1.3em;
 }
 .summary_result {
-    border: 2px solid black;
+    border: 2px solid gray;
+    border-radius: 3px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -445,11 +446,33 @@ footer div {
 
 
 
+
+/* Transitions */
+
+@starting-style {
+    .datapolicy-popup-shown {
+        opacity: 0;
+    }
+    .extra {
+        opacity: 0;
+    }
+    .answer_control {
+        opacity: 0;
+    }
+    .main-anim {
+        opacity: 0;
+    }
+    .question_img {
+        opacity: 0;
+    }
+}
+
+
 /* Media queries */
 
 @media screen and (max-width: 500px) {
     .index {
-        grid-template-columns: 0.25fr 2fr 0.25fr;
+        grid-template-columns: 0.15fr 2fr 0.15fr;
     }
     .quiz {
         margin: 2.5em 5% 3em 5%;
@@ -465,7 +488,7 @@ footer div {
 
 @media screen and (min-width: 500px) and (max-width: 1100px) {
     .index {
-        grid-template-columns: 0.5fr 2fr 0.5fr;
+        grid-template-columns: 0.3fr 2fr 0.3fr;
     }
     .quiz {
         margin: 2.5em 10% 3em 10%;
@@ -482,6 +505,7 @@ footer div {
 @media screen and (max-width: 800px) {
     header {
         column-gap: 5%;
+        padding: 0.7em 0 0.7em 0;
     }
     .title {
         text-align: center;
@@ -502,6 +526,7 @@ footer div {
     footer {
         flex-direction: column;
         row-gap: 0.6em;
+        padding: 0.5em 0 0.5em 0;
     }
 }
 

@@ -1,7 +1,7 @@
 {
     "p1":"¡Bienvenido a Alonso Quiz!",
     "p2":"Esto es un test dirigido a fans de Fernando Alonso y de la Fórmula Uno en general donde te enfrentarás a preguntas textuales, imágenes y hasta radios de equipo y tendrás que identificar la respuesta correcta entre cuatro opciones.",
-    "p3":"De momento sólo hay sobre 70 preguntas en total - el objetivo es tener una base de datos más amplia. Si quieres contribuir de alguna forma, además del Github puedes contactarnos al correo: ",
+    "p3":"De momento sólo hay sobre 70 preguntas en total - el objetivo es tener una base de datos más amplia. Si quieres contribuir de alguna forma por favor visita el GitHub.",
     "p4":"¿Listo? Haz click en el botón para empezar:",
     "button_start":"Empezar test",
 
@@ -24,7 +24,7 @@
     "link_btn_popup":"¡Enlace copiado!",
     "button_return":"Volver al inicio",
 
-    "footer_a1":"Github >",
-    "footer_a2":"Política datos ^",
-    "footer_a3":"Donar un café >"
+    "footer_a1":"Github",
+    "footer_a2":"Política datos",
+    "footer_a3":"Donar un café"
 }

@@ -58,14 +58,14 @@ async function renderQuestion() {
     if(typeof json[questionPointer].img !== "undefined") {
         $questionImg.src = `./assets/imgs/quiz/${json[questionPointer].img}`
         $questionImg.classList.remove("hidden")
-    } else if(!$questionImg.classList.contains("hidden")) {
+    } else {
         $questionImg.classList.add("hidden")
         $questionImg.src = ""
     }
     if(typeof json[questionPointer].audio !== "undefined") {
         $questionAudio.src = `./assets/audio/${json[questionPointer].audio}`
         $questionAudio.classList.remove("hidden")
-    } else if(!$questionAudio.classList.contains("hidden")) {
+    } else {
         $questionAudio.classList.add("hidden")
         $questionAudio.src = ""
     }
@@ -221,7 +221,13 @@ async function renderResult() {
     await applyLanguage(localStorage.getItem("language"),$return)
 
     //previous quiz sections are replaced with result sections
-    $main.replaceChildren($stats,$summary,$share,$return)
+    $main.classList.remove("main-anim")
+    $main.style.opacity = "0"
+    $main.classList.add("main-anim")
+    setTimeout(()=>{
+        $main.style.opacity = "1"
+        $main.replaceChildren($stats,$summary,$share,$return)
+    },1000)
 }
 
 /**
