@@ -9,13 +9,13 @@ Not a huge amount of questions at the moment - once it gets to a higher amount o
 
 ## Quiz JSON Syntax
 
-Quiz JSON files are found under the _locales folder as a quiz.json file, one file per language. File consists of an array with an object per question, here is the syntax:
+Quiz JSON files are found under the locales folder as a quiz.json file, one file per language. File consists of an array with an object per question, here is the syntax:
 
 - question: Question wording.
 
 - answers: Answer array, four items. First answer must be the correct one, other three are the wrong ones. (it gets randomized later through javascript)
 
-- themes: words for quick ctrl+f identification. Examples: wdc,year(2001,2002...),img,audio,general,warning,qualy,meme,teammate,team,social
+- themes: words for quick ctrl+f identification. Examples: wdc (world driver's championship questions), year (2001,2002...), img (image), audio, general, warning (questions that could become outdated), qualy (qualifying related), meme, teammate, team, social (social life related questions)...
 
 - img (optional): image file name, without path. files under assets/imgs/quiz
 
