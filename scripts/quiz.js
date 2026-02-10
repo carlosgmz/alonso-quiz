@@ -22,7 +22,7 @@ const FAILURE = 20, //10
  PASS = 35, //15
  REMARKABLE = 50, //20
  OUTSTANDING = 65, //25
- TOTAL_QUESTIONS = 71 //30
+ TOTAL_QUESTIONS = 100 //30
 
 let json, cont = 0, numGuessed = 0, questionPointer = 0, correctAnswer
 

@@ -393,10 +393,10 @@
     {
         "question":"¿De qué Grand Prix es esta imagen?",
         "answers":[
-            "Hockenheim 2007",
+            "Europa 2007",
             "Malasia 2007",
             "Malasia 2008",
-            "Hockenheim 2008"
+            "Europa 2008"
         ],
         "themes":"2007,img",
         "img":"alonso601.png",
@@ -800,5 +800,329 @@
         "themes":"2023,img",
         "img":"alonso633.png",
         "extra":"Imagen del Gran Premio de Canadá de 2023, donde Alonso clasificó y terminó segundo detrás de Max Verstappen y por delante de Lewis Hamilton. Entre los tres suman 12 campeonatos, y 26 contando los de Adrian Newey."
+    },
+    {
+        "question":"¿De qué Grand Prix es esta imagen?",
+        "answers":[
+            "Bélgica 2008",
+            "España 2007",
+            "Australia 2008",
+            "Italia 2009"
+        ],
+        "themes":"2008,img",
+        "img":"alonso634.png",
+        "extra":"Imagen del Gran Premio de Bélgica de 2008, donde Alonso entró en boxes en la última vuelta para poner intermedios y adelantó a cuatro coches, dos de ellos en la última curva."
+    },
+    {
+        "question":"¿En qué año nació Fernando Alonso?",
+        "answers":[
+            "1981",
+            "1977",
+            "1979",
+            "1983"
+        ],
+        "themes":"general"
+    },
+    {
+        "question":"¿En cuántas carreras ha participado Alonso en la Fórmula Uno?",
+        "answers":[
+            "400+",
+            "350-400",
+            "300-350",
+            "<300"
+        ],
+        "themes":"general,warning"
+    },
+    {
+        "question":"¿En qué equipo de F1 tuvo Alonso a Kimi Räikkönen de compañero?",
+        "answers":[
+            "Ferrari",
+            "McLaren",
+            "Toyota",
+            "Renault"
+        ],
+        "themes":"teammate",
+        "extra":"Fueron compañeros de equipo en Ferrari durante la temporada 2014 de F1."
+    },
+    {
+        "question":"¿Con qué compañero de equipo ha competido más carreras Alonso en la F1?",
+        "answers":[
+            "Felipe Massa",
+            "Lance Stroll",
+            "Giancarlo Fisichella",
+            "Jarno Trulli"
+        ],
+        "themes":"teammate,warning",
+        "extra":"Por ahora Felipe Massa gana con 77 carreras juntos, aunque Lance Stroll le superará durante la temporada 2026 de F1."
+    },
+    {
+        "question":"¿Para qué equipo pilotaba Alonso cuando ocurrió esta radio?",
+        "answers":[
+            "Ferrari",
+            "Renault",
+            "McLaren-Honda",
+            "McLaren-Mercedes"
+        ],
+        "themes":"2012,audio",
+        "audio":"audio11.ogg",
+        "extra":"Fue con Ferrari durante el GP de Baréin de 2012, peleando contra Nico Rosberg."
+    },
+    {
+        "question":"¿De qué circuito es esta radio de equipo?",
+        "answers":[
+            "Suzuka",
+            "Baréin",
+            "Fuji",
+            "Shanghai"
+        ],
+        "themes":"2015,audio",
+        "audio":"audio12.m4a",
+        "extra":"'GP2 engine' ocurrió durante el GP de Japón de 2015, en el circuito de Suzuka."
+    },
+    {
+        "question":"¿De qué año es esta radio de equipo?",
+        "answers":[
+            "2006",
+            "2009",
+            "2014",
+            "2018"
+        ],
+        "themes":"2006,audio",
+        "audio":"audio13.m4a",
+        "extra":"Esta es la radio de equipo de despedida con su equipo Renault durante el Gran Premio de Brasil de 2006, donde se proclamó bicampeón del mundo."
+    },
+    {
+        "question":"¿Para qué equipo pilotaba Alonso cuando ocurrió esta radio?",
+        "answers":[
+            "Renault",
+            "Ferrari",
+            "Minardi",
+            "McLaren-Mercedes"
+        ],
+        "themes":"teammate,audio",
+        "audio":"audio14.ogg",
+        "extra":"Radio de equipo durante su stint inicial de campeonatos con Renault, junto a su compañero de equipo Giancarlo Fisichella."
+    },
+    {
+        "question":"¿De qué año es esta radio de equipo?",
+        "answers":[
+            "2014",
+            "2015",
+            "2017",
+            "2022"
+        ],
+        "themes":"2014,audio",
+        "audio":"audio15.ogg",
+        "extra":"Radio en la clasificación del GP de Brasil de 2014, el penúltimo Gran Premio con Ferrari."
+    },
+    {
+        "question":"¿Cuántas veces ha ido Alonso a las 500 Millas de Indianápolis?",
+        "answers":[
+            "3",
+            "2",
+            "1",
+            "4"
+        ],
+        "themes":"warning",
+        "extra":"Tres veces en total: la primera en 2017 con McLaren-Andretti, otra en 2019 (aunque no se clasificó para la carrera) y la última hasta ahora en 2020."
+    },
+    {
+        "question":"¿Cuántos equipos ha pilotado Alonso con un motor Honda?",
+        "answers":[
+            "3",
+            "2",
+            "1",
+            "4"
+        ],
+        "themes":"warning",
+        "extra":"Tres equipos: McLaren-Honda (2015-2017), McLaren-Andretti (Indy 500 de 2017) y Aston Martin-Honda (2026-?)."
+    },
+    {
+        "question":"¿Cómo se llamaba el chasis de F1 que pilotó Alonso para ganar su primer campeonato mundial?",
+        "answers":[
+            "R25",
+            "Re25",
+            "Enstone-25",
+            "B25"
+        ],
+        "themes":"2005"
+    },
+    {
+        "question":"¿Cómo se llamaba el chasis de F1 que Alonso pilotó para McLaren en 2007?",
+        "answers":[
+            "MP4-22",
+            "McLaren-07",
+            "MCL27",
+            "No estaba en McLaren"
+        ],
+        "themes":"2007"
+    },
+    {
+        "question":"¿Cuál es la nomenclatura de los chassis de Aston Martin que Alonso conduce en F1?",
+        "answers":[
+            "AMR + número",
+            "Ast + número",
+            "A + número",
+            "Jordan + número"
+        ],
+        "themes":"warning",
+        "extra":"AMR, significando 'Aston Martin Racing'."
+    },
+    {
+        "question":"¿De qué Grand Prix es esta imagen?",
+        "answers":[
+            "2007 European GP",
+            "2007 Brazil GP",
+            "2008 Spanish GP",
+            "2006 European GP"
+        ],
+        "themes":"2007,img",
+        "img":"alonso536.jfif",
+        "extra":"Alonso ganó el Gran Premio de Europa de 2007 en Nürburgring tras adelantar a Felipe Massa. Aquí se le ve señalando al cámara los daños que sufrió el coche durante esa pelea."
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2023",
+            "2024",
+            "2026",
+            "2021"
+        ],
+        "themes":"2024,img,meme",
+        "img":"alonso545.jpg",
+        "extra":"Alonso inspeccionando el muy mejorado McLaren MCL38 durante el Gran Premio de Holanda de 2024, indicando al equipo que este es el coche en el que deben inspirarse."
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2017",
+            "2015",
+            "2014",
+            "2019"
+        ],
+        "themes":"2017,img",
+        "img":"alonso251.png"
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2016",
+            "2015",
+            "2009",
+            "2019"
+        ],
+        "themes":"2016,img,meme",
+        "img":"alonso247.png",
+        "extra":"La imagen del periódico es del accidente brutal de Fernando en el GP de Australia de 2016."
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2024",
+            "2023",
+            "2026",
+            "2022"
+        ],
+        "themes":"2024,img",
+        "img":"alonso552.jpg"
+    },
+    {
+        "question":"¿De qué Grand Prix es esta radio de equipo?",
+        "answers":[
+            "2023 Brazil GP",
+            "2023 Bahrain GP",
+            "2021 Qatar GP",
+            "2023 Monaco GP"
+        ],
+        "themes":"2023,audio",
+        "audio":"audio16.ogg",
+        "extra":"Radio de equipo al final del Gran Premio de Brasil de 2023, tras haber vencido a Checo Pérez, de Red Bull, en una impresionante lucha hasta la línea de meta."
+    },
+    {
+        "question":"¿Para qué equipo de F1 hacía pruebas Alonso en esta imagen?",
+        "answers":[
+            "Jaguar",
+            "Jordan",
+            "Aston Martin",
+            "Marussia"
+        ],
+        "themes":"2002,img",
+        "img":"alonso635.jpg",
+        "extra":"Imagen de Fernando en un test con Jaguar en 2002."
+    },
+    {
+        "question":"¿Quién era la esposa de Fernando durante 2006 y 2011?",
+        "answers":[
+            "Raquel del Rosario",
+            "Lara Álvarez",
+            "Dasha Kapustina",
+            "Linda Morselli"
+        ],
+        "themes":"social"
+    },
+    {
+        "question":"¿Cuál era el número del Toyota que Alonso pilotó en Le Mans?",
+        "answers":[
+            "8",
+            "7",
+            "14",
+            "2"
+        ],
+        "themes":"general"
+    },
+    {
+        "question":"En qué año compitió Alonso por primera vez en el Rally Dakar?",
+        "answers":[
+            "2020",
+            "2019",
+            "2017",
+            "2022"
+        ],
+        "themes":"general"
+    },
+    {
+        "question":"¿Quién era el ingeniero de pista de Alonso en Ferrari?",
+        "answers":[
+            "Andrea Stella",
+            "Rob Smedley",
+            "Rod Nelson",
+            "Mark Slade"
+        ],
+        "themes":"team"
+    },
+    {
+        "question":"¿De qué año es esta radio de equipo?",
+        "answers":[
+            "2014",
+            "2010",
+            "2015",
+            "2011"
+        ],
+        "themes":"2014,audio",
+        "audio":"audio17.ogg",
+        "extra":"Radio del segundo puesto de Alonso en el Gran Premio de Hungría de 2014, tras defender con éxito a los dos Mercedes y casi al Red Bull de Ricciardo."
+    },
+    {
+        "question":"¿De qué año es esta radio de equipo?",
+        "answers":[
+            "2014",
+            "2009",
+            "2016",
+            "2018"
+        ],
+        "themes":"2014,audio",
+        "audio":"audio18.ogg",
+        "extra":"Ese Caterham era el de Will Stevens, que debutó en el GP de Abu Dabi de 2014, también la última carrera de Alonso con Ferrari."
+    },
+    {
+        "question":"¿A cuántos puntos estuvo Alonso de ser cinco veces campeón del mundo?",
+        "answers":[
+            "8",
+            "13",
+            "7",
+            "5"
+        ],
+        "themes":"general,warning",
+        "extra":"1 punto en 2007, 4 puntos en 2010 y 3 puntos en 2012."
     }
 ]

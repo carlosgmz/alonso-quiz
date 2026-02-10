@@ -730,7 +730,7 @@
         "answers":[
             "Melissa Jimenez",
             "Andrea Schlager",
-            "Raquel del Rosario",
+            "Taylor Swift",
             "Linda Morselli"
         ],
         "themes":"social,warning"
@@ -800,5 +800,329 @@
         "themes":"2023,img",
         "img":"alonso633.png",
         "extra":"Image from the 2023 Canadian Grand Prix, where Alonso qualified and finished second behind Max Verstappen and ahead of Lewis Hamilton. They hold 12 Championships between them - 26 if we count Adrian Newey's."
+    },
+    {
+        "question":"Which Grand Prix is this image from?",
+        "answers":[
+            "2008 Belgian GP",
+            "2007 Spanish GP",
+            "2008 Australian GP",
+            "2009 Italian GP"
+        ],
+        "themes":"2008,img",
+        "img":"alonso634.png",
+        "extra":"Image from the 2008 Belgian Grand Prix, where Alonso pitted on the last lap for inters and overtook four cars, two of them just before the finish line."
+    },
+    {
+        "question":"In what year was Fernando Alonso born?",
+        "answers":[
+            "1981",
+            "1977",
+            "1979",
+            "1983"
+        ],
+        "themes":"general"
+    },
+    {
+        "question":"How many Formula One races has Alonso started?",
+        "answers":[
+            "400+",
+            "350-400",
+            "300-350",
+            "<300"
+        ],
+        "themes":"general,warning"
+    },
+    {
+        "question":"In which F1 team did Alonso have Kimi Räikkönen as teammate?",
+        "answers":[
+            "Ferrari",
+            "McLaren",
+            "Toyota",
+            "Renault"
+        ],
+        "themes":"teammate",
+        "extra":"They were teammates in Ferrari during the 2014 F1 season."
+    },
+    {
+        "question":"Which F1 teammate has Alonso raced with the most?",
+        "answers":[
+            "Felipe Massa",
+            "Lance Stroll",
+            "Giancarlo Fisichella",
+            "Jarno Trulli"
+        ],
+        "themes":"teammate,warning",
+        "extra":"For now Felipe Massa wins with 77 races together, although Lance Stroll will surpass him during the 2026 F1 season."
+    },
+    {
+        "question":"Which team was Alonso driving for when this radio happened?",
+        "answers":[
+            "Ferrari",
+            "Renault",
+            "McLaren-Honda",
+            "McLaren-Mercedes"
+        ],
+        "themes":"2012,audio",
+        "audio":"audio11.ogg",
+        "extra":"This team radio happened with Ferrari in the 2012 Bahrain GP during a battle with Nico Rosberg."
+    },
+    {
+        "question":"Which circuit is this team radio from?",
+        "answers":[
+            "Suzuka",
+            "Bahrain",
+            "Fuji",
+            "Shanghai"
+        ],
+        "themes":"2015,audio",
+        "audio":"audio12.m4a",
+        "extra":"'GP2 engine' radio happened during the 2015 Japanese Grand Prix at the Suzuka circuit."
+    },
+    {
+        "question":"Which year is this team radio from?",
+        "answers":[
+            "2006",
+            "2009",
+            "2014",
+            "2018"
+        ],
+        "themes":"2006,audio",
+        "audio":"audio13.m4a",
+        "extra":"This is Alonso's Renault farewell team radio during the 2006 Brazilian GP, where he became a two-time world champion and departed from Renault."
+    },
+    {
+        "question":"Which team was Alonso driving for when this radio happened?",
+        "answers":[
+            "Renault",
+            "Ferrari",
+            "Minardi",
+            "McLaren-Mercedes"
+        ],
+        "themes":"teammate,audio",
+        "audio":"audio14.ogg",
+        "extra":"Team radio during his initial championship Renault stint, together with teammate Giancarlo Fisichella."
+    },
+    {
+        "question":"Which year is this team radio from?",
+        "answers":[
+            "2014",
+            "2015",
+            "2017",
+            "2022"
+        ],
+        "themes":"2014,audio",
+        "audio":"audio15.ogg",
+        "extra":"Team radio during the 2014 Brazilian GP qualifying, his second-to-last race with Ferrari."
+    },
+    {
+        "question":"How many times did Alonso attempt the Indianapolis 500 so far?",
+        "answers":[
+            "3",
+            "2",
+            "1",
+            "4"
+        ],
+        "themes":"warning",
+        "extra":"Three times in total: first in 2017 with McLaren-Andretti, another in 2019 (although he did not qualify for the main event) and the last one so far in 2020."
+    },
+    {
+        "question":"How many teams has Alonso raced for with a Honda engine?",
+        "answers":[
+            "3",
+            "2",
+            "1",
+            "4"
+        ],
+        "themes":"warning",
+        "extra":"Three teams: McLaren-Honda (2015-2017), McLaren-Andretti (2017 Indy 500) and Aston Martin-Honda (2026-?)."
+    },
+    {
+        "question":"What was the name of the F1 chassis Alonso drove to win his first world championship?",
+        "answers":[
+            "R25",
+            "Re25",
+            "Enstone-25",
+            "B25"
+        ],
+        "themes":"2005"
+    },
+    {
+        "question":"What was the name of the F1 chassis Alonso drove for McLaren in 2007?",
+        "answers":[
+            "MP4-22",
+            "McLaren-07",
+            "MCL27",
+            "He was not in McLaren"
+        ],
+        "themes":"2007"
+    },
+    {
+        "question":"What is the naming of the Aston Martin chassis Alonso drives for in F1?",
+        "answers":[
+            "AMR + number",
+            "Ast + number",
+            "A + number",
+            "Jordan + number"
+        ],
+        "themes":"warning",
+        "extra":"AMR, meaning 'Aston Martin Racing'."
+    },
+    {
+        "question":"Which Grand Prix is this image from?",
+        "answers":[
+            "2007 European GP",
+            "2007 Brazil GP",
+            "2008 Spanish GP",
+            "2006 European GP"
+        ],
+        "themes":"2007,img",
+        "img":"alonso536.jfif",
+        "extra":"Alonso won the 2007 European GP at the Nürburgring after overtaking Felipe Massa. Here he is pointing out the car damage sustained during that fight to the cameraman."
+    },
+    {
+        "question":"Which year is this image from?",
+        "answers":[
+            "2023",
+            "2024",
+            "2026",
+            "2021"
+        ],
+        "themes":"2024,img,meme",
+        "img":"alonso545.jpg",
+        "extra":"Alonso inspecting the much improved McLaren MCL38 during the 2024 Dutch GP, signalling to the team this is the car to take inspiration from."
+    },
+    {
+        "question":"Which year is this image from?",
+        "answers":[
+            "2017",
+            "2015",
+            "2014",
+            "2019"
+        ],
+        "themes":"2017,img",
+        "img":"alonso251.png"
+    },
+    {
+        "question":"Which year is this image from?",
+        "answers":[
+            "2016",
+            "2015",
+            "2009",
+            "2019"
+        ],
+        "themes":"2016,img,meme",
+        "img":"alonso247.png",
+        "extra":"The picture in the newspaper is from Alonso's brutal crash at the 2016 Australian GP."
+    },
+    {
+        "question":"Which year is this image from?",
+        "answers":[
+            "2024",
+            "2023",
+            "2026",
+            "2022"
+        ],
+        "themes":"2024,img",
+        "img":"alonso552.jpg"
+    },
+    {
+        "question":"Which Grand Prix is this team radio from?",
+        "answers":[
+            "2023 Brazil GP",
+            "2023 Bahrain GP",
+            "2021 Qatar GP",
+            "2023 Monaco GP"
+        ],
+        "themes":"2023,audio",
+        "audio":"audio16.ogg",
+        "extra":"Team radio at the end of the 2023 Brazil GP, having just beaten Red Bull's Checo Perez in an awesome fight until the finish line."
+    },
+    {
+        "question":"Which F1 team was Alonso testing for in this image?",
+        "answers":[
+            "Jaguar",
+            "Jordan",
+            "Aston Martin",
+            "Marussia"
+        ],
+        "themes":"2002,img",
+        "img":"alonso635.jpg",
+        "extra":"Image from Alonso's test with Jaguar in 2002."
+    },
+    {
+        "question":"Who was Fernando's spouse between 2006 and 2011?",
+        "answers":[
+            "Raquel del Rosario",
+            "Lara Álvarez",
+            "Dasha Kapustina",
+            "Linda Morselli"
+        ],
+        "themes":"social"
+    },
+    {
+        "question":"What was the number of the Toyota that Alonso drove at Le Mans?",
+        "answers":[
+            "8",
+            "7",
+            "14",
+            "2"
+        ],
+        "themes":"general"
+    },
+    {
+        "question":"In what year did Alonso compete in the Dakar Rally for the first time?",
+        "answers":[
+            "2020",
+            "2019",
+            "2017",
+            "2022"
+        ],
+        "themes":"general"
+    },
+    {
+        "question":"Who was Fernando's race engineer in Ferrari?",
+        "answers":[
+            "Andrea Stella",
+            "Rob Smedley",
+            "Rod Nelson",
+            "Mark Slade"
+        ],
+        "themes":"team"
+    },
+    {
+        "question":"Which year is this team radio from?",
+        "answers":[
+            "2014",
+            "2010",
+            "2015",
+            "2011"
+        ],
+        "themes":"2014,audio",
+        "audio":"audio17.ogg",
+        "extra":"Radio from Alonso's 2nd place at the 2014 Hungarian GP, successfully fending off the two Mercedes and almost Ricciardo's Red Bull."
+    },
+    {
+        "question":"Which year is this team radio from?",
+        "answers":[
+            "2014",
+            "2009",
+            "2016",
+            "2018"
+        ],
+        "themes":"2014,audio",
+        "audio":"audio18.ogg",
+        "extra":"That Caterham was Will Stevens, debuting at the 2014 Abu Dhabi GP, also Alonso's last race with Ferrari."
+    },
+    {
+        "question":"How many points away was Alonso from becoming a five-time world champion?",
+        "answers":[
+            "8",
+            "13",
+            "7",
+            "5"
+        ],
+        "themes":"general,warning",
+        "extra":"1 point in 2007, 4 points in 2010 and 3 points in 2012."
     }
 ]
