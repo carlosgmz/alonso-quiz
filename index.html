@@ -13,6 +13,7 @@
     <link rel="icon" href="./assets/imgs/favicon.png">
     <link rel="stylesheet" href="./styles/style.css">
     <script type="module" src="./scripts/main.js" defer></script>
+    <script type="module" src="./scripts/index.js" defer></script>
     <title>Alonso Quiz</title>
 </head>
 <body>
@@ -32,11 +33,13 @@
                 <p data-i18n="p1"></p>
                 <p data-i18n="p2"></p>
                 <p data-i18n="p3"></p>
-                <p data-i18n="p4"></p>
+                <div class="endless">
+                    <label for="endless-input" data-i18n="endless"></label>
+                    <input type="checkbox" name="endless-input" id="endless-input">
+                </div>
+                <span class="endless-help" data-i18n="endless_help"></span>
                 <div class="start">
-                    <a href="./quiz">
-                        <button data-i18n="button_start"></button>
-                    </a>
+                    <button data-i18n="button_start" class="button-start"></button>
                 </div>
             </div>
         </section>

@@ -173,9 +173,11 @@ footer div {
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.1);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px;
 }
+.description {
+    font-size: 1.1em;
+}
 .description p {
     margin: 0 0 2em 0;
-    font-size: 1.1em;
 }
 .description p:first-child {
     text-align: center;
@@ -185,6 +187,21 @@ footer div {
     display: inline;
     text-align: center;
 }
+
+.endless {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+.endless input {
+    width: 25px;
+    height: 25px;
+}
+.endless-help {
+    font-size: 0.65em;
+    margin-bottom: 3em;
+}
+
 .email {
     font-style: italic;
 }
@@ -399,7 +416,11 @@ footer div {
 .share {
     margin: 1em 0 3em 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.share-info {
+    font-size: 1.1em;
 }
 .socials {
     display: flex;

@@ -1,8 +1,9 @@
 {
     "p1":"¡Bienvenido a Alonso Quiz!",
     "p2":"Esto es un test donde te enfrentarás a preguntas textuales, imágenes y hasta radios de equipo y tendrás que identificar la respuesta correcta entre cuatro opciones.",
-    "p3":"El objetivo es tener una base de datos más amplia. Si quieres contribuir de alguna forma por favor visita el GitHub o mándanos un email.",
-    "p4":"¿Listo? Haz click en el botón para empezar:",
+    "p3":"El objetivo es tener una base de datos más amplia. Si quieres contribuir de alguna forma por favor visita el GitHub.",
+    "endless":"¿Modo Infinito?",
+    "endless_help":"Puede que tardes bastante en responderlas todas.",
     "button_start":"Empezar test",
 
     "data_policy_1":"Cuando se visita un sitio de GitHub Pages, la dirección IP del visitante se registra y almacena por motivos de seguridad, independientemente de si el visitante ha iniciado sesión en GitHub o no.",
@@ -21,6 +22,7 @@
     "share_msg1":"¡He acertado un ",
     "share_msg2":" de las preguntas sobre Fernando Alonso!",
     "summary":"Resumen:",
+    "share_info":"¡Comparte exactamente el mismo test con tus amigos!",
     "link_btn_popup":"¡Enlace copiado!",
     "button_return":"Volver al inicio",
 

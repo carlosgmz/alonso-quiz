@@ -885,10 +885,10 @@
     {
         "question":"¿De qué Grand Prix es esta imagen?",
         "answers":[
-            "2007 European GP",
-            "2007 Brazil GP",
-            "2008 Spanish GP",
-            "2006 European GP"
+            "Europa 2007",
+            "Brasil 2007",
+            "España 2008",
+            "Europa 2006"
         ],
         "img":"alonso536.jfif",
         "extra":"Alonso ganó el Gran Premio de Europa de 2007 en Nürburgring tras adelantar a Felipe Massa. Aquí se le ve señalando al cámara los daños que sufrió el coche durante esa pelea."
@@ -976,7 +976,7 @@
         ]
     },
     {
-        "question":"En qué año compitió Alonso por primera vez en el Rally Dakar?",
+        "question":"¿En qué año compitió Alonso por primera vez en el Rally Dakar?",
         "answers":[
             "2020",
             "2019",

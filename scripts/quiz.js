@@ -17,14 +17,36 @@ const d = document,
  $template = d.querySelector("#summary_template").content,
  $fragment = d.createDocumentFragment()
 
-// guessed question thresholds for quiz result
-const FAILURE = 20, //10
- PASS = 35, //15
- REMARKABLE = 50, //20
- OUTSTANDING = 65, //25
- TOTAL_QUESTIONS = 100 //30
+// seeded RNG helper
+function lcg(seed) {
+    let x = seed
+    return function() {
+        x = (x * 1664525 + 1013904223) % 4294967296
+        return x / 4294967296
+    }
+}
 
-let json, cont = 0, numGuessed = 0, questionPointer = 0, correctAnswer
+function makeSeed() {
+    return Math.floor(Math.random() * 0xFFFFFFFF)
+}
+
+const params = new URLSearchParams(location.search)
+let seed = params.get("seed")
+if (!seed) {
+    seed = makeSeed()
+    params.set("seed", seed)
+    history.replaceState(null, "", "?" + params.toString())
+}
+const random = lcg(Number(seed))
+
+// guessed question thresholds for quiz result (if endless calculated depending on json.length later)
+let FAILURE = 10,
+ PASS = 15,
+ REMARKABLE = 20,
+ OUTSTANDING = 25,
+ TOTAL_QUESTIONS = 30
+
+let json, cont = 0, numGuessed = 0, questionPointer = 0, correctAnswer, endless
 
 /**
  * Fetches quiz json according to locale
@@ -37,10 +59,19 @@ async function fetchJson(language) {
 }
 
 /**
- * Start function
+ * Start function for initializing quiz and checking whether endless mode was selected, or instead create a new seed
  */
 async function init() {
     json = await fetchJson(localStorage.getItem("language"))
+    const params = new URLSearchParams(location.search)
+    endless = params.get("endless")
+    if(endless) {
+        TOTAL_QUESTIONS = json.length
+        FAILURE = (TOTAL_QUESTIONS * 0.3).toFixed(0)
+        PASS = (TOTAL_QUESTIONS * 0.5).toFixed(0)
+        REMARKABLE = (TOTAL_QUESTIONS * 0.7).toFixed(0)
+        OUTSTANDING = (TOTAL_QUESTIONS * 0.9).toFixed(0)
+    }
     $totalQuestions.textContent = TOTAL_QUESTIONS
     await renderQuestion()
 }
@@ -51,10 +82,10 @@ async function init() {
 async function renderQuestion() {
     $questionCounter.textContent = cont+1
 
-    //random question is selected from array
-    questionPointer = Math.random()*json.length>>0
-    
+    //random question is selected from json
+    questionPointer = Math.floor(random() * json.length)
     $questionSpan.textContent = json[questionPointer].question
+
     if(typeof json[questionPointer].img !== "undefined") {
         $questionImg.src = `./assets/imgs/quiz/${json[questionPointer].img}`
         $questionImg.classList.remove("hidden")
@@ -69,16 +100,80 @@ async function renderQuestion() {
         $questionAudio.classList.add("hidden")
         $questionAudio.src = ""
     }
+
     //creates a copy of the question's answers
     let answersCopy = [...json[questionPointer].answers]
     $answers.forEach(el=>{
         //selects a random answer
-        let answerPointer = Math.random()*answersCopy.length>>0
+        let answerPointer = Math.floor(random() * answersCopy.length)
         //checks if it selected the correct answer for later
         if(answersCopy[answerPointer] == json[questionPointer].answers[0]) {correctAnswer = el.id}
         //adds answer text to div textcontent
         el.lastChild.textContent = answersCopy[answerPointer]
         answersCopy.splice(answerPointer,1)
+    })
+}
+
+/**
+ * Function that loads whenever an answer is selected
+ */
+async function answerListener() {
+    $answers.forEach(el=>{
+        el.removeEventListener("click",answerListener)
+        el.classList.remove("answer_hover")
+    })
+
+    if($questionImg.classList.contains("zoomed-in")) {$questionImg.classList.remove("zoomed-in")}
+
+    localStorage.setItem(`question${cont+1}`,json[questionPointer].question)
+    localStorage.setItem(`answer${cont+1}`,json[questionPointer].answers[0])
+    localStorage.setItem(`selectedAnswer${cont+1}`,this.lastChild.textContent)
+
+    //if answer is correct
+    if(this.lastChild.textContent == json[questionPointer].answers[0]) {
+        numGuessed++
+        this.classList.add("true")
+    } else {
+        this.classList.add("false")
+        d.querySelector(`#${correctAnswer}`).classList.add("true")
+    }
+    //shows up extra info if required
+    if(typeof json[questionPointer].extra !== "undefined") {
+        $extraSpan.textContent = `ⓘ ${json[questionPointer].extra}`
+        $extra.classList.remove("hidden")
+    }
+    //removes question from array to prevent repeats
+    json.splice(questionPointer,1)
+    cont++
+    $next.classList.remove("hidden")
+    $prev.classList.remove("hidden")
+}
+
+/**
+ * Function that loads whenever next arrow is clicked
+ * @returns 
+ */
+async function nextQuestion() {
+    if(cont==TOTAL_QUESTIONS) {
+        await renderResult()
+        return
+    }
+    $answers.forEach(el=>{
+        el.classList.remove("true")
+        el.classList.remove("false")
+    })
+    $next.classList.add("hidden")
+    $prev.classList.add("hidden")
+    $extra.classList.add("hidden")
+    if($questionImg.classList.contains("zoomed-in")) {$questionImg.classList.remove("zoomed-in")}
+    $questionSpan.classList.remove("typewriter")
+    void $questionSpan.offsetWidth
+    $questionSpan.classList.add("typewriter")
+    $extraSpan.textContent = ""
+    await renderQuestion()
+    $answers.forEach(el=>{
+        el.addEventListener("click",answerListener)
+        el.classList.add("answer_hover")
     })
 }
 
@@ -145,6 +240,12 @@ async function renderResult() {
     //share section
     const $share = d.createElement("section")
     $share.classList.add("share")
+    const $shareinfo = d.createElement("div")
+    $shareinfo.classList.add("share-info")
+    let $p = d.createElement("p")
+    $p.setAttribute("data-i18n","share_info")
+    $shareinfo.appendChild($p)
+    $share.appendChild($shareinfo)
     const $socials = d.createElement("div")
     $socials.classList.add("socials")
     let $div = d.createElement("div")
@@ -153,7 +254,9 @@ async function renderResult() {
     let $img = d.createElement("img")
     $a.appendChild($img)
     $div.appendChild($a)
-    const url = "https://carlosgmz.github.io/alonso-quiz/"
+    let url
+    if(endless) {url = `https://carlosgmz.github.io/alonso-quiz/quiz?endless=endless&seed=${seed}`}
+    else {url = `https://carlosgmz.github.io/alonso-quiz/quiz?seed=${seed}`}
     const urlEncoded = encodeURIComponent(url)
     let localejson = await fetchLocale(localStorage.getItem("language"))
     const msg = encodeURIComponent(localejson.share_msg1 + `${(numGuessed/TOTAL_QUESTIONS*100).toFixed(0)}%` + localejson.share_msg2)
@@ -228,69 +331,6 @@ async function renderResult() {
         $main.style.opacity = "1"
         $main.replaceChildren($stats,$summary,$share,$return)
     },1000)
-}
-
-/**
- * Function that loads whenever an answer is selected
- */
-async function answerListener() {
-    $answers.forEach(el=>{
-        el.removeEventListener("click",answerListener)
-        el.classList.remove("answer_hover")
-    })
-
-    if($questionImg.classList.contains("zoomed-in")) {$questionImg.classList.remove("zoomed-in")}
-
-    localStorage.setItem(`question${cont+1}`,json[questionPointer].question)
-    localStorage.setItem(`answer${cont+1}`,json[questionPointer].answers[0])
-    localStorage.setItem(`selectedAnswer${cont+1}`,this.lastChild.textContent)
-
-    //if answer is correct
-    if(this.lastChild.textContent == json[questionPointer].answers[0]) {
-        numGuessed++
-        this.classList.add("true")
-    } else {
-        this.classList.add("false")
-        d.querySelector(`#${correctAnswer}`).classList.add("true")
-    }
-    //shows up extra info if required
-    if(typeof json[questionPointer].extra !== "undefined") {
-        $extraSpan.textContent = `ⓘ ${json[questionPointer].extra}`
-        $extra.classList.remove("hidden")
-    }
-    //removes question from array to prevent repeats
-    json.splice(questionPointer,1)
-    cont++
-    $next.classList.remove("hidden")
-    $prev.classList.remove("hidden")
-}
-
-/**
- * Function that loads whenever next arrow is clicked
- * @returns 
- */
-async function nextQuestion() {
-    if(cont==TOTAL_QUESTIONS) {
-        await renderResult()
-        return
-    }
-    $answers.forEach(el=>{
-        el.classList.remove("true")
-        el.classList.remove("false")
-    })
-    $next.classList.add("hidden")
-    $prev.classList.add("hidden")
-    $extra.classList.add("hidden")
-    if($questionImg.classList.contains("zoomed-in")) {$questionImg.classList.remove("zoomed-in")}
-    $questionSpan.classList.remove("typewriter")
-    void $questionSpan.offsetWidth
-    $questionSpan.classList.add("typewriter")
-    $extraSpan.textContent = ""
-    await renderQuestion()
-    $answers.forEach(el=>{
-        el.addEventListener("click",answerListener)
-        el.classList.add("answer_hover")
-    })
 }
 
 init()
