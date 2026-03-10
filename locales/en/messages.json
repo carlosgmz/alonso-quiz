@@ -10,6 +10,8 @@
     "data_policy_2":"For more information about GitHub's security practices, see GitHub Privacy Statement.",
 
     "question_counter":" of ",
+    "category":"Category: ",
+    "seed":"Seed: ",
     "arrow_next":"Next",
     
     "failure":"Simply awful.",

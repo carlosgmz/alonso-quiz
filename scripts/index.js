@@ -4,6 +4,6 @@ const doc = document,
 
 //event listener for quiz start button
 $start.addEventListener("click",e=>{
-    if($endless.checked) {location.href = "./quiz?endless=endless"}
-    else {location.href = "./quiz"}
+    if($endless.checked) {location.href = "./quiz?category=endless"}
+    else {location.href = "./quiz?category=standard"}
 })

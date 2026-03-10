@@ -231,6 +231,9 @@ footer div {
     justify-content: space-between;
     margin-bottom: 0.3em;
 }
+#category {
+    text-transform: capitalize;
+}
 
 .question {
     display: flex;

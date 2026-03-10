@@ -10,6 +10,8 @@
     "data_policy_2":"Para obtener más información sobre las prácticas de seguridad de GitHub, consulta el GitHub Privacy Statement.",
 
     "question_counter":" de ",
+    "category":"Categoría: ",
+    "seed":"Semilla: ",
     "arrow_next":"Sigue",
 
     "failure":"Simplemente terrible.",

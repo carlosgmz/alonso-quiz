@@ -1,10 +1,11 @@
 const doc = document,
  $languages = doc.querySelectorAll(".languages div"),
- acceptedLanguage = ["en","es"],
  //$darkmode = doc.querySelector(".darkmode-div button"),
  //acceptedTheme = ["light","dark"]
  $datapolicy = doc.querySelector(".datapolicy"),
  $datapolicyPopup = doc.querySelector(".datapolicy-popup")
+
+const acceptedLanguage = ["en","es"]
 
 /**
  * Fetches the content locale json file

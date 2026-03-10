@@ -6,6 +6,8 @@ const d = document,
  $questionAudio = d.querySelector(".question audio"),
  $questionCounter = d.querySelector("#questionCounter"),
  $totalQuestions = d.querySelector("#totalQuestions"),
+ $category = d.querySelector("#category"),
+ $seed = d.querySelector("#seed"),
  $extra = d.querySelector(".extra"),
  $extraSpan = d.querySelector(".extra span"),
  $answers = d.querySelectorAll(".answer"),
@@ -17,7 +19,21 @@ const d = document,
  $template = d.querySelector("#summary_template").content,
  $fragment = d.createDocumentFragment()
 
-// seeded RNG helper
+const acceptedCategory = ["standard","renault","ferrari","mclaren","aston","nonf1","endless"]
+
+// guessed question thresholds for quiz result (if category is endless it will be calculated depending on json.length later)
+let FAILURE = 10,
+ PASS = 15,
+ REMARKABLE = 20,
+ OUTSTANDING = 25,
+ TOTAL_QUESTIONS = 30
+
+let json, cont = 0, numGuessed = 0, questionPointer = 0, correctAnswer, seed = 0, category, random
+
+/**
+ * Linear Congruential Generator algorithm
+ * @param {*} seed Seed used
+ */
 function lcg(seed) {
     let x = seed
     return function() {
@@ -30,24 +46,6 @@ function makeSeed() {
     return Math.floor(Math.random() * 0xFFFFFFFF)
 }
 
-const params = new URLSearchParams(location.search)
-let seed = params.get("seed")
-if (!seed) {
-    seed = makeSeed()
-    params.set("seed", seed)
-    history.replaceState(null, "", "?" + params.toString())
-}
-const random = lcg(Number(seed))
-
-// guessed question thresholds for quiz result (if endless calculated depending on json.length later)
-let FAILURE = 10,
- PASS = 15,
- REMARKABLE = 20,
- OUTSTANDING = 25,
- TOTAL_QUESTIONS = 30
-
-let json, cont = 0, numGuessed = 0, questionPointer = 0, correctAnswer, endless
-
 /**
  * Fetches quiz json according to locale
  * @param {*} language 
@@ -59,13 +57,25 @@ async function fetchJson(language) {
 }
 
 /**
- * Start function for initializing quiz and checking whether endless mode was selected, or instead create a new seed
+ * Start function for initializing quiz, seed randomization and category selected
  */
 async function init() {
     json = await fetchJson(localStorage.getItem("language"))
     const params = new URLSearchParams(location.search)
-    endless = params.get("endless")
-    if(endless) {
+    seed = params.get("seed")
+    if(!seed || isNaN(seed) || seed<0 || seed>0xFFFFFFFF) {
+        seed = makeSeed()
+        params.set("seed", seed)
+        history.replaceState(null, "", "?" + params.toString())
+    }
+    random = lcg(Number(seed))
+    category = params.get("category")
+    if(!category || !acceptedCategory.includes(category)) {
+        category = "standard"
+        params.set("category", category)
+        history.replaceState(null, "", "?" + params.toString())
+    }
+    if(category == "endless") {
         TOTAL_QUESTIONS = json.length
         FAILURE = (TOTAL_QUESTIONS * 0.3).toFixed(0)
         PASS = (TOTAL_QUESTIONS * 0.5).toFixed(0)
@@ -73,6 +83,8 @@ async function init() {
         OUTSTANDING = (TOTAL_QUESTIONS * 0.9).toFixed(0)
     }
     $totalQuestions.textContent = TOTAL_QUESTIONS
+    $category.textContent = category
+    $seed.textContent = seed
     await renderQuestion()
 }
 
@@ -254,9 +266,7 @@ async function renderResult() {
     let $img = d.createElement("img")
     $a.appendChild($img)
     $div.appendChild($a)
-    let url
-    if(endless) {url = `https://carlosgmz.github.io/alonso-quiz/quiz?endless=endless&seed=${seed}`}
-    else {url = `https://carlosgmz.github.io/alonso-quiz/quiz?seed=${seed}`}
+    let url = `https://carlosgmz.github.io/alonso-quiz/quiz?category=${category}&seed=${seed}`
     const urlEncoded = encodeURIComponent(url)
     let localejson = await fetchLocale(localStorage.getItem("language"))
     const msg = encodeURIComponent(localejson.share_msg1 + `${(numGuessed/TOTAL_QUESTIONS*100).toFixed(0)}%` + localejson.share_msg2)
