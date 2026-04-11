@@ -1,9 +1,9 @@
 {
     "p1":"¡Bienvenido a Alonso Quiz!",
-    "p2":"Esto es un test donde te enfrentarás a preguntas textuales, imágenes y hasta radios de equipo y tendrás que identificar la respuesta correcta entre cuatro opciones.",
-    "p3":"El objetivo es tener una base de datos más amplia. Si quieres contribuir de alguna forma por favor visita el GitHub.",
+    "p2":"Esto es un test donde te enfrentarás a 30 preguntas, imágenes y hasta radios de equipo, y tendrás que identificar la respuesta correcta entre cuatro opciones.",
+    "p3":"Si quieres contribuir de alguna forma por favor visita el GitHub.",
     "endless":"¿Modo Infinito?",
-    "endless_help":"Puede que tardes bastante en responderlas todas.",
+    "endless_help":"Puede que tardes mucho en responderlas todas.",
     "button_start":"Empezar test",
 
     "data_policy_1":"Cuando se visita un sitio de GitHub Pages, la dirección IP del visitante se registra y almacena por motivos de seguridad, independientemente de si el visitante ha iniciado sesión en GitHub o no.",

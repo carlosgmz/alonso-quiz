@@ -601,7 +601,7 @@
             "2018 Monaco GP"
         ],
         "audio":"audio9.m4a",
-        "extra":"One of the many amusing radio moments for spectators during the McLaren-Honda era, trying to see things with a sense of humour.s"
+        "extra":"One of the many amusing radio moments for spectators during the McLaren-Honda era, trying to see things with a sense of humour."
     },
     {
         "question":"Which Grand Prix is this team radio from?",
@@ -662,7 +662,7 @@
         ]
     },
     {
-        "question":"Who is Alonso going to have a baby with?",
+        "question":"With whom did Fernando Alonso have a child?",
         "answers":[
             "Melissa Jimenez",
             "Andrea Schlager",
@@ -805,9 +805,9 @@
         "question":"Which year is this team radio from?",
         "answers":[
             "2006",
-            "2009",
-            "2014",
-            "2018"
+            "2005",
+            "2007",
+            "2009"
         ],
         "audio":"audio13.m4a",
         "extra":"This is Alonso's Renault farewell team radio during the 2006 Brazilian GP, where he became a two-time world champion and departed from Renault."
@@ -828,8 +828,8 @@
         "answers":[
             "2014",
             "2015",
-            "2017",
-            "2022"
+            "2013",
+            "2017"
         ],
         "audio":"audio15.ogg",
         "extra":"Team radio during the 2014 Brazilian GP qualifying, his second-to-last race with Ferrari."
@@ -1008,9 +1008,9 @@
         "question":"Which year is this team radio from?",
         "answers":[
             "2014",
-            "2009",
-            "2016",
-            "2018"
+            "2012",
+            "2010",
+            "2011"
         ],
         "audio":"audio18.ogg",
         "extra":"That Caterham was Will Stevens, debuting at the 2014 Abu Dhabi GP, also Alonso's last race with Ferrari."
@@ -1024,5 +1024,124 @@
             "5"
         ],
         "extra":"1 point in 2007, 4 points in 2010 and 3 points in 2012."
+    },
+    {
+        "question":"Who were Alonso's teammates on his side of the Toyota garage in WEC?",
+        "answers":[
+            "Sébastien Buemi and Kazuki Nakajima",
+            "Mike Conway and Kamui Kobajashi",
+            "Pechito López and Kamui Kobajashi",
+            "Robert Kubica and Pastor Maldonado"
+        ]
+    },
+    {
+        "question":"Which race is this image from?",
+        "answers":[
+            "2019 24h of Daytona",
+            "2019 12h of Sebring",
+            "2018 Le Mans 24h",
+            "2018 6h of Spa"
+        ],
+        "img":"alonso700.png",
+        "extra":"The 2019 Daytona 24 Hours was a race with variable conditions, and here we can see Alonso performing late braking overtakes under rain."
+    },
+    {
+        "question":"Which F1 team was Alonso testing for in this image?",
+        "answers":[
+            "Benetton",
+            "Jordan",
+            "Prost GP",
+            "Marussia"
+        ],
+        "img":"alonso701.jpg",
+        "extra":"Image from Alonso's test with Benetton in 2000."
+    },
+    {
+        "question":"Which qualifying is this image from?",
+        "answers":[
+            "2024 Saudi Arabia",
+            "2025 Baku",
+            "2023 Monaco",
+            "2022 Canada"
+        ],
+        "img":"alonso503.PNG",
+        "extra":"Alonso qualified fourth and finished the Grand Prix in fifth place with a strong performance."
+    },
+    {
+        "question":"Which race is this image from?",
+        "answers":[
+            "2023 Brazil GP",
+            "2023 Monaco GP",
+            "2024 Dutch GP",
+            "2025 Chinese GP"
+        ],
+        "img":"alonso702.webp",
+        "extra":"Photo finish on the final lap of the 2023 Brazilian Grand Prix between Alonso and Pérez."
+    },
+    {
+        "question":"Which year is this image from?",
+        "answers":[
+            "2022",
+            "2023",
+            "2020",
+            "2025"
+        ],
+        "img":"alonso704.jpg",
+        "extra":"Photo from the 2022 post-season test in Abu Dhabi, where Alonso drove the AMR22 without any sponsors."
+    },
+    {
+        "question":"Which year is this image from?",
+        "answers":[
+            "2006",
+            "2005",
+            "2007",
+            "2009"
+        ],
+        "img":"alonso703.png",
+        "extra":"Photo from Fernando's first test for McLaren-Mercedes in December 2006 at Jerez, without any sponsors."
+    },
+    {
+        "question":"Which year is this image from?",
+        "answers":[
+            "2012",
+            "2010",
+            "2014",
+            "2015"
+        ],
+        "img":"alonso705.png",
+        "extra":"Alonso's first lap at Abu Dhabi 2012 from 6th to 4th. He would go on to finish in 2nd place behind Kimi Räikkönen."
+    },
+    {
+        "question":"Which year is this image from?",
+        "answers":[
+            "2013",
+            "2010",
+            "2014",
+            "2015"
+        ],
+        "img":"alonso706.png",
+        "extra":"A shot during Alonso's spectacular start at the 2013 Singapore Grand Prix, moving up from seventh to third on the outside of the first corner."
+    },
+    {
+        "question":"Which year is this team radio from?",
+        "answers":[
+            "2025",
+            "2018",
+            "2022",
+            "2026"
+        ],
+        "audio":"audio19.ogg",
+        "extra":"Alonso's radio during the 2025 Imola GP after a Virtual Safety Car ruined his and a few other driver's race strategies."
+    },
+    {
+        "question":"Which race is this team radio from?",
+        "answers":[
+            "2025 Singapore GP",
+            "2025 Imola GP",
+            "2024 Canada GP",
+            "2026 Australian GP"
+        ],
+        "audio":"audio20.ogg",
+        "extra":"Fernando's funny comment happened after overtaking Liam Lawson who was losing both drivers important laptime with his defending."
     }
 ]

@@ -9,17 +9,17 @@ If you want to add more questions to repo then read the following, or send an em
 
 ## Quiz JSON Syntax
 
-Quiz JSON files are found under the locales folder as a quiz.json file, one file per language. File consists of an array with an object per question, here is the syntax:
+Quiz JSON files are found under the locales folder as a quiz.json file, one per language. File consists of an array with an object per question, with the following syntax:
 
 - question: Question wording.
 
-- answers: Answer array, four items. First answer must be the correct one, other three are the wrong ones. (it gets randomized later through javascript)
+- answers: Answer array, four items. First answer must be the correct one, other three must be wrong. (it gets randomized later through javascript)
 
-- img (optional): image file name if necessary, without path. stored in assets/imgs/quiz
+- img (optional): image file name. stored in assets/imgs/quiz
 
-- audio (optional): audio file name if necessary, without path. stored in assets/audio
+- audio (optional): audio file name. stored in assets/audio
 
-- extra (optional): additional information if necessary shown after selecting an answer.
+- extra (optional): additional information shown after selecting an answer.
 
 
 ## Contact

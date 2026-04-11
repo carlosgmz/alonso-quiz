@@ -44,7 +44,7 @@ header {
     justify-content: center;
     column-gap: 10%;
     min-width: 100%;
-    padding: 1.5em 0 1.5em 0;
+    padding: 1.2em 0 1.2em 0;
     background-color: rgb(0, 168, 168);
 }
 
@@ -87,7 +87,7 @@ footer {
     column-gap: 10%;
     min-width: 100%;
     font-size: 1.2em;
-    padding: 0.8em 0 0.8em 0;
+    padding: 0.6em 0 0.6em 0;
     background-color: rgb(0, 168, 168);
     margin-top: auto;
 }
@@ -178,6 +178,7 @@ footer div {
 }
 .description p {
     margin: 0 0 2em 0;
+    text-align: center;
 }
 .description p:first-child {
     text-align: center;
@@ -223,16 +224,23 @@ footer div {
 /* Quiz */
 
 .quiz {
-    margin: 2.5em 20% 3em 20%;
+    margin: 2.5em 20% 5em 20%;
 }
 
 .quiz-info {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     margin-bottom: 0.3em;
 }
-#category {
-    text-transform: capitalize;
+.quiz-info div {
+    width: 300px;
+    text-align: center;
+}
+.quiz-info div:first-child {
+    text-align: start;
+}
+.quiz-info div:last-child {
+    text-align: end;
 }
 
 .question {
@@ -244,7 +252,6 @@ footer div {
     border-radius: 5px;
     font-size: 1.2em;
     padding: 0.2em 0.3em;
-    margin-bottom: 1.5em;
 }
 .question span {
     position: relative;
@@ -270,9 +277,13 @@ footer div {
     }
 }
 
+.resource {
+    text-align: center;
+    margin: 0.8em 0 1.2em 0;
+}
 .question_img {
     width: 55%;
-    margin-top: 0.5em;
+    border-radius: 5px;
     cursor: zoom-in;
     transition: 
         opacity 0.5s,
@@ -283,9 +294,9 @@ footer div {
     cursor: zoom-out;
     box-shadow: 0 0 0 max(100vh, 100vw) rgba(0, 0, 0, .35);
 }
-
 .question_audio {
-    margin-top: 0.5em;
+    width: 30%;
+    border-radius: 5px;
 }
 
 .extra {
@@ -529,7 +540,7 @@ footer div {
 @media screen and (max-width: 800px) {
     header {
         column-gap: 5%;
-        padding: 0.7em 0 0.7em 0;
+        padding: 0.6em 0 0.6em 0;
     }
     .title {
         text-align: center;
@@ -550,7 +561,7 @@ footer div {
     footer {
         flex-direction: column;
         row-gap: 0.6em;
-        padding: 0.5em 0 0.5em 0;
+        padding: 0.3em 0 0.3em 0;
     }
 }
 

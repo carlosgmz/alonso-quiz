@@ -1,12 +1,11 @@
 import {applyLanguage, fetchLocale} from "./main.js"
 
 const d = document,
- $questionSpan = d.querySelector(".question span"),
- $questionImg = d.querySelector(".question img"),
- $questionAudio = d.querySelector(".question audio"),
+ $questionSpan = d.querySelector(".typewriter"),
+ $questionImg = d.querySelector(".question_img"),
+ $questionAudio = d.querySelector(".question_audio"),
  $questionCounter = d.querySelector("#questionCounter"),
  $totalQuestions = d.querySelector("#totalQuestions"),
- $category = d.querySelector("#category"),
  $seed = d.querySelector("#seed"),
  $extra = d.querySelector(".extra"),
  $extraSpan = d.querySelector(".extra span"),
@@ -19,7 +18,7 @@ const d = document,
  $template = d.querySelector("#summary_template").content,
  $fragment = d.createDocumentFragment()
 
-const acceptedCategory = ["standard","renault","ferrari","mclaren","aston","nonf1","endless"]
+const acceptedCategory = ["standard","endless"]
 
 // guessed question thresholds for quiz result (if category is endless it will be calculated depending on json.length later)
 let FAILURE = 10,
@@ -83,7 +82,6 @@ async function init() {
         OUTSTANDING = (TOTAL_QUESTIONS * 0.9).toFixed(0)
     }
     $totalQuestions.textContent = TOTAL_QUESTIONS
-    $category.textContent = category
     $seed.textContent = seed
     await renderQuestion()
 }
@@ -273,7 +271,7 @@ async function renderResult() {
      //copy link button
      const $link = $div.cloneNode(true)
      $link.classList.add("link-btn","socials-btn")
-     $link.querySelector("img").src = "./assets/imgs/link-svgrepo-com.svg"
+     $link.querySelector("img").src = "./assets/imgs/socials/link-svgrepo-com.svg"
      $link.querySelector("img").alt = "copy link"
      $link.addEventListener("click",async e=>{
         e.preventDefault()
@@ -352,10 +350,10 @@ $answers.forEach(el=>{
 
 // hover and click event listeners on next arrow
 $next.addEventListener("mouseover",e=>{
-    $nextImg.src = "./assets/imgs/flecha_2_2.png"
+    $nextImg.src = "./assets/imgs/arrow_2_2.png"
 })
 $next.addEventListener("mouseout",e=>{
-    $nextImg.src = "./assets/imgs/flecha_2.png"
+    $nextImg.src = "./assets/imgs/arrow_2.png"
 })
 $next.addEventListener("click",nextQuestion)
 

@@ -662,7 +662,7 @@
         ]
     },
     {
-        "question":"¿Con quién va a ser padre Fernando Alonso?",
+        "question":"¿Con quién ha tenido un hijo Fernando Alonso?",
         "answers":[
             "Melissa Jimenez",
             "Andrea Schlager",
@@ -805,9 +805,9 @@
         "question":"¿De qué año es esta radio de equipo?",
         "answers":[
             "2006",
-            "2009",
-            "2014",
-            "2018"
+            "2005",
+            "2007",
+            "2009"
         ],
         "audio":"audio13.m4a",
         "extra":"Esta es la radio de equipo de despedida con su equipo Renault durante el Gran Premio de Brasil de 2006, donde se proclamó bicampeón del mundo."
@@ -828,8 +828,8 @@
         "answers":[
             "2014",
             "2015",
-            "2017",
-            "2022"
+            "2013",
+            "2017"
         ],
         "audio":"audio15.ogg",
         "extra":"Radio en la clasificación del GP de Brasil de 2014, el penúltimo Gran Premio con Ferrari."
@@ -938,10 +938,10 @@
     {
         "question":"¿De qué Grand Prix es esta radio de equipo?",
         "answers":[
-            "2023 Brazil GP",
-            "2023 Bahrain GP",
-            "2021 Qatar GP",
-            "2023 Monaco GP"
+            "Brasil 2023",
+            "Baréin 2023",
+            "Qatar 2021",
+            "Mónaco 2023"
         ],
         "audio":"audio16.ogg",
         "extra":"Radio de equipo al final del Gran Premio de Brasil de 2023, tras haber vencido a Checo Pérez, de Red Bull, en una impresionante lucha hasta la línea de meta."
@@ -1008,9 +1008,9 @@
         "question":"¿De qué año es esta radio de equipo?",
         "answers":[
             "2014",
-            "2009",
-            "2016",
-            "2018"
+            "2012",
+            "2010",
+            "2011"
         ],
         "audio":"audio18.ogg",
         "extra":"Ese Caterham era el de Will Stevens, que debutó en el GP de Abu Dabi de 2014, también la última carrera de Alonso con Ferrari."
@@ -1024,5 +1024,124 @@
             "5"
         ],
         "extra":"1 punto en 2007, 4 puntos en 2010 y 3 puntos en 2012."
+    },
+    {
+        "question":"¿Qué compañeros de equipo tuvo Alonso en su lado del garaje con Toyota en el WEC?",
+        "answers":[
+            "Sébastien Buemi y Kazuki Nakajima",
+            "Mike Conway y Kamui Kobajashi",
+            "Pechito López y Kamui Kobajashi",
+            "Robert Kubica y Pastor Maldonado"
+        ]
+    },
+    {
+        "question":"¿De qué carrera es esta imagen?",
+        "answers":[
+            "24 horas de Daytona 2019",
+            "12 horas de Sebring 2019",
+            "24 horas de Le Mans 2018",
+            "6 horas de Spa 2018"
+        ],
+        "img":"alonso700.png",
+        "extra":"Las 24 Horas de Daytona de 2019 fueron una carrera con condiciones variables. Aquí se puede ver a Alonso adelantando bajo la lluvia."
+    },
+    {
+        "question":"¿Para qué equipo de F1 hacía pruebas Alonso en esta imagen?",
+        "answers":[
+            "Benetton",
+            "Jordan",
+            "Prost GP",
+            "Marussia"
+        ],
+        "img":"alonso701.jpg",
+        "extra":"Imagen de Fernando en un test con Benetton en 2000."
+    },
+    {
+        "question":"¿De qué clasificación es esta imagen?",
+        "answers":[
+            "Arabia Saudí 2024",
+            "Bakú 2025",
+            "Mónaco 2023",
+            "Canadá 2022"
+        ],
+        "img":"alonso503.PNG",
+        "extra":"Alonso clasificó cuarto y terminó el GP quinto con una buena actuación."
+    },
+    {
+        "question":"¿De qué Grand Prix es esta imagen?",
+        "answers":[
+            "Brasil 2023",
+            "Mónaco 2023",
+            "Holanda 2024",
+            "China 2025"
+        ],
+        "img":"alonso702.webp",
+        "extra":"Photo finish de la última vuelta del GP de Brasil 2023 entre Alonso y Pérez."
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2022",
+            "2023",
+            "2020",
+            "2025"
+        ],
+        "img":"alonso704.jpg",
+        "extra":"Imagen del test de postemporada en Abu Dhabi de 2022, donde Alonso pilotó el AMR22 sin patrocinadores."
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2006",
+            "2005",
+            "2007",
+            "2009"
+        ],
+        "img":"alonso703.png",
+        "extra":"Foto del primer test de Fernando con McLaren-Mercedes en diciembre de 2006 en Jerez, sin patrocinadores."
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2012",
+            "2010",
+            "2014",
+            "2015"
+        ],
+        "img":"alonso705.png",
+        "extra":"La primera vuelta de Alonso en Abu Dhabi 2012 en la que pasó del sexto al cuarto puesto. Acabaría terminando en segunda posición, por detrás de Kimi Räikkönen."
+    },
+    {
+        "question":"¿De qué año es esta imagen?",
+        "answers":[
+            "2013",
+            "2010",
+            "2014",
+            "2015"
+        ],
+        "img":"alonso706.png",
+        "extra":"Imagen de la espectacular salida de Alonso en el GP de Singapur de 2013, pasando de séptimo a tercero en la primera curva por el exterior. "
+    },
+    {
+        "question":"¿De qué año es esta radio de equipo?",
+        "answers":[
+            "2025",
+            "2018",
+            "2022",
+            "2026"
+        ],
+        "audio":"audio19.ogg",
+        "extra":"Radio durante el Gran Premio de Imola de 2025 después de que un coche de seguridad virtual arruinara su estrategia de carrera y la de algunos otros pilotos."
+    },
+    {
+        "question":"¿De qué carrera es esta imagen?",
+        "answers":[
+            "Singapur 2025",
+            "Imola 2025",
+            "Canadá 2024",
+            "Australia 2026"
+        ],
+        "audio":"audio20.ogg",
+        "extra":"El divertido comentario de Fernando se produjo tras adelantar a Liam Lawson, cuya defensa estaba haciendo perder a ambos pilotos un tiempo de vuelta importante."
     }
 ]
