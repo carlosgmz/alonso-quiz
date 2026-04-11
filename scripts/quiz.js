@@ -258,21 +258,18 @@ async function renderResult() {
     $share.appendChild($shareinfo)
     const $socials = d.createElement("div")
     $socials.classList.add("socials")
-    let $div = d.createElement("div")
     let $a = d.createElement("a")
     $a.target = "_blank"
-    let $img = d.createElement("img")
-    $a.appendChild($img)
-    $div.appendChild($a)
+    let $i = d.createElement("i")
+    $a.appendChild($i)
     let url = `https://carlosgmz.github.io/alonso-quiz/quiz?category=${category}&seed=${seed}`
     const urlEncoded = encodeURIComponent(url)
     let localejson = await fetchLocale(localStorage.getItem("language"))
     const msg = encodeURIComponent(localejson.share_msg1 + `${(numGuessed/TOTAL_QUESTIONS*100).toFixed(0)}%` + localejson.share_msg2)
      //copy link button
-     const $link = $div.cloneNode(true)
+     const $link = $a.cloneNode(true)
      $link.classList.add("link-btn","socials-btn")
-     $link.querySelector("img").src = "./assets/imgs/socials/link-svgrepo-com.svg"
-     $link.querySelector("img").alt = "copy link"
+     $link.querySelector("i").classList.add("bi","bi-copy")
      $link.addEventListener("click",async e=>{
         e.preventDefault()
         if(d.querySelector(".link-btn-popup") == null) {
@@ -290,29 +287,25 @@ async function renderResult() {
         }
      })
      //twitter-X share button
-     const $twitter = $div.cloneNode(true)
-     $twitter.querySelector("a").href = `https://twitter.com/intent/tweet?url=${urlEncoded}&text=${msg}`
+     const $twitter = $a.cloneNode(true)
      $twitter.classList.add("twitter-btn","socials-btn")
-     $twitter.querySelector("img").src = "./assets/imgs/socials/twitter-x.svg"
-     $twitter.querySelector("img").alt = "twitter"
+     $twitter.querySelector("i").classList.add("bi","bi-twitter-x")
+     $twitter.href = `https://twitter.com/intent/tweet?url=${urlEncoded}&text=${msg}`
      //whatsapp share button
-     const $whatsapp = $div.cloneNode(true)
-     $whatsapp.querySelector("a").href = `https://api.whatsapp.com/send?text=${msg} ${urlEncoded}`
+     const $whatsapp = $a.cloneNode(true)
      $whatsapp.classList.add("whatsapp-btn","socials-btn")
-     $whatsapp.querySelector("img").src = "./assets/imgs/socials/whatsapp.svg"
-     $whatsapp.querySelector("img").alt = "whatsapp"
+     $whatsapp.querySelector("i").classList.add("bi","bi-whatsapp")
+     $whatsapp.href = `https://api.whatsapp.com/send?text=${msg} ${urlEncoded}`
      //threads share button
-     const $threads = $div.cloneNode(true)
-     $threads.querySelector("a").href = `https://www.threads.net/intent/post?text=${msg}&url=${urlEncoded}`
+     const $threads = $a.cloneNode(true)
      $threads.classList.add("threads-btn","socials-btn")
-     $threads.querySelector("img").src = "./assets/imgs/socials/threads.svg"
-     $threads.querySelector("img").alt = "threads"
+     $threads.querySelector("i").classList.add("bi","bi-threads")
+     $threads.href = `https://www.threads.net/intent/post?text=${msg}&url=${urlEncoded}`
      //facebook share button
-     const $facebook = $div.cloneNode(true)
-     $facebook.querySelector("a").href = `https://www.facebook.com/sharer.php?u=${urlEncoded}`
+     const $facebook = $a.cloneNode(true)
      $facebook.classList.add("facebook-btn","socials-btn")
-     $facebook.querySelector("img").src = "./assets/imgs/socials/facebook.svg"
-     $facebook.querySelector("img").alt = "facebook"
+     $facebook.querySelector("i").classList.add("bi","bi-facebook")
+     $facebook.href = `https://www.facebook.com/sharer.php?u=${urlEncoded}`
     $socials.append($link,$twitter,$whatsapp,$threads,$facebook)
     $share.appendChild($socials)
 

@@ -22,6 +22,11 @@ Quiz JSON files are found under the locales folder as a quiz.json file, one per 
 - extra (optional): additional information shown after selecting an answer.
 
 
+## Dependencies
+
+-[Bootstrap Icons](https://icons.getbootstrap.com/), loaded via jsdelivr CDN.
+
+
 ## Contact
 
 If you want to contact me then send an email to `carlosgmzes@proton.me`.
