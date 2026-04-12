@@ -1,10 +1,10 @@
 {
     "p1":"¡Bienvenido a Alonso Quiz!",
-    "p2":"Esto es un test donde te enfrentarás a 30 preguntas, imágenes y hasta radios de equipo, y tendrás que identificar la respuesta correcta entre cuatro opciones.",
+    "p2":"Esto es un test donde te enfrentarás a 30 preguntas, imágenes y radios de equipo, y tendrás que identificar la respuesta correcta entre cuatro opciones.",
     "p3":"Si quieres contribuir de alguna forma por favor visita el GitHub.",
     "endless":"¿Modo Infinito?",
     "endless_help":"Puede que tardes mucho en responderlas todas.",
-    "button_start":"Empezar test",
+    "button_start":"Iniciar Test",
 
     "data_policy_1":"Cuando se visita un sitio de GitHub Pages, la dirección IP del visitante se registra y almacena por motivos de seguridad, independientemente de si el visitante ha iniciado sesión en GitHub o no.",
     "data_policy_2":"Para obtener más información sobre las prácticas de seguridad de GitHub, consulta el GitHub Privacy Statement.",
@@ -26,7 +26,7 @@
     "summary":"Resumen:",
     "share_info":"¡Comparte exactamente el mismo test con tus amigos!",
     "link_btn_popup":"¡Enlace copiado!",
-    "button_return":"Volver al inicio",
+    "button_return":"Volver",
 
     "footer_a1":"Github",
     "footer_a2":"Política datos",
