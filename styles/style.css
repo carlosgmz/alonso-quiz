@@ -544,7 +544,13 @@ footer a:hover {
         grid-template-columns: 0.15fr 2fr 0.15fr;
     }
     .quiz {
-        margin: 0.5em 5% 1em 5%;
+        margin: 0.6em 5% 1.5em 5%;
+    }
+    .question_img {
+        width: 65%;
+    }
+    .question_audio {
+        width: 55%;
     }
     .answers {
         width: 55%;
@@ -561,6 +567,12 @@ footer a:hover {
     }
     .quiz {
         margin: 0.8em 10% 2em 10%;
+    }
+    .question_img {
+        width: 55%;
+    }
+    .question_audio {
+        width: 50%;
     }
     .answers {
         width: 60%;
